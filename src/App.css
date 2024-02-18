@@ -16,7 +16,15 @@ html {
 }
 
 body{
-  background-color: #F5F4F6;
+  /* background-color: #F5F4F6; */
+  background-color: #F8FAFC;
+}
+
+#root{
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+  /* background-color: cadetblue; */
 }
 
 
@@ -44,18 +52,17 @@ body{
   overflow: hidden;
   position: fixed;
   top: 10px;
-  left: 15%;
+  left: 7%;
 }
 
 .n-memoji img{
-  height: 40px;
+  height: 35px;
   border-radius: 50%;
 }
 
 .n-links{
   height: 50px;
   width: fit-content;
-  background-color: #F5F4F6;
   padding: 3px 4px;
   display: flex;
   justify-content: center;
@@ -71,9 +78,19 @@ body{
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  font-size: 15px;
+  font-size: .875rem;
   cursor: pointer;
   border: 1px solid transparent;
+  text-transform: capitalize;
+
+  background-color: transparent;
+  background-image: linear-gradient(-45deg, #0F172A, #0f172a7e);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 
@@ -84,4 +101,23 @@ body{
 
 .ui{
   height: 200vh;
+}
+
+.n-socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  gap: 20px;
+  position: fixed;
+  top: 10px;
+  right: 7%;
+}
+
+.n-socials a{
+  text-decoration: none;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  color: #475569;
 }
