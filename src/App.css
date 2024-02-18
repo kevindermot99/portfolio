@@ -1,42 +1,87 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', system-ui, sans-serif;
+  /* background-image: radial-gradient(ellipse 100% 100% at 0 100%,rgb(119 232 208 / 8%),rgb(255 0 126 / 0%)); */
+  /* background-repeat: no-repeat; */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  background-color: #F5F4F6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+.navbar{
+  /* background-color: cadetblue; */
+  height: 7%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
 }
 
-.card {
-  padding: 2em;
+.n-memoji{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 5px 20px 0px #9b9b9b67;
+  overflow: hidden;
+  position: fixed;
+  top: 10px;
+  left: 15%;
 }
 
-.read-the-docs {
-  color: #888;
+.n-memoji img{
+  height: 40px;
+  border-radius: 50%;
+}
+
+.n-links{
+  height: 50px;
+  width: fit-content;
+  background-color: #F5F4F6;
+  padding: 3px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.n-links span{
+  padding: 5px 20px;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+
+.n-links span.active{
+  background-color: #ffffffb9;
+  box-shadow: 0px 5px 20px 0px #bdbdbd67;
+}
+
+.ui{
+  height: 200vh;
 }
