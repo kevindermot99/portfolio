@@ -6,6 +6,7 @@ import memoji from '../public/memoji.jpeg'
 import { FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { SlLocationPin } from "react-icons/sl";
 
 function App() {
 
@@ -29,7 +30,11 @@ function App() {
       </div>
     </div>
     
-
+    <div className="hero">
+      <h1>Hi, I'm Kevin.</h1>
+      <p><SlLocationPin /> Kigali, Rwanda</p>
+      <p>I'm curently at <a href="#">ALU</a> taking Bachelors of Software Engineering, for more info <a href="#">About Me.</a></p>
+    </div>
     </>
   )
 }
