@@ -1,7 +1,7 @@
 import './App.css'
 import Ui from './pages/ui'
 import memoji from '../public/memoji.jpeg'
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 // icons
 import { FaGithub } from "react-icons/fa";
@@ -10,6 +10,27 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { SlLocationPin } from "react-icons/sl";
 
 function App() {
+
+  const [mBox, setmBox] = useState(false);
+  const memojiRef = useRef(null);
+
+  const handleMbox = () => {
+    setmBox(true)
+  }
+
+  const handleclickOutslideMbox = (event) => {
+    if (!memojiRef.current.contains(event.target)) {
+      setmBox(false);
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener("click", handleclickOutslideMbox)
+
+    return () => {
+      document.addEventListener("click", handleclickOutslideMbox)
+    }
+  }, [])
 
   return (
     <div className='wrapper'>
@@ -20,7 +41,7 @@ function App() {
       {/* navbar */}
       <div className="navbar">
 
-        <div className="n-memoji">
+        <div className={`n-memoji ${mBox ? 'active' : ''}`} onClick={handleMbox} ref={memojiRef}>
           <img src={memoji} alt="" />
           <div className="n-memoji-box">
             
