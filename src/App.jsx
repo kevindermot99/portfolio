@@ -51,8 +51,8 @@ function App() {
         <div className="n-links">
           <span>UI\UX</span>
           <span>Full Stack</span>
-          <span>skills</span>
           <span>About me</span>
+          <span><a href="#">My CV</a></span>
         </div>
 
         <div className="n-socials">
@@ -67,8 +67,7 @@ function App() {
       <div className="hero">
         <h1>Hi, I'm Kevin.</h1>
         <p><SlLocationPin /> Kigali, Rwanda </p>
-        <p>I am currently pursuing a Bachelor's degree in Software Engineering at <a href="https://www.alueducation.com" target='_blank'>ALU</a>. For further information about my academic background, check this page <a href="#"> about me</a></p>
-        {/* <p>I'm curently at <a href="#">ALU</a> taking Bachelors of Software Engineering, for more info <a href="#">About Me.</a></p> */}
+        <p>Full stack developer and am currently pursuing a Bachelor's degree in Software Engineering at <a href="https://www.alueducation.com" target='_blank'>ALU</a>. For further information about my academic background, check the <a href="#"> about me</a> page.</p>
       </div>
 
 
