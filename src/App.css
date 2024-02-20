@@ -196,7 +196,6 @@ body {
   color: var(--main-color);
 }
 
-
 .n-socials {
   display: flex;
   justify-content: center;
@@ -244,8 +243,6 @@ body {
 
 
 
-
-
 /* hero */
 
 .hero {
@@ -254,11 +251,12 @@ body {
   justify-content: center;
   align-items: center;
   /* background-color: cadetblue; */
-  min-height: 500px;
+  min-height: 550px;
+  position: relative;
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 800;
   margin-bottom: 10px;
   text-align: center;

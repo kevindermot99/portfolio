@@ -1,6 +1,8 @@
 import './App.css'
 import Ui from './pages/ui'
 import memoji from '../public/memoji.jpeg'
+import me1 from '../public/me1.jpeg'
+import me2 from '../public/m2.jpeg'
 import { useEffect, useRef, useState } from 'react';
 
 // icons
@@ -65,6 +67,7 @@ function App() {
 
 
       <div className="hero">
+        
         <h1>Hi, I'm Kevin.</h1>
         <p><SlLocationPin /> Kigali, Rwanda </p>
         <p>Full stack developer and am currently pursuing a Bachelor's degree in Software Engineering at <a href="https://www.alueducation.com" target='_blank'>ALU</a>. For further information about my academic background, check the <a href="#"> about me</a> page.</p>
