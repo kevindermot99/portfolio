@@ -1,4 +1,4 @@
 export const Greetings = "Hello"
-export const NameAndLocation = "I'm Kevin, a Rwandan-based Web application Developer currently at African Leadership University in BSC. (HONS) SOFTWARE ENGINEERING"
+export const NameAndLocation = "I am Kevin, a Web Application Developer based in Rwanda, currently pursuing a BSc (Hons) in Software Engineering at African Leadership University."
 
 
