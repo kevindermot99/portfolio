@@ -1,20 +1,21 @@
 import React from 'react'
 import { FaGithub } from "react-icons/fa";
-import { BiLogoGmail } from "react-icons/bi";
-import { IoLogoWhatsapp } from "react-icons/io";
-import memoji from "../assets/me/memoji.jpeg"
 import { Link } from 'react-router-dom';
+import { NavLinks, NavNames } from '../data';
 
 function Navbar() {
 
     return (
         <div className='bg-white bg-opacity-70 backdrop-blur-xl px-7 py-5 h-fit w-full flex items-center justify-between'>
             <div className='flex items-center justify-center gap-4'>
-                <h1 className='text-lg font-bold '>mboni kevin</h1>
+                <h1 className='text-xl font-bold cursor-default '>{NavNames}</h1>
                 <ul>
-                    <Link className='text-sm font-medium capitalize py-3 px-3 hover:bg-gray-100 rounded-lg'>Projects</Link>
-                    <Link className='text-sm font-medium capitalize py-3 px-3 hover:bg-gray-100 rounded-lg'>About</Link>
-                    <Link className='text-sm font-medium capitalize py-3 px-3 hover:bg-gray-100 rounded-lg'>Contact</Link>
+                    {NavLinks.map((link, index) => (
+                        <Link to={link.location} className='text-sm font-medium capitalize py-3 px-3 hover:bg-gray-100 rounded-lg' key={index}>
+                            {link.title}
+                        </Link>
+                    ))}
+                    
                 </ul>
             </div>
 
