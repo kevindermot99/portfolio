@@ -5,15 +5,13 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import memoji from "../assets/me/memoji.jpeg"
 
 function Navbar() {
-    const iconstyle = 'text-lg text-gray-800 transition hover:opacity-70 cursor-pointer '
+    
   return (
     <div className='bg-white bg-opacity-70 backdrop-blur-xl px-7 py-2 h-fit w-full flex items-center justify-between'>
         <img src={memoji} className="h-10 rounded-full" />
         
         <div className='flex gap-3 items-center justify-center'>
-            <FaGithub className={iconstyle} />
-            <BiLogoGmail className={iconstyle} />
-            <IoLogoWhatsapp className={iconstyle} />
+            <FaGithub className='text-3xl text-black cursor-pointer' />
         </div>
     </div>
   )
