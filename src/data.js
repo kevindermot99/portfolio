@@ -6,4 +6,5 @@ export const NavLinks = [
     {title: "Projects", location: "/"},
     {title: "About", location: "/about"},
     {title: "Contact", location: "/contact"},
+    {title: "My CV", location: "/mycv"},
 ]

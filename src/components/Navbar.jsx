@@ -11,7 +11,7 @@ function Navbar() {
                 <h1 className='text-xl font-bold cursor-default '>{NavNames}</h1>
                 <ul>
                     {NavLinks.map((link, index) => (
-                        <Link to={link.location} className='text-sm font-medium capitalize py-3 px-3 hover:bg-gray-100 rounded-lg' key={index}>
+                        <Link to={link.location} className='text-sm font-medium capitalize py-3 px-4 hover:bg-gray-100 rounded-lg' key={index}>
                             {link.title}
                         </Link>
                     ))}
