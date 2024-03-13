@@ -6,7 +6,7 @@ import { NavLinks, NavNames } from '../data';
 function Navbar() {
 
     return (
-        <div className='bg-white bg-opacity-70 backdrop-blur-xl px-7 py-5 h-fit w-full flex items-center justify-between'>
+        <div className='bg-white bg-opacity-90 backdrop-blur-2xl px-7 py-5 h-fit w-full flex items-center justify-between sticky top-0'>
             <div className='flex items-center justify-center gap-4'>
                 <h1 className='text-xl font-bold cursor-default '>{NavNames}</h1>
                 <ul>
