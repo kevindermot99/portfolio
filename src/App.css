@@ -20,3 +20,24 @@ body {
   position: relative;
 }
 
+.hero{
+  transition: transform 1s ease;
+  animation: fade linear;
+  animation-timeline: scroll();
+  animation-range-start: 0;
+  animation-range-end:340px;
+
+}
+
+@keyframes fade {
+  from{
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0);
+  }
+  to{
+    opacity: .2;
+    scale: 1.4;
+    transform: translateY(100px);
+  }
+}
