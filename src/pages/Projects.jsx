@@ -1,8 +1,11 @@
 import React from 'react'
+import { Greetings } from '../data'
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <div>
+        
+    </div>
   )
 }
 
