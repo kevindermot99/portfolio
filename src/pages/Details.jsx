@@ -46,14 +46,14 @@ function Details({isVisible}) {
                     <button className='text-xl p-2 bg-gray-200 hover:scale-105 shadow-sm outline-none rounded-xl ' onClick={copylink}><IoShareSocialOutline /></button>
                 </div>
 
-                <div className='w-full h-[300px] rounded-xl relative overflow-clip'>
+                <div className='w-full h-[330px] rounded-xl relative overflow-clip'>
                     <img src={res.thumbnail} className='w-full h-full object-cover' />
                 </div>
 
                 <div className='w-full'>
                     <div className='flex items-center justify-between mt-10'>
                         <h1 className='text-3xl font-bold'>{res.title}</h1>
-                        <a href={res.liveDemoLink} className='font-medium text-base text-white bg-blue-500 px-10 py-3 rounded-lg transition hover:opacity-90'>Live Demo</a>
+                        <a href={res.liveDemoLink} target='_blank' className='font-medium text-base text-white bg-blue-500 px-10 py-3 rounded-lg transition hover:opacity-90'>Live Demo</a>
                     </div>
                     
                     <h3 className={h3}>
@@ -97,7 +97,7 @@ function Details({isVisible}) {
             </div>
 
 
-            <div className={`fixed left-0 right-0 bottom-4 m-auto w-fit bg-gray-200 rounded-xl p-3 flex items-center justify-start transition-all   ${copied ? ' opacity-100 scale-100' : ' opacity-0 scale-0'}`} id='copied'>
+            <div className={`fixed left-4 bottom-4 m-auto w-fit bg-gray-200 rounded-xl p-3 flex items-center justify-start transition-all   ${copied ? ' opacity-100 scale-100' : ' opacity-0 scale-0'}`} id='copied'>
                 <IoCheckmarkOutline className='text-xl text-green-600' />
                 <p className='text-sm px-1 font-medium text-gray-500'>
                     Link Copied

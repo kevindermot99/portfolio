@@ -20,7 +20,7 @@ function Projects() {
             <section className='w-full bg-white'>
                 <div className=' w-full max-w-[1000px] grid grid-cols-2 gap-4 m-auto px-3 overflow-clip'>
                     {ProjectModel.map((project) => (
-                        <Link to={`/details/${project.id}`} key={project.id} className='w-[100%] h-[250px] rounded-md overflow-clip' >
+                        <Link to={`/details/${project.id}`} key={project.id} className='w-[100%] h-[250px] rounded-xl overflow-clip' >
                             <img src={project.thumbnail} className='w-full h-full object-cover' alt="" />
                         </Link>
                     ))}
