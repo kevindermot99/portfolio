@@ -27,5 +27,40 @@ const projectModel = [
         title: "THE App Clone hehheehhhhehehe",
         description: "suka buryaat",
         liveDemoLink: "www.google.com",
-    }
+    },
+    {
+        id: "03un0d3i6ywvd9gai7wx",
+        thumbnail: {example2},
+        title: "THE App Clone hehheehhhhehehe",
+        description: "suka buryaat",
+        liveDemoLink: "www.google.com",
+    },
+    {
+        id: "4tygv4c3a9dzqcyw7821",
+        thumbnail: {example3},
+        title: "THE App Clone hehheehhhhehehe",
+        description: "suka buryaat",
+        liveDemoLink: "www.google.com",
+    },
+    {
+        id: "39q400r75106vxmnpkwn",
+        thumbnail: {example4},
+        title: "THE App Clone hehheehhhhehehe",
+        description: "suka buryaat",
+        liveDemoLink: "www.google.com",
+    },
+    {
+        id: "kgm3k1qr8dq9y4dhjjn9",
+        thumbnail: {example5},
+        title: "THE App Clone hehheehhhhehehe",
+        description: "suka buryaat",
+        liveDemoLink: "www.google.com",
+    },
+    {
+        id: "7ez5bbw5zqzah3ppx261",
+        thumbnail: {example6},
+        title: "THE App Clone hehheehhhhehehe",
+        description: "suka buryaat",
+        liveDemoLink: "www.google.com",
+    },
 ]
