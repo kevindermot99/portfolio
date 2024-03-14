@@ -30,13 +30,17 @@ function Project() {
     }
     return (
         <div>
-            <Navbar />
+            {/* <Navbar /> */}
 
             <div className='w-full relative px-7 max-w-[1200px] m-auto'>
+                <div className='flex justify-between items-center py-4'>
+                <Link to="/" className='text-xl p-2 bg-gray-200 hover:scale-105 shadow-sm rounded-xl'><IoChevronBack /></Link>
+                <p className='font-medium text-base '>{res.title}</p>
+                <button className='text-xl p-2 bg-gray-200 hover:scale-105 shadow-sm outline-none rounded-xl ' onClick={copylink}><IoShareSocialOutline /></button>
+                </div>
 
-                <div className='w-full h-[300px] rounded-xl bg-gray-200 relative'>
-                    <Link to="/" className='text-xl p-2 bg-gray-100 hover:scale-105 bg-opacity-70 backdrop-blur-md shadow-sm rounded-xl absolute top-3 left-3'><IoChevronBack /></Link>
-                    <button className='text-xl p-2 bg-gray-100 hover:scale-105 bg-opacity-70 backdrop-blur-md shadow-sm outline-none rounded-xl absolute top-3 right-3' onClick={copylink}><IoShareSocialOutline /></button>
+                <div className='w-full h-[300px] rounded-xl bg-gray-200 relative overflow-clip'>
+                    <img src={res.thumbnail} className='w-full h-full object-cover' />
                 </div>
 
             </div>
