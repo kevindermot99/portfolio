@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Greetings, Situation, ProjectModel } from '../data'
 import Navbar from '../components/Navbar'
+import { Link } from 'react-router-dom';
 
 function Projects() {
 
@@ -10,7 +11,7 @@ function Projects() {
         <div className=' overflow-clip'>
             <Navbar />
 
-            <section className='hero flex items-center justify-center flex-col my-10 pt-10 pb-16 sticky top-[110px] -z-[2] overflow-clip'>
+            <section className='hero flex items-center justify-center flex-col mt-10 pt-10 pb-10 sticky top-[110px] -z-[2] overflow-clip'>
                 <h1 className='text-5xl text-black font-bold mb-2'>{Greetings}!</h1>
                 <p className='text-sm text-black max-w-[600px] text-center '>{Situation}</p>
             </section>
@@ -18,9 +19,9 @@ function Projects() {
             <section className='w-full bg-white'>
                 <div className=' w-full max-w-[1000px] grid grid-cols-2 gap-4 m-auto px-3'>
                     {ProjectModel.map((project) => (
-                        <div className='w-[100%] h-[280px] bg-orange-400' key={project.id}>
+                        <Link to={`/project/${project.id}`} key={project.id} className='w-[100%] h-[280px] bg-orange-400' >
 
-                        </div>
+                        </Link>
                     ))}
                     
                     
