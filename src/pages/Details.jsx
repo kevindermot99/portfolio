@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { ProjectModel } from '../data'
-import { IoChevronBack } from "react-icons/io5";
+import { RiScreenshotLine } from "react-icons/ri";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { IoCheckmarkOutline } from "react-icons/io5";
 import { useState, useEffect } from 'react'
@@ -36,18 +36,17 @@ function Details({ isVisible }) {
     }
     return (
         <div className=' wrapper pb-20'>
-            {/* <Navbar /> */}
+            <Navbar />
 
             <div className='w-full relative '>
 
-                <div className='flex justify-between items-center overflow-clip py-4 absolute z-10 top-0 w-full px-7'>
-                    <Link to="/" className='text-xl p-2 bg-white bg-opacity-10 backdrop-blur-sm text-white hover:scale-105 shadow-sm rounded-xl'><IoChevronBack /></Link>
-                    <p className='font-medium text-sm text-white text-opacity-20 max-sm:hidden '>{res.title}: {res.slogan}</p>
-                    <button className='text-xl p-2 bg-white bg-opacity-10 backdrop-blur-sm text-white hover:scale-105 shadow-sm outline-none rounded-xl ' onClick={copylink}><IoShareSocialOutline /></button>
-                </div>
-
-                <div className='w-full h-[65vh] max-h-[600px] relative overflow-clip'>
+                <div className='animateZoom w-full h-[65vh] max-h-[600px] relative overflow-clip'>
                     <img src={res.thumbnail} className='w-full h-full object-cover select-none' />
+                    <div className='flex justify-between items-center overflow-clip py-4 absolute z-10 bottom-0 w-full px-7'>
+                        <button className='text-xl p-2 bg-white bg-opacity-10 backdrop-blur-sm text-white hover:scale-105 shadow-sm rounded-xl' title='Screenshots'><RiScreenshotLine /></button>
+                        <p className='font-medium text-sm text-white text-opacity-30 max-sm:hidden '>~ {res.slogan} ~</p>
+                        <button className='text-xl p-2 bg-white bg-opacity-10 backdrop-blur-sm text-white hover:scale-105 shadow-sm outline-none rounded-xl' title='Share' onClick={copylink}><IoShareSocialOutline /></button>
+                    </div>
                 </div>
 
                 <div className='w-full px-7 max-w-[1200px] m-auto'>
@@ -61,7 +60,7 @@ function Details({ isVisible }) {
                         <a href={res.liveDemoLink} target='_blank' className='font-medium text-base text-white bg-blue-500 px-10 py-3 rounded-lg transition hover:opacity-90'>Live Demo</a>
                     </div>
 
-                    
+
 
                     <h3 className={h3}>
                         Technologies Used:
@@ -105,7 +104,7 @@ function Details({ isVisible }) {
             </div>
 
 
-            <div className={`fixed left-4 bottom-4 m-auto w-fit bg-gray-200 rounded-xl p-3 flex items-center justify-start transition-all   ${copied ? ' opacity-100 scale-100' : ' opacity-0 scale-0'}`} id='copied'>
+            <div className={`fixed left-0 right-0 top-4 z-10 m-auto w-fit bg-gray-100 rounded-xl p-3 flex items-center justify-start transition-all   ${copied ? ' opacity-100 scale-100' : ' opacity-0 scale-0'}`} id='copied'>
                 <IoCheckmarkOutline className='text-xl text-green-600' />
                 <p className='text-sm px-1 font-medium text-gray-500'>
                     Link Copied
