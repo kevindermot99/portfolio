@@ -7,7 +7,8 @@ import { IoCheckmarkOutline } from "react-icons/io5";
 import { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar';
 
-function Project() {
+
+function Details({isVisible}) {
 
     const { id } = useParams();
     const res = ProjectModel.find(findthis)
@@ -34,7 +35,7 @@ function Project() {
         return <div>Item not found!</div>
     }
     return (
-        <div className='pb-20'>
+        <div className=' wrapper pb-20'>
             {/* <Navbar /> */}
 
             <div className='w-full relative px-7 max-w-[1200px] m-auto'>
@@ -106,4 +107,4 @@ function Project() {
     )
 }
 
-export default Project
+export default Details

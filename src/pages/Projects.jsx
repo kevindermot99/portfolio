@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { Greetings, Situation, ProjectModel } from '../data'    
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 function Projects() {
 
     const today = new Date();
 
     return (
-        <div className=' overflow-clip'>
+        <div className='wrapper overflow-clip'>
             <Navbar />
 
             <section className='hero flex items-center justify-center flex-col mt-10 pt-10 pb-10 sticky top-[110px] -z-[2] overflow-clip'>
@@ -17,10 +18,10 @@ function Projects() {
             </section>
 
             <section className='w-full bg-white'>
-                <div className=' w-full max-w-[1000px] grid grid-cols-2 gap-4 m-auto px-3'>
+                <div className=' w-full max-w-[1000px] grid grid-cols-2 gap-4 m-auto px-3 overflow-clip'>
                     {ProjectModel.map((project) => (
-                        <Link to={`/project/${project.id}`} key={project.id} className='w-[100%] h-[250px] bg-orange-400 rounded-md' >
-                            
+                        <Link to={`/details/${project.id}`} key={project.id} className='w-[100%] h-[250px] rounded-md overflow-clip' >
+                            <img src={project.thumbnail} className='w-full h-full object-cover' alt="" />
                         </Link>
                     ))}
                     
