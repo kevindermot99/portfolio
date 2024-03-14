@@ -16,6 +16,8 @@ function Project() {
     const [copied, setcopied] = useState(false)
 
     function copylink() {
+        const url = window.location.href;
+        navigator.clipboard.writeText(url)
         setcopied(true)
         setTimeout(() => {
             setcopied(false)
