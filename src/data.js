@@ -37,7 +37,7 @@ export const ProjectModel = [
     {
         id: "8p3hwvf64q1nix1q2fzd",
         thumbnail: pagez,
-        title: "Youtube 2.0",
+        title: "Pagez",
         description: "Youtube 2.0 is a modern web application aiming to revolutionize the online video sharing experience. With a sleek and intuitive user interface, users can easily discover, watch, and share their favorite videos. The platform is built using cutting-edge technologies such as React JS, MongoDB, Express JS, Node JS, Next JS, and Tailwind CSS. Whether you're a content creator or a viewer, Youtube 2.0 offers a seamless and immersive experience for all. Join us and be part of the future of online video sharing.",
         liveDemoLink: "https://www.google.com/",
         technologies: [

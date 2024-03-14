@@ -42,11 +42,11 @@ function Details({isVisible}) {
                 
                 <div className='flex justify-between items-center overflow-clip py-4 absolute z-10 top-0 w-full px-7'>
                     <Link to="/" className='text-xl p-2 bg-white bg-opacity-10 backdrop-blur-sm text-white hover:scale-105 shadow-sm rounded-xl'><IoChevronBack /></Link>
-                    <p className='font-medium text-base text-white '>{res.title}</p>
+                    {/* <p className='font-medium text-base text-white '>{res.title}</p> */}
                     <button className='text-xl p-2 bg-white bg-opacity-10 backdrop-blur-sm text-white hover:scale-105 shadow-sm outline-none rounded-xl ' onClick={copylink}><IoShareSocialOutline /></button>
                 </div>
 
-                <div className='w-full h-[400px] relative overflow-clip'>
+                <div className='w-full h-[65vh] max-h-[600px] relative overflow-clip'>
                     <img src={res.thumbnail} className='w-full h-full object-cover' />
                 </div>
 
