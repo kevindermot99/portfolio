@@ -60,7 +60,7 @@ function Project() {
                     </h3>
                     <div className='flex gap-3 overflow-clip flex-wrap mb-8 mt-2'>
                         {res.technologies.map((tech, index) => (
-                            <img src={tech.icon} title={tech.name} className='h-12 bg-gray-100 p-2 rounded-lg'/>
+                            <img src={tech.icon} title={tech.name} key={index} className='h-12 bg-gray-100 p-2 rounded-lg'/>
                         ))}
                     </div>
 

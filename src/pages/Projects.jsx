@@ -19,17 +19,17 @@ function Projects() {
             <section className='w-full bg-white'>
                 <div className=' w-full max-w-[1000px] grid grid-cols-2 gap-4 m-auto px-3'>
                     {ProjectModel.map((project) => (
-                        <a href={`/project/${project.id}`} key={project.id} className='w-[100%] h-[280px] bg-orange-400' >
+                        <Link to={`/project/${project.id}`} key={project.id} className='w-[100%] h-[280px] bg-orange-400' >
                             
-                        </a>
+                        </Link>
                     ))}
                     
                     
                 </div>
             </section>
 
-            <section className='mt-6 flex justify-center items-center px-3 pt-28 pb-10'>
-                <p className='font-light text-base text-black'>i started Web dev in 2020 - {today.getFullYear()}</p>
+            <section className='mt-6 flex justify-center items-center px-3 pt-16 pb-6'>
+                <p className='font-medium text-sm text-black'>Started 2020 - {today.getFullYear()}</p>
             </section>
 
         </div>
