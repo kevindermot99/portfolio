@@ -38,20 +38,20 @@ function Details({isVisible}) {
         <div className=' wrapper pb-20'>
             {/* <Navbar /> */}
 
-            <div className='w-full relative px-7 max-w-[1200px] m-auto'>
+            <div className='w-full relative '>
                 
-                <div className='flex justify-between items-center py-4'>
-                    <Link to="/" className='text-xl p-2 bg-gray-200 hover:scale-105 shadow-sm rounded-xl'><IoChevronBack /></Link>
-                    <p className='font-medium text-base '>{res.title}</p>
-                    <button className='text-xl p-2 bg-gray-200 hover:scale-105 shadow-sm outline-none rounded-xl ' onClick={copylink}><IoShareSocialOutline /></button>
+                <div className='flex justify-between items-center overflow-clip py-4 absolute z-10 top-0 w-full px-7'>
+                    <Link to="/" className='text-xl p-2 bg-white bg-opacity-15 backdrop-blur-md text-white hover:scale-105 shadow-sm rounded-xl'><IoChevronBack /></Link>
+                    <p className='font-medium text-base text-white '>{res.title}</p>
+                    <button className='text-xl p-2 bg-white bg-opacity-15 backdrop-blur-md text-white hover:scale-105 shadow-sm outline-none rounded-xl ' onClick={copylink}><IoShareSocialOutline /></button>
                 </div>
 
-                <div className='w-full h-[330px] rounded-xl relative overflow-clip'>
+                <div className='w-full h-[400px] relative overflow-clip'>
                     <img src={res.thumbnail} className='w-full h-full object-cover' />
                 </div>
 
-                <div className='w-full'>
-                    <div className='flex items-center justify-between mt-10'>
+                <div className='w-full px-7 max-w-[1200px] m-auto'>
+                    <div className='flex items-center justify-between mt-8'>
                         <h1 className='text-3xl font-bold'>{res.title}</h1>
                         <a href={res.liveDemoLink} target='_blank' className='font-medium text-base text-white bg-blue-500 px-10 py-3 rounded-lg transition hover:opacity-90'>Live Demo</a>
                     </div>
