@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar';
 
 
-function Details({isVisible}) {
+function Details({ isVisible }) {
 
     const { id } = useParams();
     const res = ProjectModel.find(findthis)
@@ -28,8 +28,8 @@ function Details({isVisible}) {
         }, 2000);
     }
 
-    const h3 ='font-semibold text-lg mt-3 ';
-    const p ='text-base font-light mb-7 leading-relaxed  ';
+    const h3 = 'font-semibold text-lg mt-3 ';
+    const p = 'text-base font-light mb-7 leading-relaxed  ';
 
     if (!res) {
         return <div>Item not found!</div>
@@ -39,35 +39,43 @@ function Details({isVisible}) {
             {/* <Navbar /> */}
 
             <div className='w-full relative '>
-                
+
                 <div className='flex justify-between items-center overflow-clip py-4 absolute z-10 top-0 w-full px-7'>
                     <Link to="/" className='text-xl p-2 bg-white bg-opacity-10 backdrop-blur-sm text-white hover:scale-105 shadow-sm rounded-xl'><IoChevronBack /></Link>
-                    {/* <p className='font-medium text-base text-white '>{res.title}</p> */}
+                    <p className='font-medium text-sm text-white text-opacity-20 max-sm:hidden '>{res.title}: {res.slogan}</p>
                     <button className='text-xl p-2 bg-white bg-opacity-10 backdrop-blur-sm text-white hover:scale-105 shadow-sm outline-none rounded-xl ' onClick={copylink}><IoShareSocialOutline /></button>
                 </div>
 
                 <div className='w-full h-[65vh] max-h-[600px] relative overflow-clip'>
-                    <img src={res.thumbnail} className='w-full h-full object-cover' />
+                    <img src={res.thumbnail} className='w-full h-full object-cover select-none' />
                 </div>
 
                 <div className='w-full px-7 max-w-[1200px] m-auto'>
                     <div className='flex items-center justify-between mt-8'>
-                        <h1 className='text-3xl font-bold'>{res.title}</h1>
+                        <span>
+                            <h1 className='text-3xl font-bold'>{res.title}</h1>
+                            <p className='text-base font-light  '>{res.slogan}</p>
+                        </span>
+
+
                         <a href={res.liveDemoLink} target='_blank' className='font-medium text-base text-white bg-blue-500 px-10 py-3 rounded-lg transition hover:opacity-90'>Live Demo</a>
                     </div>
+
                     
+
                     <h3 className={h3}>
                         Technologies Used:
                     </h3>
                     <div className='flex gap-3 overflow-clip flex-wrap mb-8 mt-2'>
                         {res.technologies.map((tech, index) => (
-                            <img src={tech.icon} title={tech.name} key={index} className='h-12 bg-gray-100 p-2 rounded-lg'/>
+                            <img src={tech.icon} title={tech.name} key={index} className='h-12 bg-gray-100 p-2 rounded-lg' />
                         ))}
                     </div>
 
                     <h3 className={h3}>
                         About: {res.title}
-                        </h3>
+                    </h3>
+
                     <p className={p}>
                         {res.description}
                     </p>
@@ -90,8 +98,8 @@ function Details({isVisible}) {
                     <a href="#" target='_blank' className='text-base font-medium underline transition hover:text-blue-400 text-blue-500'>
                         {res.linkSourceCode}
                     </a>
-                
-                
+
+
                 </div>
 
             </div>
