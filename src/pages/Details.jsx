@@ -29,31 +29,31 @@ function Details({ isVisible }) {
     }
 
     const h3 = 'font-semibold text-lg mt-3 ';
-    const p = 'text-base font-light mb-7 leading-relaxed  ';
+    const p = 'text-base font-normal mb-7 leading-relaxed  ';
 
     if (!res) {
         return <div>Item not found!</div>
     }
     return (
-        <div className=' wrapper pb-20'>
+        <div className=' wrapper pb-28'>
             <Navbar />
 
             <div className='w-full relative '>
 
-                <div className='animateZoom w-full h-[65vh] max-h-[600px] relative overflow-clip'>
-                    <img src={res.thumbnail} className='w-full h-full object-cover select-none' />
-                    <div className='flex justify-between items-center overflow-clip py-4 absolute z-10 bottom-0 w-full px-7'>
+                <div className='w-full h-[65vh] max-h-[600px] relative overflow-clip'>
+                    <img src={res.thumbnail} className='animateZoom w-full h-full object-cover select-none' />
+                    <div className='flex justify-between items-center overflow-clip py-4 absolute z-0  bottom-0 w-full px-7'>
                         <button className='text-xl p-2 bg-white bg-opacity-10 backdrop-blur-sm text-white hover:scale-105 shadow-sm rounded-xl' title='Screenshots'><RiScreenshotLine /></button>
-                        <p className='font-medium text-sm text-white text-opacity-30 max-sm:hidden '>~ {res.slogan} ~</p>
+                        <p className='font-medium text-sm text-white text-opacity-40 max-sm:hidden '>~ {res.slogan} ~</p>
                         <button className='text-xl p-2 bg-white bg-opacity-10 backdrop-blur-sm text-white hover:scale-105 shadow-sm outline-none rounded-xl' title='Share' onClick={copylink}><IoShareSocialOutline /></button>
                     </div>
                 </div>
 
                 <div className='w-full px-7 max-w-[1200px] m-auto'>
-                    <div className='flex items-center justify-between mt-8'>
+                    <div className='flex items-center justify-between mt-10'>
                         <span>
                             <h1 className='text-3xl font-bold'>{res.title}</h1>
-                            <p className='text-base font-light  '>{res.slogan}</p>
+                            <p className='text-base font-normal  '>{res.slogan}</p>
                         </span>
 
 
@@ -93,7 +93,9 @@ function Details({ isVisible }) {
                         {res.duration}
                     </p>
 
-                    <h3 className={h3}>Source Code:</h3>
+                    <h3 className={h3}>
+                        Source Code:
+                    </h3>
                     <a href="#" target='_blank' className='text-base font-medium underline transition hover:text-blue-400 text-blue-500'>
                         {res.linkSourceCode}
                     </a>

@@ -40,3 +40,20 @@ body {
     transform: translateY(100px);
   }
 }
+
+.animateZoom{
+  transition: transform 1s ease;
+  animation: zoomOnScroll linear;
+  animation-timeline: scroll();
+  animation-range-start: 0;
+  animation-range-end: 100vh;
+}
+
+@keyframes zoomOnScroll {
+  from{
+    scale: 1;
+  }
+  to{
+    scale: 1.3;
+  }
+}
