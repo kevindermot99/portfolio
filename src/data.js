@@ -27,6 +27,7 @@ export const ProjectModel = [
         title: "Youtube 2.0",
         description: "suka buryaat",
         liveDemoLink: "www.google.com",
+        Technologies: [],
     },
     {
         id: "03un0d3i6ywvd9gai7wx",
