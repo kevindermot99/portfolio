@@ -9,3 +9,12 @@ export const NavLinks = [
     {title: "Contact", location: "/contact"},
     {title: "My CV", location: "/mycv"},
 ]
+
+
+// projects
+const projectModel = [
+    {
+        id: "8p3hwvf64q1nix1q2fzd",
+        imageURL: ""
+    }
+]
