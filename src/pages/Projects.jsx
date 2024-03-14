@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Greetings, Situation } from '../data'
+import { Greetings, Situation, ProjectModel } from '../data'
 import Navbar from '../components/Navbar'
 
 function Projects() {
@@ -17,26 +17,13 @@ function Projects() {
 
             <section className='w-full bg-white'>
                 <div className=' w-full max-w-[1000px] grid grid-cols-2 gap-4 m-auto px-3'>
-                    <div className='w-[100%] h-[280px] bg-orange-400'>
+                    {ProjectModel.map((project) => (
+                        <div className='w-[100%] h-[280px] bg-orange-400' key={project.id}>
 
-                    </div>
-                    <div className='w-[100%] h-[280px] bg-purple-400'>
-
-                    </div>
-
-                    <div className='w-[100%] h-[280px] bg-red-400'>
-
-                    </div>
-                    <div className='w-[100%] h-[280px] bg-lime-400'>
-
-                    </div>
-
-                    <div className='w-[100%] h-[280px] bg-amber-400'>
-
-                    </div>
-                    <div className='w-[100%] h-[280px] bg-slate-400'>
-
-                    </div>
+                        </div>
+                    ))}
+                    
+                    
                 </div>
             </section>
 

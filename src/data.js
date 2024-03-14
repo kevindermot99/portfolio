@@ -20,7 +20,7 @@ export const NavLinks = [
 
 
 // projects
-const projectModel = [
+export const ProjectModel = [
     {
         id: "8p3hwvf64q1nix1q2fzd",
         thumbnail: {example1},
