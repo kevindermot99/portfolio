@@ -39,7 +39,7 @@ function Projects() {
             </section>
 
             <section>
-                <p></p>
+                <p> </p>
             </section>
 
         </div>
