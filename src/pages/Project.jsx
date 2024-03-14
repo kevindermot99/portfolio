@@ -4,15 +4,18 @@ import { ProjectModel } from '../data'
 import { IoChevronBack } from "react-icons/io5";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { IoCheckmarkOutline } from "react-icons/io5";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar';
 
 function Project() {
+
     const { id } = useParams();
     const res = ProjectModel.find(findthis)
     function findthis(project) {
         return project.id === id;
     }
+
+    history.replace(`/project/${id}`);
 
     const [copied, setcopied] = useState(false)
 
@@ -25,14 +28,14 @@ function Project() {
         }, 2000);
     }
 
-    const h3 ='font-semibold text-lg mt-8 mb-1';
-    const p ='text-base font-light  ';
+    const h3 ='font-semibold text-lg mt-3 ';
+    const p ='text-base font-light mb-7 leading-relaxed  ';
 
     if (!res) {
         return <div>Item not found!</div>
     }
     return (
-        <div>
+        <div className='pb-20'>
             {/* <Navbar /> */}
 
             <div className='w-full relative px-7 max-w-[1200px] m-auto'>
@@ -56,16 +59,37 @@ function Project() {
                     <h3 className={h3}>
                         Technologies Used:
                     </h3>
-                    <p className={p}>
-                        React JS, MongoDB, Express, NodeJS, Tailwind 
-                    </p>
+                    <div className='flex gap-3 overflow-clip flex-wrap mb-8 mt-2'>
+                        {res.technologies.map((tech, index) => (
+                            <img src={tech.icon} title={tech.name} className='h-12 bg-gray-100 p-2 rounded-lg'/>
+                        ))}
+                    </div>
 
                     <h3 className={h3}>
                         About: {res.title}
                         </h3>
                     <p className={p}>
-                        elit. Reprehenderit earum sapiente, cum repellendus consequatur eveniet aliquam, nobis quibusdam corporis suscipit ipsa, velit ipsam magni odio aut dicta nemo ratione. Distinctio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dicta maxime repellendus. Dignissimos dolores, optio repudiandae architecto reprehenderit iusto quo quasi voluptatem porro, facilis natus sapiente perspiciatis enim numquam. Exercitationem?
+                        {res.description}
                     </p>
+
+                    <h3 className={h3}>
+                        Project Role:
+                    </h3>
+                    <p className={p}>
+                        {res.role}
+                    </p>
+
+                    <h3 className={h3}>
+                        Project Duration:
+                    </h3>
+                    <p className={p}>
+                        {res.duration}
+                    </p>
+
+                    <h3 className={h3}>Source Code:</h3>
+                    <a href="#" target='_blank' className='text-base font-medium underline transition hover:text-blue-400 text-blue-500'>
+                        {res.linkSourceCode}
+                    </a>
                 
                 
                 </div>
