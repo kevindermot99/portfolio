@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar'
 
 function Projects() {
 
+    const today = new Date();
+
     return (
         <div className=' overflow-clip'>
             <Navbar />
@@ -14,32 +16,32 @@ function Projects() {
             </section>
 
             <section className='w-full bg-white'>
-                <div className=' w-full max-w-[1150px] grid grid-cols-2 gap-4 m-auto px-3'>
-                    <div className='w-[100%] h-[300px] bg-orange-400'>
+                <div className=' w-full max-w-[1000px] grid grid-cols-2 gap-4 m-auto px-3'>
+                    <div className='w-[100%] h-[280px] bg-orange-400'>
 
                     </div>
-                    <div className='w-[100%] h-[300px] bg-purple-400'>
-
-                    </div>
-
-                    <div className='w-[100%] h-[300px] bg-red-400'>
-
-                    </div>
-                    <div className='w-[100%] h-[300px] bg-lime-400'>
+                    <div className='w-[100%] h-[280px] bg-purple-400'>
 
                     </div>
 
-                    <div className='w-[100%] h-[300px] bg-amber-400'>
+                    <div className='w-[100%] h-[280px] bg-red-400'>
 
                     </div>
-                    <div className='w-[100%] h-[300px] bg-slate-400'>
+                    <div className='w-[100%] h-[280px] bg-lime-400'>
+
+                    </div>
+
+                    <div className='w-[100%] h-[280px] bg-amber-400'>
+
+                    </div>
+                    <div className='w-[100%] h-[280px] bg-slate-400'>
 
                     </div>
                 </div>
             </section>
 
-            <section>
-                <p> </p>
+            <section className='mt-6 flex justify-center items-center px-3 pt-28 pb-10'>
+                <p className='font-light text-base text-black'>i started Web dev in 2020 - {today.getFullYear()}</p>
             </section>
 
         </div>

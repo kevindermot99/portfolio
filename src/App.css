@@ -26,7 +26,6 @@ body {
   animation-timeline: scroll();
   animation-range-start: 0;
   animation-range-end:340px;
-
 }
 
 @keyframes fade {
