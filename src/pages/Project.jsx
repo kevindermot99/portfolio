@@ -15,7 +15,6 @@ function Project() {
         return project.id === id;
     }
 
-    history.replace(`/project/${id}`);
 
     const [copied, setcopied] = useState(false)
 

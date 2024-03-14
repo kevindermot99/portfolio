@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 function Projects() {
 
     const today = new Date();
-    history.replace('/');
 
     return (
         <div className=' overflow-clip'>
