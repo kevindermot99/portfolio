@@ -20,8 +20,7 @@ import Tailwind from "./assets/technologies/icons8-tailwindcss-240.png"
 
 
 export const Greetings = "Hello"
-export const Situation = "I am Kevin, a Web Application Developer based in Rwanda, currently pursuing a BSc (Hons) in Software Engineering at African Leadership University."
-// export const 
+export const Situation = "I am Kevin, a Web Developer based in Rwanda, currently pursuing a BSc (Hons) in Software Engineering at African Leadership University."
 
 export const NavNames = 'mboni kevin.'
 export const NavLinks = [
@@ -39,17 +38,16 @@ export const ProjectModel = [
         thumbnail: pagez,
         title: "Pagez",
         slogan: "The Ocean of Novels",
-        description: "Youtube 2.0 is a modern web application aiming to revolutionize the online video sharing experience. With a sleek and intuitive user interface, users can easily discover, watch, and share their favorite videos. The platform is built using cutting-edge technologies such as React JS, MongoDB, Express JS, Node JS, Next JS, and Tailwind CSS. Whether you're a content creator or a viewer, Youtube 2.0 offers a seamless and immersive experience for all. Join us and be part of the future of online video sharing.",
+        description: "Welcome to our online library, where imagination knows no bounds! Dive into a world of captivating novels, all at your fingertips. Our user-friendly interface makes discovering your next literary adventure a breeze. With a vast collection of titles spanning various genres, finding your perfect read is effortless. Enjoy the freedom of unlimited free downloads, allowing you to explore without constraints. Enhance your reading experience with soothing background music, carefully curated to complement each story. Whether you're a seasoned bookworm or just starting your reading journey, our platform offers something for everyone. Join us and embark on a limitless literary voyage today!",
         liveDemoLink: "https://www.google.com/",
         technologies: [
             { name: 'React JS', icon: React },
             { name: 'MongoDb', icon: Mongo },
             { name: 'Express JS', icon: Express },
             { name: 'Node JS', icon: NodeJS },
-            { name: 'Next JS', icon: Next },
             { name: 'Tailwind', icon: Tailwind }
         ],
-        duration: '8 months',
+        duration: '3 Weeks',
         linkSourceCode: 'http://localhost:5173/project/8p3hwvf64q1nix1q2fzd',
         role: 'Full-stack Developer'
     },
