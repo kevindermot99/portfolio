@@ -14,8 +14,11 @@ function Project() {
       }
 
   return (
-    <div>
-      {res.title}
+    <div className='max-w-[1000px] m-auto'>
+        <div>
+            <Link to="/"></Link>
+            <button></button>
+        </div>
     </div>
   )
 }
