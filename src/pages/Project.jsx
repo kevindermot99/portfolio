@@ -4,20 +4,18 @@ import { ProjectModel } from '../data'
 
 function Project() {
     const { id } = useParams();
-    console.log('ID:', id); // Log the ID to debug
-    const item = ProjectModel.find(obj => obj.id === parseInt(id));
-    
+    const res = ProjectModel.find(findthis)
+    function findthis(project){
+        return project.id === id;
+    }
 
-    if (!item) {
-        return <div>Item not found!</div>;
+    if (!res) {
+        return <div>Item not found!</div>
       }
 
   return (
     <div>
-      <h2>{item.title}</h2>
-      <img src={item.thumbnail} alt={item.title} />
-      <p>{item.description}</p>
-      <a href={item.liveDemoLink}>Live Demo</a>
+      {res.title}
     </div>
   )
 }
