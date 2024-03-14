@@ -1,11 +1,10 @@
 // import images
-import example1 from "./assets/thumbnails/example1.jpg"
+import pagez from "./assets/thumbnails/pagez-thumbnail.png"
 import example2 from "./assets/thumbnails/example2.png"
 import example3 from "./assets/thumbnails/example3.jpg"
 import example4 from "./assets/thumbnails/example4.jpg"
 import example5 from "./assets/thumbnails/example5.png"
 import example6 from "./assets/thumbnails/example6.jpg"
-import example7 from "./assets/thumbnails/example7.jpg"
 
 // import technologies
 import Html from "./assets/technologies/icons8-html-240.png"
@@ -37,7 +36,7 @@ export const NavLinks = [
 export const ProjectModel = [
     {
         id: "8p3hwvf64q1nix1q2fzd",
-        thumbnail: example7,
+        thumbnail: pagez,
         title: "Youtube 2.0",
         description: "Youtube 2.0 is a modern web application aiming to revolutionize the online video sharing experience. With a sleek and intuitive user interface, users can easily discover, watch, and share their favorite videos. The platform is built using cutting-edge technologies such as React JS, MongoDB, Express JS, Node JS, Next JS, and Tailwind CSS. Whether you're a content creator or a viewer, Youtube 2.0 offers a seamless and immersive experience for all. Join us and be part of the future of online video sharing.",
         liveDemoLink: "https://www.google.com/",
