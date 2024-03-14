@@ -19,7 +19,7 @@ function Projects() {
             <section className='w-full bg-white'>
                 <div className=' w-full max-w-[1000px] grid grid-cols-2 gap-4 m-auto px-3'>
                     {ProjectModel.map((project) => (
-                        <Link to={`/project/${project.id}`} key={project.id} className='w-[100%] h-[280px] bg-orange-400' >
+                        <Link to={`/project/${project.id}`} key={project.id} className='w-[100%] h-[250px] bg-orange-400 rounded-md' >
                             
                         </Link>
                     ))}
