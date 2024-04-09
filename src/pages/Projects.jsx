@@ -21,8 +21,8 @@ function Projects() {
                 <p className='text-center py-5 capitalize'>~ my Work ~</p>
                 <div className=' w-full max-w-[1000px] grid grid-cols-2 gap-1 m-auto px-3 overflow-clip'>
                     {ProjectModel.map((project) => (
-                        <Link to={`/details/${project.id}`} key={project.id} className='group w-[100%] rounded-sm h-[250px] overflow-clip' >
-                            <img src={project.thumbnail} className='w-full h-full object-cover group-hover:scale-105 transition duration-500' alt="" />
+                        <Link to={`/details/${project.id}`} key={project.id} className='group w-[100%] rounded-sm h-[250px] overflow-clip bg-red-700 flex items-center justify-center ' >
+                            <img src={project.thumbnail} className='h-14  object-cover group-hover:scale-105 transition duration-500' alt="" />
                         </Link>
                     ))}
                     
