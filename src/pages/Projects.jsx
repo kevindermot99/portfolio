@@ -19,9 +19,9 @@ function Projects() {
 
             <section className='w-full bg-white'>
                 <p className='text-center py-5 capitalize'>~ my Work ~</p>
-                <div className=' w-full max-w-[1000px] grid grid-cols-2 gap-4 m-auto px-3 overflow-clip'>
+                <div className=' w-full max-w-[1000px] grid grid-cols-2 gap-1 m-auto px-3 overflow-clip'>
                     {ProjectModel.map((project) => (
-                        <Link to={`/details/${project.id}`} key={project.id} className='group w-[100%] h-[250px] rounded-xl overflow-clip' >
+                        <Link to={`/details/${project.id}`} key={project.id} className='group w-[100%] rounded-sm h-[250px] overflow-clip' >
                             <img src={project.thumbnail} className='w-full h-full object-cover group-hover:scale-105 transition duration-500' alt="" />
                         </Link>
                     ))}
