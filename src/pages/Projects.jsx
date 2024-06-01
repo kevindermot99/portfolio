@@ -9,19 +9,19 @@ function Projects() {
     const today = new Date();
 
     return (
-        <div className='wrapper overflow-clip'>
+        <div className='wrapper overflow-clip bg-stone-100 '>
             <Navbar />
 
-            <section className='hero flex items-center justify-center flex-col mt-10 pt-10 pb-10 sticky top-[110px] -z-[2] overflow-clip'>
-                <h1 className='text-5xl text-black font-bold mb-2'>{Greetings}!</h1>
-                <p className='text-sm text-black max-w-[600px] text-center '>{Situation}</p>
+            <section className=' flex items-center justify-center flex-col mt-10 py-4 pb-3  '>
+                <h1 className='text-[60px] leading-[60px] text-black font-extrabold mb-2 tracking-tighter'>{Greetings}!</h1>
+                <p className='text-sm text-black max-w-[600px] text-center tracking-tight '>{Situation}</p>
             </section>
 
-            <section className='w-full bg-white'>
-                <p className='text-center py-5 capitalize'>~ my Work ~</p>
-                <div className=' w-full max-w-[1000px] grid grid-cols-2 gap-1 m-auto px-3 overflow-clip'>
+            <section className='w-full'>
+                <p className='text-sm text-black py-5 text-center tracking-tight'>My Projects</p>
+                <div className='gridRespo w-full m-auto px-3 overflow-clip'>
                     {ProjectModel.map((project) => (
-                        <Link to={`/details/${project.id}`} key={project.id} className={` group w-[100%] rounded-sm h-[250px] overflow-clip flex items-center justify-center `} style={{backgroundColor: project.wallBg}} >
+                        <Link to={`/details/${project.id}`} key={project.id} className={` group rounded-sm h-[180px] w-full overflow-clip flex items-center justify-center bg-gradient-to-br from-stone-300 to-stone-100  `} >
                             <img src={project.thumbnail} className='h-14  object-cover group-hover:scale-105 transition duration-500' alt="" />
                         </Link>
                     ))}

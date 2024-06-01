@@ -8,7 +8,7 @@ function Navbar() {
     const location = useLocation()
 
     return (
-        <div className='bg-white bg-opacity-95 backdrop-blur-lg px-7 py-5 h-fit w-full flex items-center justify-between sticky top-0 z-10'>
+        <div className='bg-stone-100/40 bg-opacity-95 backdrop-blur-lg px-7 py-2 h-fit w-full flex items-center justify-between sticky top-0 z-10'>
             <div className='flex items-center justify-center gap-1'>
                 <h1 className='text-xl font-bold cursor-default mr-10 '>{NavNames}</h1>
 
