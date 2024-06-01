@@ -13,7 +13,7 @@ import Tailwind from "./assets/technologies/icons8-tailwindcss-240.png"
 
 
 export const Greetings = "Hello, I'm Kevin."
-export const Situation = "a Web Developer based in Rwanda, currently pursuing a BSc (Hons) in Software Engineering at African Leadership University."
+export const AboutMe = "a Web Developer based in Rwanda. Currently pursuing a BSc (Hons) in Software Engineering at African Leadership University."
 
 export const NavNames = 'mboni kevin.'
 
@@ -21,6 +21,82 @@ export const NavNames = 'mboni kevin.'
 
 // projects
 export const ProjectModel = [
+    {
+        id: "",
+        thumbnail: '',
+        wallBg: "",
+        title: "",
+        slogan: "",
+        description: "",
+        liveDemoLink: "",
+        technologies: [
+            {  },
+            {  },
+            {  },
+            {  },
+            { }
+        ],
+        duration: '',
+        linkSourceCode: '',
+        role: ''
+    },
+    {
+        id: "",
+        thumbnail: '',
+        wallBg: "",
+        title: "",
+        slogan: "",
+        description: "",
+        liveDemoLink: "",
+        technologies: [
+            {  },
+            {  },
+            {  },
+            {  },
+            { }
+        ],
+        duration: '',
+        linkSourceCode: '',
+        role: ''
+    },
+    {
+        id: "",
+        thumbnail: '',
+        wallBg: "",
+        title: "",
+        slogan: "",
+        description: "",
+        liveDemoLink: "",
+        technologies: [
+            {  },
+            {  },
+            {  },
+            {  },
+            { }
+        ],
+        duration: '',
+        linkSourceCode: '',
+        role: ''
+    },
+    {
+        id: "",
+        thumbnail: '',
+        wallBg: "",
+        title: "",
+        slogan: "",
+        description: "",
+        liveDemoLink: "",
+        technologies: [
+            {  },
+            {  },
+            {  },
+            {  },
+            { }
+        ],
+        duration: '',
+        linkSourceCode: '',
+        role: ''
+    },
     {
         id: "",
         thumbnail: '',

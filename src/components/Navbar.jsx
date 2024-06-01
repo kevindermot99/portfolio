@@ -8,7 +8,7 @@ function Navbar() {
   const location = useLocation();
 
   return (
-    <div className="bg-stone-100/40 bg-opacity-95 backdrop-blur-lg px-7 py-3 h-fit w-full flex items-center justify-between sticky top-0 z-10">
+    <div className="bg-stone-100/80 backdrop-blur-md px-7 py-3 h-fit w-full flex items-center justify-between sticky top-0 z-20">
       <div className="flex items-center justify-center gap-1">
         <h1 className="text-xl font-bold cursor-default mr-10 ">{NavNames}</h1>
 
@@ -26,7 +26,7 @@ function Navbar() {
             location.pathname == "/about" && "bg-stone-200 pointer-events-none"
           } relative text-sm font-medium capitalize py-2 min-w-[90px] flex justify-center items-center px-4 rounded-full select-none`}
         >
-          About
+          About Me
         </Link>
         <Link
           to="/contact"
