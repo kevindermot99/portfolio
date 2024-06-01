@@ -44,16 +44,3 @@ body {
   gap: 2px;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
-
-.indicator::after{
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  right: 0;
-  left: 0;
-  margin: auto;
-  height: 5px;
-  width: 40px;
-  background: #000000;
-  border-radius: 10px;
-}

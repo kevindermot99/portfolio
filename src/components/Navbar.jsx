@@ -1,38 +1,53 @@
-import React from 'react'
+import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { Link, useLocation } from 'react-router-dom';
-import { NavNames } from '../data';
+import { Link, useLocation } from "react-router-dom";
+import { NavNames } from "../data";
+import { FaFileLines } from "react-icons/fa6";
 
 function Navbar() {
+  const location = useLocation();
 
-    const location = useLocation()
+  return (
+    <div className="bg-stone-100/40 bg-opacity-95 backdrop-blur-lg px-7 py-3 h-fit w-full flex items-center justify-between sticky top-0 z-10">
+      <div className="flex items-center justify-center gap-1">
+        <h1 className="text-xl font-bold cursor-default mr-10 ">{NavNames}</h1>
 
-    return (
-        <div className='bg-stone-100/40 bg-opacity-95 backdrop-blur-lg px-7 py-2 h-fit w-full flex items-center justify-between sticky top-0 z-10'>
-            <div className='flex items-center justify-center gap-1'>
-                <h1 className='text-xl font-bold cursor-default mr-10 '>{NavNames}</h1>
+        <Link
+          to="/"
+          className={`${
+            location.pathname === "/" && " bg-stone-200 pointer-events-none"
+          } relative text-sm font-medium capitalize py-2 min-w-[90px] flex justify-center items-center px-4 rounded-full select-none`}
+        >
+          Projects
+        </Link>
+        <Link
+          to="/about"
+          className={`${
+            location.pathname == "/about" && "bg-stone-200 pointer-events-none"
+          } relative text-sm font-medium capitalize py-2 min-w-[90px] flex justify-center items-center px-4 rounded-full select-none`}
+        >
+          About
+        </Link>
+        <Link
+          to="/contact"
+          className={`${
+            location.pathname == "/contact" &&
+            "bg-stone-200 pointer-events-none"
+          } relative text-sm font-medium capitalize py-2 min-w-[90px] flex justify-center items-center px-4 rounded-full select-none`}
+        >
+          Contact Me
+        </Link>
+      </div>
 
-                <Link to="/" className={`${location.pathname === '/' && 'bg-stone-200  indicator pointer-events-none'} relative text-sm font-medium capitalize py-3 min-w-[90px] flex justify-center items-center px-4 hover:bg-stone-100 rounded-lg `}>
-                    Projects
-                </Link>
-                <Link to="/about" className={`${location.pathname == '/about' && 'bg-stone-200  indicator pointer-events-none'} relative text-sm font-medium capitalize py-3 min-w-[90px] flex justify-center items-center px-4 hover:bg-stone-100 rounded-lg `}>
-                    About
-                </Link>
-                <Link to="/contact" className={`${location.pathname == '/contact' && 'bg-stone-200  indicator pointer-events-none'} relative text-sm font-medium capitalize py-3 min-w-[90px] flex justify-center items-center px-4 hover:bg-stone-100 rounded-lg `}>
-                    Contact
-                </Link>
-                <Link to="/mycv" className={` relative text-sm font-medium capitalize py-3 min-w-[90px] flex justify-center items-center px-4 hover:bg-stone-100 rounded-lg `}>
-                    My CV
-                </Link>
-
-
-            </div>
-
-            <div className='flex gap-3 items-center justify-center'>
-                <FaGithub className='text-3xl text-black cursor-pointer' />
-            </div>
-        </div>
-    )
+      <div className="flex gap-3 items-center justify-center">
+        <a href="/" className="flex items-center gap-2 justify-start bg-stone-200 py-2 px-4 rounded-full ">
+          <FaFileLines className="text-md text-blue-600/80 " />
+          <p className="text-sm text-black max-w-[600px] text-center tracking-tight capitalize font-medium ">My CV</p>
+        </a>
+        <FaGithub className="text-3xl text-black cursor-pointer" />
+      </div>
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;
