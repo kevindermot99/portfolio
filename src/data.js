@@ -1,3 +1,7 @@
+// import thumbnails
+import sorwazini from './assets/thumbnails/sorwazini.png'
+import gamezilla from './assets/thumbnails/gamezilla.png'
+
 export const Greetings = "Hello, I'm Kevin."
 export const AboutMe = "a Web Developer based in Rwanda. Currently pursuing a BSc (Hons) in Software Engineering at African Leadership University."
 
@@ -9,7 +13,7 @@ export const NavNames = 'Mboni Kevin.'
 export const ProjectModel = [
     {
         id: "1",
-        thumbnail: "",
+        thumbnail: gamezilla,
         title: "Gamezilla",
         description: "Online Game Store",
         liveDemoLink: "/",
@@ -18,12 +22,12 @@ export const ProjectModel = [
         due: "",
     },
     {
-        id: "1",
-        thumbnail: "",
-        title: "Gamezilla",
-        description: "Online Game Store",
+        id: "2",
+        thumbnail: sorwazini,
+        title: "Sorwazini",
+        description: "My Class Room Group Website",
         liveDemoLink: "/",
-        type: "Full-Stack",
+        type: "Front-end",
         technologies: ["MERN Stack", "Tailwind CSS"],
         due: "",
     },,

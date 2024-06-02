@@ -31,7 +31,7 @@ function Projects() {
             My Projects
           </span>
           <span className="text-sm font-medium text-black max-w-[500px] text-center tracking-tight">
-            I have Completed {ProjectModel.length} projects so far
+            I've Completed / Participated on {ProjectModel.length} projects so far
           </span>
         </p>
         <div className="gridRespo w-full m-auto px-3 overflow-clip">
@@ -40,14 +40,14 @@ function Projects() {
               <Link
                 to={`/`}
                 key={index}
-                className={` group rounded-sm w-full overflow-clip flex items-center justify-center bg-gradient-to-br from-stone-300 to-stone-100 relative `}
+                className={` group rounded-lg w-full overflow-clip flex items-center justify-center bg-gradient-to-br from-stone-300 to-stone-100 relative `}
               >
                 <div className="absolute top-0 left-0 w-full h-full z-10 opacity-0 group-hover:opacity-100 transition duration-300 bg-gradient-to-tr from-black/40 to-black/20 flex items-start justify-end flex-col p-4  ">
                   
                 </div>
                 <img
                   src={project.thumbnail}
-                  className="h-[190px] object-cover group-hover:scale-105 transition duration-500"
+                  className="h-full w-full aspect-video object-cover group-hover:scale-105 transition duration-500"
                   alt=""
                 />
               </Link>
