@@ -41,6 +41,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  gap: 2px;
+  gap: 8px;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
