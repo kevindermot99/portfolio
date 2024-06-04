@@ -33,7 +33,7 @@ export const ProjectModel = [
     },,
     {
         id: "1",
-        thumbnail: "",
+        thumbnail: gamezilla,
         title: "Gamezilla",
         description: "Online Game Store",
         liveDemoLink: "/",
@@ -43,7 +43,7 @@ export const ProjectModel = [
     },,
     {
         id: "1",
-        thumbnail: "",
+        thumbnail: sorwazini,
         title: "Gamezilla",
         description: "Online Game Store",
         liveDemoLink: "/",
@@ -53,7 +53,7 @@ export const ProjectModel = [
     },,
     {
         id: "1",
-        thumbnail: "",
+        thumbnail: gamezilla,
         title: "Gamezilla",
         description: "Online Game Store",
         liveDemoLink: "/",
@@ -63,7 +63,7 @@ export const ProjectModel = [
     },,
     {
         id: "1",
-        thumbnail: "",
+        thumbnail: sorwazini,
         title: "Gamezilla",
         description: "Online Game Store",
         liveDemoLink: "/",
@@ -73,7 +73,7 @@ export const ProjectModel = [
     },,
     {
         id: "1",
-        thumbnail: "",
+        thumbnail: gamezilla,
         title: "Gamezilla",
         description: "Online Game Store",
         liveDemoLink: "/",
@@ -83,7 +83,7 @@ export const ProjectModel = [
     },,
     {
         id: "1",
-        thumbnail: "",
+        thumbnail: sorwazini,
         title: "Gamezilla",
         description: "Online Game Store",
         liveDemoLink: "/",
@@ -93,7 +93,7 @@ export const ProjectModel = [
     },,
     {
         id: "1",
-        thumbnail: "",
+        thumbnail: gamezilla,
         title: "Gamezilla",
         description: "Online Game Store",
         liveDemoLink: "/",
@@ -103,7 +103,7 @@ export const ProjectModel = [
     },,
     {
         id: "1",
-        thumbnail: "",
+        thumbnail: sorwazini,
         title: "Gamezilla",
         description: "Online Game Store",
         liveDemoLink: "/",
@@ -113,7 +113,7 @@ export const ProjectModel = [
     },,
     {
         id: "1",
-        thumbnail: "",
+        thumbnail: gamezilla,
         title: "Gamezilla",
         description: "Online Game Store",
         liveDemoLink: "/",
@@ -123,7 +123,7 @@ export const ProjectModel = [
     },,
     {
         id: "1",
-        thumbnail: "",
+        thumbnail: sorwazini,
         title: "Gamezilla",
         description: "Online Game Store",
         liveDemoLink: "/",
