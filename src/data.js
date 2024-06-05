@@ -1,6 +1,6 @@
 // import thumbnails
 import sorwazini from './assets/thumbnails/sorwazini.png'
-import gamezilla from './assets/thumbnails/gamezilla.png'
+import gamezilla from './assets/thumbnails/gamezilla.jpg'
 
 export const Greetings = "Hello, I'm Kevin."
 export const AboutMe = "a Web Developer based in Rwanda. Currently pursuing a BSc (Hons) in Software Engineering at African Leadership University."

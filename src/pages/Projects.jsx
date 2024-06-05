@@ -43,10 +43,10 @@ function Projects() {
                 key={index}
                 className={` group w-full overflow-clip flex items-center justify-center bg-gradient-to-br from-stone-300 to-stone-100 dark:from-stone-900/40 relative `}
               >
-                <div className="absolute top-0 left-0 w-full h-full z-10 opacity-0 group-hover:opacity-100 transition duration-300 bg-gradient-to-tr from-black/70 to-black/20 flex items-start justify-end flex-col p-4  "></div>
+                <div className="absolute top-0 left-0 w-full h-full z-10 opacity-0 group-hover:opacity-100 transition duration-300 bg-gradient-to-tr from-black/40 to-black/20 flex items-start justify-end flex-col p-4  "></div>
                 <img
                   src={project.thumbnail}
-                  className="h-full w-full aspect-video object-cover group-hover:scale-105 transition duration-300"
+                  className="h-full w-full aspect-video object-cover group-hover:scale-105 transition dark:opacity-85 duration-300"
                   alt=""
                 />
               </Link>
