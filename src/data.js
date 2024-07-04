@@ -2,10 +2,10 @@
 import sorwazini from './assets/thumbnails/sorwazini.png'
 import gamezilla from './assets/thumbnails/gamezilla.jpg'
 
-export const Greetings = "Hello, I'm Kevin."
+export const HeroText = "Transforming Ideas into Stunning Projects"
 export const AboutMe = "a Web Developer based in Rwanda. Currently pursuing a BSc (Hons) in Software Engineering at African Leadership University."
 
-export const NavNames = 'Mboni Kevin.'
+export const MyNames = 'kevin mk.'
 
 
 
