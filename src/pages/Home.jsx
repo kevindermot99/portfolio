@@ -114,7 +114,7 @@ function Home() {
             <div className="font-bold text-[40px] text-main-color transition z-10">
               01
             </div>
-            <div className="flex flex-col items-start justify-start z-10">
+            <div className="flex flex-col items-start justify-start z-10 md:backdrop-blur-md rounded-lg overflow-clip pr-5 ">
               <h1 className="text-2xl font-medium tracking-tight capitalize ">
                 Front-end Development
               </h1>
@@ -176,12 +176,12 @@ function Home() {
             <div className="font-bold text-[40px] text-main-color transition">
               02
             </div>
-            <div className="flex flex-col items-start justify-start">
+            <div className="flex flex-col items-start justify-start z-10 md:backdrop-blur-md rounded-lg overflow-clip pr-5">
               <h1 className="text-2xl font-medium tracking-tight capitalize ">
                 back-end development
               </h1>
               <p className="opacity-50 text-base leading-6">
-                with Node js, Express js or Next js
+                With Node js, Express js or Next js
               </p>
             </div>
           </div>
@@ -223,15 +223,17 @@ function Home() {
             <div className="font-bold text-[40px]  text-main-color transition">
               03
             </div>
-            <div className="flex flex-col items-start justify-start">
+            <div className="flex flex-col items-start justify-start z-10 md:backdrop-blur-md rounded-lg overflow-clip pr-5">
               <h1 className="text-2xl font-medium tracking-tight ">Support</h1>
               <p className="opacity-50 text-base leading-6">
-                Ongoing Technical Support for Debugging and Project Maintenance
+                Ongoing technical support for debugging and project maintenance
               </p>
             </div>
           </div>
         </div>
       </section>
+
+
     </div>
   );
 }
