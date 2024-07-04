@@ -28,15 +28,17 @@ body {
   animation: zoomOnScroll linear;
   animation-timeline: scroll();
   animation-range-start: 0;
-  animation-range-end: 100vh;
+  /* animation-range-end: 800px; */
 }
 
 @keyframes zoomOnScroll {
   from{
-    scale: 1;
+    transform: translateY(0px);
   }
   to{
-    scale: 1.3;
+    transform: translateY(-400px);
+    scale: 1.1;
+    opacity: 0;
   }
 }
 

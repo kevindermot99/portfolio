@@ -11,7 +11,7 @@ export default {
       },
       colors: {
         "light-body": "#F1EFE7",
-        "dark-body": "#",
+        "dark-body": "#0a0a0a",
       },
     },
   },
