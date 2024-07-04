@@ -59,7 +59,7 @@ function Navbar() {
 
         <Link
           to="/"
-          className={` relative text-sm transition opacity-50 hover:opacity-100 font-medium capitalize text-black/90 dark:text-white select-none flex items-center justify-start gap-[2px]`}
+          className={` relative text-sm transition opacity-50 hover:opacity-100 hover:text-main-color font-medium capitalize text-black/90 dark:text-white select-none flex items-center justify-start gap-[2px]`}
         >
           Open Cv
           <MdArrowRightAlt className="text-lg -rotate-45" />
