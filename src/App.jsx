@@ -1,7 +1,7 @@
 import './App.css'
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Projects from './pages/Projects'
+import Home from './pages/Home'
 import ScrollToTop from './ScrollToTop'
 
 function App() {
@@ -11,10 +11,7 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Routes >
-          <Route path='/' element={<Projects />}></Route>
-          <Route path='/about' element={<Projects />}></Route>
-          <Route path='/contact' element={<Projects />}></Route>
-          <Route path='/mycv' element={<Projects />}></Route>
+          <Route path='/' element={<Home />}></Route>
         </Routes>
       </BrowserRouter>
 

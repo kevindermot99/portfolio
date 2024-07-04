@@ -6,7 +6,10 @@ export default {
   ],
   theme: {
     extend: {
-      
+      colors: {
+        "light-body": "#F1EFE7",
+        "dark-body": "#",
+      },
     },
   },
   plugins: [],

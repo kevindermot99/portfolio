@@ -4,11 +4,11 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-function Projects() {
+function Home() {
   const today = new Date();
 
   return (
-    <div className="wrapper overflow-clip bg-stone-100 dark:bg-[#0a0a0a]   ">
+    <div className="wrapper overflow-clip bg-light-body dark:bg-[#0a0a0a]   ">
       <Navbar />
 
       <section className=" flex items-center justify-center flex-col gap-4 py-16 ">
@@ -87,4 +87,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Home;

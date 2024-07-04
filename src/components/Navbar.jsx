@@ -8,43 +8,41 @@ function Navbar() {
   const location = useLocation();
 
   return (
-    <div className="bg-stone-100/80 dark:bg-[#0a0a0a]/90 backdrop-blur-md px-7 py-3 h-fit w-full flex items-center justify-between sticky top-0 z-20">
+    <div className="bg-light-body/80 dark:bg-[#0a0a0a]/90 backdrop-blur-md px-20 max-md:px-10 py-4 h-fit w-full flex items-center justify-between sticky top-0 z-20">
       <div className="flex items-center justify-center gap-1">
-        <h1 className="text-xl font-bold cursor-default mr-10 text-black/90 dark:text-white/90 ">{NavNames}</h1>
+        <h1 className="text-xl font-bold cursor-default mr-10 text-black/90 dark:text-white/90 ">
+          {NavNames}
+        </h1>
+      </div>
+
+      <div className="flex gap-6 items-center justify-center">
+        <Link
+          to="/"
+          className={` relative text-sm transition hover:opacity-60 font-medium capitalize text-black/90 dark:text-white select-none`}
+        >
+          Home
+        </Link>
 
         <Link
           to="/"
-          className={`${
-            location.pathname === "/" && " bg-stone-200 dark:bg-stone-600/20 pointer-events-none"
-          } relative text-sm font-medium capitalize text-black/90 dark:text-white/90 py-2 min-w-[90px] flex justify-center items-center px-4 rounded-full select-none`}
+          className={` relative text-sm transition hover:opacity-60 font-medium capitalize text-black/90 dark:text-white select-none`}
         >
-          Projects
+          work
         </Link>
-        <Link
-          to="/about"
-          className={`${
-            location.pathname == "/about" && "bg-stone-200 dark:bg-stone-600/20 pointer-events-none"
-          } relative text-sm font-medium capitalize text-black/90 dark:text-white/90 py-2 min-w-[90px] flex justify-center items-center px-4 rounded-full select-none`}
-        >
-          About Me
-        </Link>
-        <Link
-          to="/contact"
-          className={`${
-            location.pathname == "/contact" &&
-            "bg-stone-200 dark:bg-stone-600/20 pointer-events-none"
-          } relative text-sm font-medium capitalize text-black/90 dark:text-white/90 py-2 min-w-[90px] flex justify-center items-center px-4 rounded-full select-none`}
-        >
-          Contact Me
-        </Link>
-      </div>
 
-      <div className="flex gap-3 items-center justify-center">
-        <a href="/" className="flex items-center gap-2 justify-start bg-stone-200 dark:bg-stone-600/20  py-2 px-4 rounded-full ">
-          <FaFileLines className="text-md text-blue-600/80 " />
-          <p className="text-sm text-black max-w-[600px] text-center tracking-tight capitalize font-medium text-black/90 dark:text-white/90 ">My CV</p>
-        </a>
-        <FaGithub className="text-3xl text-black/90 dark:text-white/90 cursor-pointer" />
+        <Link
+          to="/"
+          className={` relative text-sm transition hover:opacity-60 font-medium capitalize text-black/90 dark:text-white select-none`}
+        >
+          About
+        </Link>
+
+        <Link
+          to="/"
+          className={` relative text-sm transition hover:opacity-60 font-medium capitalize text-black/90 dark:text-white select-none`}
+        >
+          Open Cv
+        </Link>
       </div>
     </div>
   );
