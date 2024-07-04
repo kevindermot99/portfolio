@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Caveat: ['Caveat', 'sans-serif'],
+      },
       colors: {
         "light-body": "#F1EFE7",
         "dark-body": "#",
