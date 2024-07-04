@@ -20,7 +20,6 @@ html {
 
 body {
   position: relative;
-  background-color: #f1efe7;
 }
 
 .animateZoom{
@@ -43,9 +42,32 @@ body {
 }
 
 .gridRespo {
-  max-width: 1200px;
-  margin: 0 auto;
+  /* max-width: 1000px; */
+  width: 100%;
+  margin: auto;
   display: grid;
-  gap: 8px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+@media only screen and (max-width: 800px) {
+  .gridRespo {
+    /* max-width: 1000px; */
+    width: 100%;
+    margin: auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .gridRespo {
+    /* max-width: 1000px; */
+    width: 100%;
+    margin: auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
 }

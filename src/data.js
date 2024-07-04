@@ -3,7 +3,7 @@ export const MyNames = "kevin mk.";
 
 // Hero
 export const HeroText = "Transforming Ideas into Stunning Projects";
-export const MyLocation = "Based in Rwanda";
+export const MiniIntro = `Greetings, I’m Kevin. and I’m driven by the idea of`;
 export const Promising = { no: "complexity", yes: "simplicity" };
 
 // Projects
@@ -14,6 +14,10 @@ export const ProjectSection = {
 
 // services
 export const ServicesSection = {
-    title: "Imagine. Sketch. Code. Launch.",
+    title: "Imagine, Design, Code, Launch & Maintain.",
     explanation: "I offer end-to-end front-end and back-end development services for your websites and web apps."
 }
+
+// contact
+export const Email = "mbonimpayekevin@gmail.com"
+export const CreatedAt = '2024'

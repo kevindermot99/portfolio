@@ -10,7 +10,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 5) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -38,21 +38,21 @@ function Navbar() {
       <div className="flex gap-6 items-center justify-center">
         <Link
           to="/"
-          className={` relative text-sm transition hover:opacity-60 font-medium capitalize text-black/90 dark:text-white/80 select-none`}
+          className={` relative text-sm transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none`}
         >
           Home
         </Link>
 
         <Link
-          to="/"
-          className={` relative text-sm transition hover:opacity-60 font-medium capitalize text-black/90 dark:text-white/80 select-none`}
+          to="/work"
+          className={` relative text-sm transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none`}
         >
           work
         </Link>
 
         <Link
           to="/"
-          className={` relative text-sm transition hover:opacity-60 font-medium capitalize text-black/90 dark:text-white/80 select-none`}
+          className={` relative text-sm transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none`}
         >
           About
         </Link>

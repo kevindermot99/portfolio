@@ -1,19 +1,21 @@
 import './App.css'
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import ScrollToTop from './ScrollToTop'
+import Work from './pages/Work'
 
 function App() {
   return (
     <div>
       {/* <Navbar /> */}
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <Routes >
           <Route path='/' element={<Home />}></Route>
+          <Route path='/work' element={<Work />}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
     </div>
   )
