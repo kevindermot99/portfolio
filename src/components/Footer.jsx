@@ -5,9 +5,9 @@ function Footer() {
   return (
     <>
       {/* CAT */}
-      <section className=" w-full h-fit flex items-center justify-center flex-col gap-1 py-32  px-20 max-md:px-10 z-20 ">
+      <section className=" w-full h-fit flex items-center justify-center flex-col gap-1 py-32 max-md:py-0 px-20 max-md:px-5 z-20 ">
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-16 mb-6 max-md:gap-5">
-          <h1 className="text-[37px] leading-[41px] text-transparent font-semibold tracking-tight z-10 max-w-[500px]">
+          <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7 text-transparent font-semibold tracking-tight z-10 max-w-[500px]">
             <span className="font-medium text-base text-main-color">
               Let's talk &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp;{" "}
@@ -22,7 +22,7 @@ function Footer() {
             <a
               target="_blank"
               href="mailto:mbonimpayekevin@gmail.com"
-              className="font-bold opacity-100 text-black dark:text-white cursor-pointer hover:underline hover:text-main-color transition "
+              className="font-bold opacity-100 break-words text-black dark:text-white cursor-pointer hover:underline hover:text-main-color transition "
             >
               mbonimpayekevin@gmail.com
             </a>
@@ -32,15 +32,15 @@ function Footer() {
       </section>
 
       <div className="flex flex-col items-start justify-start w-full h-full px-20 max-md:px-5">
-        <div className="py-6 border-b-[1px] border-stone-300 dark:border-stone-800 w-full flex items-center justify-between">
+        <div className="py-6 border-b-[1px] border-stone-300 dark:border-stone-800 w-full flex items-center max-md:flex-col gap-3 max-md:gap-6 flex-wrap max-md:items-start justify-between">
           <a
             target="_blank"
             href="mailto:mbonimpayekevin@gmail.com"
-            className="font-medium text-sm text-black/40 dark:text-white/40 hover:text-main-color transition hover:underline"
+            className="font-medium  break-words max-md:max-w-[100%] line-clamp-1 text-sm text-black/40 dark:text-white/40 hover:text-main-color transition hover:underline"
           >
             {Email}
           </a>
-          <div className="flex items-center justify-end gap-5">
+          <div className="flex items-center justify-start gap-5 flex-wrap">
             <a
               href="#"
               className="font-medium text-sm text-black/40 dark:text-white/40 hover:text-main-color transition hover:underline"
@@ -61,7 +61,7 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div className="py-6 w-full flex items-center justify-between">
+        <div className="py-6 w-full flex items-center justify-between max-md:flex-col max-md:items-start  max-md:gap-5 ">
           <p className="font-medium text-sm text-black/40 dark:text-white/40">
             &copy; {CreatedAt}
           </p>

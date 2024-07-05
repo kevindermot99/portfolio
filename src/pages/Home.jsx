@@ -24,18 +24,18 @@ function Home() {
 
   return (
     <>
-      <div className="wrapper overflow-clip bg-light-body dark:bg-dark-body text-black/90 dark:text-white/80  ">
+      <div className="wrapper w-full overflow-clip bg-light-body dark:bg-dark-body text-black/90 dark:text-white/80 relative  ">
         <Navbar />
         {/* light */}
-        <div className="w-[700px] aspect-square rounded-full bg-gradient-to-br from-stone-800/20 to-transparent dark:from-stone-200/10 blur-[90px] absolute left-[-240px] top-[-250px] z-0"></div>
+        <div className="w-[700px] h-auto aspect-square rounded-full bg-gradient-to-br from-stone-800/20 to-transparent dark:from-stone-200/10 blur-[90px] absolute left-[-240px] top-[-250px] z-0"></div>
 
         {/* Hero */}
-        <section className="animateZoom flex items-start justify-end flex-col gap-2 py-10 px-20 max-md:px-10 min-h-svh max-h-[800px] select-none">
+        <section className="animateZoom flex items-start justify-end flex-col gap-2 py-10 px-20 max-md:px-5 min-h-svh max-h-[800px] select-none">
           <p className="text-base opacity-70 z-10">{MiniIntro}</p>
-          <h1 className="text-[70px] leading-[75px] text-transparent bg-clip-text bg-gradient-to-br max-w-[600px] from-black dark:from-white to-stone-700/70 dark:to-black/80 font-semibold tracking-tight z-10 ">
+          <h1 className="text-[70px] leading-[75px] max-md:text-[45px] max-md:leading-[50px] max-md:mb-5 text-transparent bg-clip-text bg-gradient-to-br max-w-[600px] from-black dark:from-white to-stone-700/70 dark:to-black/80 font-semibold tracking-tight z-10 ">
             {HeroText}
           </h1>
-          <p className="self-end text-base font-normal select-none capitalize">
+          <p className="self-end max-md:self-start text-base font-normal select-none capitalize">
             <s className="opacity-50 ">{Promising.no}</s>
             &nbsp;
             <span className="text-main-color">{Promising.yes}.</span>
@@ -43,9 +43,9 @@ function Home() {
         </section>
 
         {/* Projects */}
-        <section className="bg-stone-100 dark:bg-stone-800/20 w-full h-fit flex items-start justify-strat flex-col gap-2 py-16 px-20 max-md:px-10 ">
+        <section className="bg-stone-100 dark:bg-stone-800/20 w-full h-fit flex items-start justify-strat flex-col gap-2 py-16 px-20 max-md:px-5 ">
           <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 mb-6 max-md:gap-5">
-            <h1 className="text-[37px] leading-[41px] text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
+            <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7  text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
               <span className="font-medium text-base text-main-color">
                 Work &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp;{" "}
@@ -54,7 +54,7 @@ function Home() {
                 {ProjectSection.title}
               </span>
             </h1>
-            <p className="text-base leading-6 opacity-50 text-justify">
+            <p className="text-base leading-6 opacity-50">
               {ProjectSection.favorite}
             </p>
           </div>
@@ -78,9 +78,9 @@ function Home() {
         </section>
 
         {/* Services */}
-        <section className=" w-full h-fit flex items-start justify-start flex-col gap-6 py-16 px-20 max-md:px-10 -z-0 ">
+        <section className=" w-full h-fit flex items-start justify-start flex-col gap-6 py-16 px-20 max-md:px-5 -z-0 ">
           <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 mb-6 max-md:gap-5">
-            <h1 className="text-[37px] leading-[41px] text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
+            <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7  text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
               <span className="font-medium text-base text-main-color">
                 Services &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp;{" "}
