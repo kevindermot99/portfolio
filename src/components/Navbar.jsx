@@ -29,9 +29,9 @@ function Navbar() {
   return (
     <>
       {/* mobile menu overlay */}
-      <div onClick={() => setMobileMenu(false)} className={`w-full h-full bg-dark-body/30 dark:bg-dark-body/60 fixed top-0 left z-40 transition-all duration-300 ease-in-out ${mobileMenu ? 'max-md:flex visible opacity-100' : 'max-md:invisible opacity-0'}`}></div>
+      <div onClick={() => setMobileMenu(false)} className={`w-full h-full bg-dark-body/30 dark:bg-dark-body/60 fixed top-0 left z-40 transition-all duration-300 ease-in-out ${mobileMenu ? 'visible opacity-100' : 'invisible opacity-0 '}`}></div>
       {/* mobile menu */}
-      <div className={`w-full min-h-[400px] h-fit bg-light-body dark:bg-stone-800 fixed top-0 left-0 z-40 p-7 flex-col gap-5  transition-all duration-300 ease-in-out flex ${mobileMenu ? 'max-md:visible translate-y-0 opacity-100' : 'max-md:invisible -translate-y-full opacity-0 '}`}>
+      <div className={`w-full min-h-[400px] h-fit bg-light-body dark:bg-stone-800 fixed top-0 left-0 z-40 p-7 flex-col gap-5  transition-all duration-300 ease-in-out flex ${mobileMenu ? 'visible translate-y-0 opacity-100' : 'invisible -translate-y-full opacity-0 '}`}>
         <button onClick={() => setMobileMenu(false)} className="self-end text-2xl p-2 transition active:scale-75">
           <IoMdClose />
         </button>

@@ -30,12 +30,12 @@ function Home() {
         <div className="w-[700px] h-auto aspect-square rounded-full bg-gradient-to-br from-stone-800/20 to-transparent dark:from-stone-200/10 blur-[90px] absolute left-[-240px] top-[-250px] z-0"></div>
 
         {/* Hero */}
-        <section className="animateZoom flex items-start justify-end flex-col gap-2 py-10 px-20 max-md:px-5 min-h-svh max-h-[800px] select-none">
+        <section className="animateZoom flex items-start justify-end flex-col gap-2 py-10 px-20 max-md:px-5 min-h-svh max-h-[800px]">
           <p className="text-base opacity-70 z-10">{MiniIntro}</p>
           <h1 className="text-[70px] leading-[75px] max-md:text-[45px] max-md:leading-[50px] max-md:mb-5 text-transparent bg-clip-text bg-gradient-to-br max-w-[600px] from-black dark:from-white to-stone-700/70 dark:to-black/80 font-semibold tracking-tight z-10 ">
             {HeroText}
           </h1>
-          <p className="self-end max-md:self-start text-base font-normal select-none capitalize">
+          <p className="self-end max-md:self-start text-base font-normal capitalize">
             <s className="opacity-50 ">{Promising.no}</s>
             &nbsp;
             <span className="text-main-color">{Promising.yes}.</span>
