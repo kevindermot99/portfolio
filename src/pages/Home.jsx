@@ -8,9 +8,8 @@ import {
 } from "../data";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { CiLocationOn } from "react-icons/ci";
-import { TbArrowCurveLeft } from "react-icons/tb";
+import { Fade, Reveal } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 import { MdArrowRightAlt, MdOutlineErrorOutline } from "react-icons/md";
 import { RxSpaceBetweenVertically } from "react-icons/rx";
 import { PiSelectionPlusDuotone } from "react-icons/pi";
@@ -21,6 +20,17 @@ import ProjectContainer from "../components/ProjectContainer";
 
 function Home() {
   const today = new Date();
+  const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
   return (
     <>
@@ -31,63 +41,89 @@ function Home() {
 
         {/* Hero */}
         <section className="animateZoom flex items-start justify-end flex-col gap-2 py-10 px-20 max-md:px-5 min-h-svh max-h-[800px]">
-          <p className="text-base opacity-70 z-10">{MiniIntro}</p>
-          <h1 className="text-[70px] leading-[75px] max-md:text-[45px] max-md:leading-[50px] max-md:mb-5 text-transparent bg-clip-text bg-gradient-to-br max-w-[600px] from-black dark:from-white to-stone-700/70 dark:to-black/80 font-semibold tracking-tight z-10 ">
-            {HeroText}
-          </h1>
-          <p className="self-end max-md:self-start text-base font-normal capitalize">
-            <s className="opacity-70 ">{Promising.no}</s>
-            &nbsp;
-            <span className="text-main-color">{Promising.yes}.</span>
-          </p>
+          <Reveal
+            keyframes={customAnimation}
+            triggerOnce
+            duration={800}
+            cascade
+            damping={0.1}
+            className="flex items-start justify-end flex-col gap-2 w-full"
+          >
+            <p className="text-base opacity-70 z-10">{MiniIntro}</p>
+            <h1 className="text-[70px] leading-[75px] max-md:text-[45px] max-md:leading-[50px] max-md:mb-5 text-transparent bg-clip-text bg-gradient-to-br max-w-[600px] from-black dark:from-white to-stone-700/70 dark:to-black/80 font-semibold tracking-tight z-10 ">
+              {HeroText}
+            </h1>
+            <p className="self-end max-md:self-start text-base font-normal capitalize">
+              <s className="opacity-70 ">{Promising.no}</s>
+              &nbsp;
+              <span className="text-main-color">{Promising.yes}.</span>
+            </p>
+          </Reveal>
         </section>
 
         {/* Projects */}
         <section className="bg-stone-100 dark:bg-stone-800/20 w-full h-fit flex items-start justify-strat flex-col gap-2 py-16 px-20 max-md:px-5 ">
-          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 mb-6 max-md:gap-5">
-            <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7  text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
-              <span className="font-medium text-base text-main-color">
-                Work &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;{" "}
-              </span>
-              <span className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
-                {ProjectSection.title}
-              </span>
-            </h1>
-            <p className="text-base leading-6 opacity-70">
-              {ProjectSection.favorite}
-            </p>
-          </div>
-
+          <Reveal
+            keyframes={customAnimation}
+            triggerOnce
+            duration={800}
+            cascade
+            damping={0.1}
+            className="flex items-start justify-end flex-col gap-2 w-full"
+          >
+            <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 mb-6 max-md:gap-5">
+              <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7  text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
+                <span className="font-medium text-base text-main-color">
+                  Work &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp;{" "}
+                </span>
+                <span className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
+                  {ProjectSection.title}
+                </span>
+              </h1>
+              <p className="text-base leading-6 opacity-70">
+                {ProjectSection.favorite}
+              </p>
+            </div>
+          </Reveal>
           <div className="gridRespo">
-            <ProjectContainer
-              name={"InsideHome"}
-              duration={"4 months"}
-              img={
-                "https://cdn.dribbble.com/userupload/10471938/file/original-2e30b00c968752ab0a1ee42d8a9cd2fa.jpg?resize=320x240&vertical=center"
-              }
-            />
-            <ProjectContainer
-              name={"SaveIt"}
-              duration={"1 month"}
-              img={
-                "https://cdn.dribbble.com/userupload/9784250/file/original-1100bc42ac6b83a633f7e0b0463792bb.png?resize=320x240&vertical=center"
-              }
-            />
-            <ProjectContainer
-              name={"MyBag"}
-              duration={"2 motnhs"}
-              img={
-                "https://cdn.dribbble.com/userupload/14242666/file/still-846073c229981e24a86a3b8d1572d322.gif?resize=320x240&vertical=center"
-              }
-            />
-            <ProjectContainer
-              name={"Remoty"}
-              duration={"4 months"}
-              img={
-                "https://cdn.dribbble.com/userupload/14900913/file/still-b58c7dfa669ede68d7945c220660e112.png?resize=320x240&vertical=center"
-              }
-            />
+            <Reveal
+              keyframes={customAnimation}
+              triggerOnce
+              duration={800}
+              cascade
+              damping={0.1}
+              className="flex items-start justify-end flex-col gap-2 w-full"
+            >
+              <ProjectContainer
+                name={"InsideHome"}
+                duration={"4 months"}
+                img={
+                  "https://cdn.dribbble.com/userupload/10471938/file/original-2e30b00c968752ab0a1ee42d8a9cd2fa.jpg?resize=320x240&vertical=center"
+                }
+              />
+              <ProjectContainer
+                name={"SaveIt"}
+                duration={"1 month"}
+                img={
+                  "https://cdn.dribbble.com/userupload/9784250/file/original-1100bc42ac6b83a633f7e0b0463792bb.png?resize=320x240&vertical=center"
+                }
+              />
+              <ProjectContainer
+                name={"MyBag"}
+                duration={"2 motnhs"}
+                img={
+                  "https://cdn.dribbble.com/userupload/14242666/file/still-846073c229981e24a86a3b8d1572d322.gif?resize=320x240&vertical=center"
+                }
+              />
+              <ProjectContainer
+                name={"Remoty"}
+                duration={"4 months"}
+                img={
+                  "https://cdn.dribbble.com/userupload/14900913/file/still-b58c7dfa669ede68d7945c220660e112.png?resize=320x240&vertical=center"
+                }
+              />
+            </Reveal>
           </div>
 
           <div className="w-full h-fit py-6 flex items-center justify-center mt-5">
@@ -104,18 +140,27 @@ function Home() {
         {/* Services */}
         <section className=" w-full h-fit flex items-start justify-start flex-col gap-6 py-16 px-20 max-md:px-5 -z-0 ">
           <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 mb-6 max-md:gap-5">
-            <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7  text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
-              <span className="font-medium text-base text-main-color">
-                Services &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;{" "}
-              </span>
-              <span className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
-                {ServicesSection.title}
-              </span>
-            </h1>
-            <p className="text-base leading-6 opacity-70">
-              {ServicesSection.explanation}
-            </p>
+            <Reveal
+              keyframes={customAnimation}
+              triggerOnce
+              duration={1000}
+              cascade
+              damping={0.1}
+              className="flex items-start justify-end flex-col gap-2 w-full"
+            >
+              <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7  text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
+                <span className="font-medium text-base text-main-color">
+                  Services &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp;{" "}
+                </span>
+                <span className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
+                  {ServicesSection.title}
+                </span>
+              </h1>
+              <p className="text-base leading-6 opacity-70">
+                {ServicesSection.explanation}
+              </p>
+            </Reveal>
           </div>
 
           <div className="w-full h-fit flex max-md:flex-col gap-6 mt-6 max-md:gap-5">
