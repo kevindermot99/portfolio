@@ -3,7 +3,7 @@ export const MyNames = "kevin mk.";
 
 // Hero
 export const HeroText = "Transforming Ideas into Stunning Projects";
-export const MiniIntro = `Hi, I'm Kevin, a 21 year old from Rwanda with a mission of`;
+export const MiniIntro = `I'm Kevin, a 21 year old from Rwanda with a mission of`;
 export const Promising = { no: "complexity", yes: "simplicity" };
 
 // Projects
