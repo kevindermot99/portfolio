@@ -37,30 +37,27 @@ function Navbar() {
         </button>
         <Link
           to="/"
-          className={` relative text-md transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none w-fit`}
+          className={`relative text-md transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none w-fit py-2`}
         >
           Home
         </Link>
-        <div className="w-full h-[1px] bg-stone-300 dark:bg-stone-700"></div>
         <Link
           to="/work"
-          className={` relative text-md transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none w-fit`}
+          className={`relative text-md transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none w-fit py-2`}
         >
           work
         </Link>
-        <div className="w-full h-[1px] bg-stone-300 dark:bg-stone-700"></div>
         <Link
           to="/"
-          className={` relative text-md transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none w-fit`}
+          className={`relative text-md transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none w-fit py-2`}
         >
           About
         </Link>
-        <div className="w-full h-[1px] bg-stone-300 dark:bg-stone-700"></div>
         <Link
           to="/"
           className={` relative text-md transition opacity-50 hover:opacity-100 hover:text-main-color font-medium capitalize text-black/90 dark:text-white select-none flex items-center justify-start gap-[2px] w-full`}
         >
-          Open Cv
+          My Resume
           <MdArrowRightAlt className="text-xl -rotate-45" />
         </Link>
       </div>
@@ -103,7 +100,7 @@ function Navbar() {
             to="/"
             className={` relative text-sm transition opacity-50 hover:opacity-100 hover:text-main-color font-medium capitalize text-black/90 dark:text-white select-none flex items-center justify-start gap-[2px]`}
           >
-            Open Cv
+            My Resume
             <MdArrowRightAlt className="text-lg -rotate-45" />
           </Link>
         </div>
