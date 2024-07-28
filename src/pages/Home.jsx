@@ -36,7 +36,7 @@ function Home() {
             {HeroText}
           </h1>
           <p className="self-end max-md:self-start text-base font-normal capitalize">
-            <s className="opacity-50 ">{Promising.no}</s>
+            <s className="opacity-70 ">{Promising.no}</s>
             &nbsp;
             <span className="text-main-color">{Promising.yes}.</span>
           </p>
@@ -54,7 +54,7 @@ function Home() {
                 {ProjectSection.title}
               </span>
             </h1>
-            <p className="text-base leading-6 opacity-50">
+            <p className="text-base leading-6 opacity-70">
               {ProjectSection.favorite}
             </p>
           </div>
@@ -113,7 +113,7 @@ function Home() {
                 {ServicesSection.title}
               </span>
             </h1>
-            <p className="text-base leading-6 opacity-50">
+            <p className="text-base leading-6 opacity-70">
               {ServicesSection.explanation}
             </p>
           </div>
@@ -145,7 +145,7 @@ function Home() {
                 <h1 className="text-2xl font-medium tracking-tight capitalize ">
                   Front-end Development
                 </h1>
-                <p className="opacity-50 text-base leading-6">
+                <p className="opacity-70 text-base leading-6">
                   With React js, Next js or Figma
                 </p>
               </div>
@@ -207,7 +207,7 @@ function Home() {
                 <h1 className="text-2xl font-medium tracking-tight capitalize ">
                   back-end development
                 </h1>
-                <p className="opacity-50 text-base leading-6">
+                <p className="opacity-70 text-base leading-6">
                   With Node js, Express js or Next js
                 </p>
               </div>
@@ -254,7 +254,7 @@ function Home() {
                 <h1 className="text-2xl font-medium tracking-tight ">
                   Support
                 </h1>
-                <p className="opacity-50 text-base leading-6">
+                <p className="opacity-70 text-base leading-6">
                   Ongoing technical support for debugging and project
                   maintenance
                 </p>

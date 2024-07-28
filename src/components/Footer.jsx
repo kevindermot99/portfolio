@@ -16,7 +16,7 @@ function Footer() {
               Have an idea? Interested in collaborating?
             </span>
           </h1>
-          <p className="text-base leading-6 text-black/40 dark:text-white/40">
+          <p className="text-base leading-6 text-black/70 dark:text-white/40">
             Feel free to reach out to me via email for any inquiries,
             collaborations or just to say hello! drop me a message at{" "}
             <a
@@ -36,45 +36,45 @@ function Footer() {
           <a
             target="_blank"
             href="mailto:mbonimpayekevin@gmail.com"
-            className="font-medium  break-words max-md:max-w-[100%] line-clamp-1 text-sm text-black/40 dark:text-white/40 hover:text-main-color transition hover:underline"
+            className="font-medium  break-words max-md:max-w-[100%] line-clamp-1 text-sm text-black/70 dark:text-white/40 hover:text-main-color transition hover:underline"
           >
             {Email}
           </a>
           <div className="flex items-center justify-start gap-5 flex-wrap">
             <a
               href="#"
-              className="font-medium text-sm text-black/40 dark:text-white/40 hover:text-main-color transition hover:underline"
+              className="font-medium text-sm text-black/70 dark:text-white/40 hover:text-main-color transition hover:underline"
             >
               Dribbble
             </a>
             <a
               href="#"
-              className="font-medium text-sm text-black/40 dark:text-white/40 hover:text-main-color transition hover:underline"
+              className="font-medium text-sm text-black/70 dark:text-white/40 hover:text-main-color transition hover:underline"
             >
               Linkedin
             </a>
             <a
               href="#"
-              className="font-medium text-sm text-black/40 dark:text-white/40 hover:text-main-color transition hover:underline"
+              className="font-medium text-sm text-black/70 dark:text-white/40 hover:text-main-color transition hover:underline"
             >
               Instagram
             </a>
           </div>
         </div>
         <div className="py-6 w-full flex items-center justify-between max-md:flex-col max-md:items-start  max-md:gap-5 ">
-          <p className="font-medium text-sm text-black/40 dark:text-white/40">
+          <p className="font-medium text-sm text-black/70 dark:text-white/40">
             &copy; {CreatedAt}
           </p>
           <div className="flex items-center justify-end gap-5">
             <a
               href="#"
-              className="font-medium text-sm text-black/40 dark:text-white/40 transition hover:text-main-color hover:underline "
+              className="font-medium text-sm text-black/70 dark:text-white/40 transition hover:text-main-color hover:underline "
             >
               Terms
             </a>
             <a
               href="#"
-              className="font-medium text-sm text-black/40 dark:text-white/40 transition hover:text-main-color hover:underline "
+              className="font-medium text-sm text-black/70 dark:text-white/40 transition hover:text-main-color hover:underline "
             >
               Privacy
             </a>

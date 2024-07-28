@@ -48,7 +48,7 @@ function Navbar() {
           work
         </Link>
         <Link
-          to="/"
+          to="/about"
           className={`relative text-md transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none w-fit py-2`}
         >
           About
@@ -90,7 +90,7 @@ function Navbar() {
           </Link>
 
           <Link
-            to="/"
+            to="/about"
             className={` relative text-sm transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none`}
           >
             About
