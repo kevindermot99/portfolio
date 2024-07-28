@@ -18,8 +18,8 @@ function ProjectContainer({ img, name, duration }) {
         </span>
       </Link>
       {/* image */}
-      <div className="h-[200px] w-full shadow-md cursor-pointer bg-white/80 dark:bg-stone-800/40 rounded-xl mb-1 overflow-clip">
-        <img src={img} className="dark:opacity-90" />
+      <div className="h-[200px] max-md:h-fit w-full shadow-md cursor-pointer bg-white/80 dark:bg-stone-800/40 rounded-xl mb-1 overflow-clip">
+        <img src={img} className="dark:opacity-90 h-full w-full object-cover" />
       </div>
       {/* Details */}
       <div className="flex justify-between items-center w-full mt-1 gap-6 max-md:gap-5">
