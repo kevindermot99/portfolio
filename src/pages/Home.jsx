@@ -23,7 +23,7 @@ function Home() {
   const customAnimation = keyframes`
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(10px);
   }
 
   to {

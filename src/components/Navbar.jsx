@@ -37,13 +37,13 @@ function Navbar() {
         </button>
         <Link
           to="/"
-          className={`relative text-md transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none w-fit py-2`}
+          className={`relative text-md transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none w-fit py-2 `}
         >
           Home
         </Link>
         <Link
           to="/work"
-          className={`relative text-md transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none w-fit py-2`}
+          className={`relative text-md transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none w-fit py-2 `}
         >
           work
         </Link>
@@ -55,7 +55,7 @@ function Navbar() {
         </Link>
         <Link
           to="/"
-          className={` relative text-md transition opacity-50 hover:opacity-100 hover:text-main-color font-medium capitalize text-black/90 dark:text-white select-none flex items-center justify-start gap-[2px] w-full`}
+          className={` relative text-md transition opacity-70 hover:opacity-100 hover:text-main-color font-medium capitalize text-black/90 dark:text-white select-none flex items-center justify-start gap-[2px] w-full`}
         >
           My Resume
           <MdArrowRightAlt className="text-xl -rotate-45" />
@@ -77,28 +77,28 @@ function Navbar() {
         <div className="flex gap-6 items-center justify-center max-md:hidden">
           <Link
             to="/"
-            className={` relative text-sm transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none`}
+            className={` relative text-sm transition hover:text-main-color font-medium capitalize select-none ${location.pathname === '/' ? 'text-main-color' : 'text-black/90 dark:text-white/80'}`}
           >
             Home
           </Link>
 
           <Link
             to="/work"
-            className={` relative text-sm transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none`}
+            className={` relative text-sm transition hover:text-main-color font-medium capitalize select-none ${location.pathname === '/work' ? 'text-main-color' : 'text-black/90 dark:text-white/80'}`}
           >
             work
           </Link>
 
           <Link
             to="/about"
-            className={` relative text-sm transition hover:text-main-color font-medium capitalize text-black/90 dark:text-white/80 select-none`}
+            className={` relative text-sm transition hover:text-main-color font-medium capitalize select-none ${location.pathname === '/about' ? 'text-main-color' : 'text-black/90 dark:text-white/80'}`}
           >
             About
           </Link>
 
           <Link
             to="/"
-            className={` relative text-sm transition opacity-50 hover:opacity-100 hover:text-main-color font-medium capitalize text-black/90 dark:text-white select-none flex items-center justify-start gap-[2px]`}
+            className={` relative text-sm transition opacity-70 hover:opacity-100 hover:text-main-color font-medium capitalize text-black/90 dark:text-white select-none flex items-center justify-start gap-[2px]`}
           >
             My Resume
             <MdArrowRightAlt className="text-lg -rotate-45" />

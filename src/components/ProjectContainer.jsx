@@ -29,7 +29,7 @@ function ProjectContainer({ img, name, duration }) {
             {name}
           </span>
         </h1>
-        <p className="text-[13px] leading-6 opacity-50 font-medium">
+        <p className="text-[13px] leading-6 opacity-70 font-medium">
           built in {duration}
         </p>
       </div>
