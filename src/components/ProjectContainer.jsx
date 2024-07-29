@@ -8,7 +8,7 @@ function ProjectContainer({ img, name, duration }) {
   return (
     <div className="flex flex-col items-start justify-start relative w-full">
       {/* external link icon */}
-      <Link
+      {/* <Link
         to={`/`}
         className="absolute top-2 right-2 flex items-center justify-center h-auto w-auto p-1 rounded-md shadow-lg bg-white dark:bg-stone-600/40 dark:backdrop-blur-md z-20 group"
       >
@@ -16,7 +16,7 @@ function ProjectContainer({ img, name, duration }) {
         <span className="text-xs font-medium transition-all ease-in-out duration-500 max-w-0 overflow-clip whitespace-nowrap group-hover:max-w-xs">
           Live view
         </span>
-      </Link>
+      </Link> */}
       {/* image */}
       <div className="group h-fit max-md:h-fit w-full shadow-md cursor-pointer bg-white/80 dark:bg-stone-800/40 rounded-xl mb-1 overflow-clip relative">
         {/* technologies */}
