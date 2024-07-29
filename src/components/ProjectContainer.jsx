@@ -18,7 +18,24 @@ function ProjectContainer({ img, name, duration }) {
         </span>
       </Link>
       {/* image */}
-      <div className="h-[200px] max-md:h-fit w-full shadow-md cursor-pointer bg-white/80 dark:bg-stone-800/40 rounded-xl mb-1 overflow-clip">
+      <div className="group h-[200px] max-md:h-fit w-full shadow-md cursor-pointer bg-white/80 dark:bg-stone-800/40 rounded-xl mb-1 overflow-clip relative">
+        {/* technologies */}
+        <div className="absolute top-0 left-0 w-full h-full p-2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-300 translate-y-[200px] group-hover:translate-y-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
+          <div className="flex flex-wrap items-end justify-start h-fit gap-1">
+            <h1 className="text-xs text-dark-body/80 font-semibold bg-light-body h-[25px] px-3 flex items-center justify-center rounded-full shadow-lg w-fit">
+              React js
+            </h1>
+            <h1 className="text-xs text-dark-body/80 font-semibold bg-light-body h-[25px] px-3 flex items-center justify-center rounded-full shadow-lg w-fit">
+              Tailwind
+            </h1>
+            <h1 className="text-xs text-dark-body/80 font-semibold bg-light-body h-[25px] px-3 flex items-center justify-center rounded-full shadow-lg w-fit">
+              MongoDB
+            </h1>
+            <h1 className="text-xs text-dark-body/80 font-semibold bg-light-body h-[25px] px-3 flex items-center justify-center rounded-full shadow-lg w-fit">
+              Node js
+            </h1>
+          </div>
+        </div>
         <img src={img} className="dark:opacity-90 h-full w-full object-cover" />
       </div>
       {/* Details */}

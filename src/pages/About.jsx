@@ -5,7 +5,7 @@ import { MdArrowRightAlt } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import ProjectContainer from "../components/ProjectContainer";
-import { FaCss3Alt, FaGit, FaHtml5, FaReact } from "react-icons/fa";
+import { FaCss3Alt, FaGit, FaHtml5, FaNode, FaReact } from "react-icons/fa";
 import { BiLogoPhp } from "react-icons/bi";
 import { SiMongodb, SiNextdotjs, SiRedux, SiTailwindcss } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
@@ -39,11 +39,8 @@ function About() {
               almost any idea that comes to my mind to life.
             </p>
             <p className="text-base leading-6 max-w-full text-justify text-black/70 dark:text-white/40">
-              I created several projects during this journey, and I'm sure they
-              all solve real-world problems. I know I could fill this portfolio
-              with to-do list apps or other YouTube tutorial copy-paste
-              projects, but I didn't. What I want is to show that I can create
-              solutions to real problems.
+              I created several projects during this journey, and I'm sure some of them are solution to certain real-world problems. What I want to show is that I can create
+              solutions to real world problems.
             </p>
             <p className="text-base leading-6 max-w-full text-justify text-black/70 dark:text-white/40">
               Currently pursuing my Bachelor's degree in Software Engineering at
@@ -62,6 +59,7 @@ function About() {
               <SiNextdotjs className="text-base" />
               <FaGit className="text-xl" />
               <IoLogoJavascript />
+              <FaNode className="text-4xl" />
             </div>
           </Fade>
         </div>

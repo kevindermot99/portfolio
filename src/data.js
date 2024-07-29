@@ -9,7 +9,7 @@ export const Promising = { no: "complexity", yes: "simplicity" };
 // Projects
 export const ProjectSection = {
   title: "A peek at my most recent projects.",
-  favorite: `Every project here solves a real-world problem. I create things not just because I can, but because they can be used.`,
+  favorite: `These are my top pics of all my projects. I believe these projects can be a solution to a certain real-world problem. `,
 };
 
 // services
