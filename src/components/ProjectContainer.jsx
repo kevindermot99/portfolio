@@ -10,7 +10,7 @@ function ProjectContainer({ img, name, duration }) {
       {/* external link icon */}
       <Link
         to={`/`}
-        className="absolute top-2 right-2 flex items-center justify-center h-auto w-auto p-1 rounded-md shadow-lg bg-white dark:bg-stone-600/40 dark:backdrop-blur-md z-10 group"
+        className="absolute top-2 right-2 flex items-center justify-center h-auto w-auto p-1 rounded-md shadow-lg bg-white dark:bg-stone-600/40 dark:backdrop-blur-md z-20 group"
       >
         <TbExternalLink className="dark:opacity-85 transition" />
         <span className="text-xs font-medium transition-all ease-in-out duration-500 max-w-0 overflow-clip whitespace-nowrap group-hover:max-w-xs">
