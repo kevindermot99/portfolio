@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function ProjectContainer({ img, name, duration }) {
   return (
-    <div className="flex flex-col items-start justify-start relative">
+    <div className="flex flex-col items-start justify-start relative w-full">
       {/* external link icon */}
       <Link
         to={`/`}
@@ -18,7 +18,7 @@ function ProjectContainer({ img, name, duration }) {
         </span>
       </Link>
       {/* image */}
-      <div className="group h-[200px] max-md:h-fit w-full shadow-md cursor-pointer bg-white/80 dark:bg-stone-800/40 rounded-xl mb-1 overflow-clip relative">
+      <div className="group h-fit max-md:h-fit w-full shadow-md cursor-pointer bg-white/80 dark:bg-stone-800/40 rounded-xl mb-1 overflow-clip relative">
         {/* technologies */}
         <div className="absolute top-0 left-0 w-full h-full p-2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-300 translate-y-[200px] group-hover:translate-y-0 bg-gradient-to-t from-black/40 to-transparent flex items-end z-10">
           <div className="flex flex-wrap items-end justify-start h-fit gap-1">
