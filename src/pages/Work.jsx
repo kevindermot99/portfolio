@@ -8,6 +8,7 @@ import ProjectContainer from "../components/ProjectContainer";
 import Reveal, { Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { TbExternalLink } from "react-icons/tb";
+import { Projects } from "../content/data";
 
 function Work() {
   const customAnimation = keyframes`
@@ -50,13 +51,16 @@ function Work() {
             damping={0.1}
             className="flex items-start justify-end flex-col gap-2 w-full"
           >
-            <ProjectContainer
-              name={"SpaceX"}
-              duration={"3 months"}
-              img={
-                "https://cdn.dribbble.com/userupload/15801193/file/original-629f42554a13b7940fdfd6df79306fd8.png?resize=320x240&vertical=center"
-              }
-            />
+            {Projects.map((project, index) => (
+              <ProjectContainer
+                name={project.name}
+                duration={project.duration}
+                img={project.cover}
+                logo={project.logo}
+                tech={project.tech}
+              />
+            ))}
+
             <ProjectContainer
               name={"InvestorGraph"}
               duration={"15 days"}
