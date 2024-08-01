@@ -58,6 +58,7 @@ function Work() {
                 img={project.cover}
                 logo={project.logo}
                 tech={project.tech}
+                url={project.url}
               />
             ))}
 

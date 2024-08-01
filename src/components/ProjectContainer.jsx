@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { GoLinkExternal, GoLock } from "react-icons/go";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { TbExternalLink } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
-function ProjectContainer({ img, name, duration, logo, tech }) {
+function ProjectContainer({ img, name, duration, logo, tech, url }) {
   const techArray = Array.isArray(tech) ? tech : [];
+  // const [url, setUrl] = useState('')
   return (
-    <div className="flex flex-col items-start justify-start relative w-full max-w-[340px]">
+    <a href={url} target="_blank" className="flex flex-col items-start justify-start relative w-full max-w-[400px]">
       {/* external link icon */}
       {/* <Link
         to={`/`}
@@ -47,7 +48,7 @@ function ProjectContainer({ img, name, duration, logo, tech }) {
           built in {duration}
         </p>
       </div>
-    </div>
+    </a>
   );
 }
 
