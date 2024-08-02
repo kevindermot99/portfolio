@@ -12,6 +12,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { Fade, Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { HiMiniPuzzlePiece, HiOutlinePuzzlePiece } from "react-icons/hi2";
+import imageOfMe from '../assets/me/portrait.jpg'
 
 function About() {
   const customAnimation = keyframes`
@@ -31,8 +32,10 @@ function About() {
       <Navbar />
 
       {/* Projects */}
-      <section className="w-full h-fit grid grid-cols-2 max-md:grid-cols-1 gap-10 py-20 px-20 max-md:px-5 pt-32 ">
-        <div className="">picture</div>
+      <section className="w-full h-fit grid grid-cols-2 max-lg:grid-cols-1 gap-10 py-0 px-20 max-md:px-5 pt-32 ">
+        <div className="w-full h-fit max-h-[500px] max-lg:max-h-[500px] overflow-clip rounded-md">
+          <img src={imageOfMe} className="w-full h-full opacity-85" />
+        </div>
         <div className="flex flex-col gap-4 mb-20 max-md:mb-10 max-md:gap-5">
           <Reveal
             keyframes={customAnimation}
