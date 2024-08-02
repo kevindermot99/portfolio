@@ -13,6 +13,7 @@ import { Fade, Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { HiMiniPuzzlePiece, HiOutlinePuzzlePiece } from "react-icons/hi2";
 import imageOfMe from '../assets/me/portrait.jpg'
+import { HiBadgeCheck } from "react-icons/hi";
 
 function About() {
   const customAnimation = keyframes`
@@ -32,9 +33,18 @@ function About() {
       <Navbar />
 
       {/* Projects */}
-      <section className="w-full h-fit grid grid-cols-2 max-lg:grid-cols-1 gap-10 py-0 px-20 max-md:px-5 pt-32 ">
-        <div className="w-full h-fit max-h-[500px] max-lg:max-h-[500px] overflow-clip rounded-md">
-          <img src={imageOfMe} className="w-full h-full opacity-85" />
+      <section className="w-full h-fit grid grid-cols-2 max-lg:grid-cols-1 gap-10 py-0 px-20 max-md:px-5 pt-32 max-md:pt-[75px] max-w-[1400px] mx-auto ">
+        <div className="w-full h-fit">
+          <Reveal
+            keyframes={customAnimation}
+            triggerOnce
+            duration={800}
+            cascade
+            damping={0.1}>
+            <div className="w-full h-fit max-h-[550px] overflow-clip rounded-md">
+              <img src={imageOfMe} loading="lazy" className="w-full h-full opacity-85" />
+            </div>
+          </Reveal>
         </div>
         <div className="flex flex-col gap-4 mb-20 max-md:mb-10 max-md:gap-5">
           <Reveal
@@ -49,7 +59,7 @@ function About() {
                 My Story
               </p>
               <p className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
-              From Simple Beginnings to Real Solutions
+                From Simple Beginnings to Real Solutions
               </p>
             </div>
             <p className="text-base leading-6 max-w-full text-justify text-black/70 dark:text-white/40">
@@ -86,6 +96,32 @@ function About() {
           </Reveal>
         </div>
       </section>
+
+      <section className="w-full h-full grid grid-cols-2 max-md:grid-cols-1 gap-6 pt-20 px-20 max-md:px-5 max-md:mb-5 max-md:gap-5">
+          <Reveal
+            keyframes={customAnimation}
+            triggerOnce
+            duration={800}
+            cascade
+            damping={0.1}
+            className="w-full"
+            >
+            <div className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7 text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
+              <p className="font-medium text-lg max-md:text-base text-main-color flex items-center gap-1 max-md:pb-2">
+                <HiBadgeCheck />
+                Completed
+              </p>
+              <p className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
+                Complete and Functional Projects
+              </p>
+            </div>
+            <p className="text-base leading-6 opacity-70 text-justify pt-7 max-md:pt-0">
+              Projects that not only look great but also works. This includes everything from full stack web apps to functional React-based apps that perform as intended.
+            </p>
+          </Reveal>
+        </section>
+
+      
 
       {/* Footer */}
       <Footer />
