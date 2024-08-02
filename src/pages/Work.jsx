@@ -145,7 +145,7 @@ function Work() {
               </p>
             </div>
             <p className="text-base leading-6 opacity-70 text-justify pt-7 max-md:pt-0">
-              these are website ideas and design concepts made with React. just early drafts and imaginative concepts of mine.
+              In my free time, I enjoy stepping away from Visual Studio Code to try to be creative through imagination and sketching
             </p>
           </Reveal>
         </div>
