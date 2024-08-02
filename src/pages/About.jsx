@@ -10,6 +10,7 @@ import { BiLogoPhp } from "react-icons/bi";
 import { SiMongodb, SiNextdotjs, SiRedux, SiTailwindcss } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import { Fade } from "react-awesome-reveal";
+import { HiMiniPuzzlePiece, HiOutlinePuzzlePiece } from "react-icons/hi2";
 
 function About() {
   return (
@@ -21,18 +22,9 @@ function About() {
         <div className="">picture</div>
         <div className="flex flex-col gap-4 mb-20 max-md:mb-10 max-md:gap-5">
           <Fade duration={800} cascade damping={0.1} triggerOnce>
-            <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7  text-transparent font-semibold tracking-tight z-10 max-w-full ">
-              <span className="font-medium text-base text-main-color">
-                My Story &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;{" "}
-              </span>
-              <span className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
-                From Simple Beginnings to Real Solutions
-              </span>
-            </h1>
             <div className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7 text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
               <p className="font-medium text-lg max-md:text-base text-main-color flex items-center gap-1 max-md:pb-2">
-                <HiBadgeCheck />
+                <HiMiniPuzzlePiece />
                 My Story
               </p>
               <p className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
