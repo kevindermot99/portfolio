@@ -60,7 +60,6 @@ function Work() {
             duration={800}
             cascade
             damping={0.1}
-            className="flex items-start justify-end flex-col gap-2 w-full"
           >
             {Projects.map((project, index) => (
               <ProjectContainer
