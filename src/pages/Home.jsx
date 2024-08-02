@@ -17,6 +17,7 @@ import { GoShieldCheck } from "react-icons/go";
 import { RiSignalWifiErrorLine } from "react-icons/ri";
 import Footer from "../components/Footer";
 import ProjectContainer from "../components/ProjectContainer";
+import { Projects } from "../content/data";
 
 function Home() {
   const today = new Date();
@@ -96,34 +97,16 @@ function Home() {
               damping={0.1}
               className="flex items-start justify-end flex-col gap-2 w-full"
             >
-              <ProjectContainer
-                name={"InsideHome"}
-                duration={"4 months"}
-                img={
-                  "https://cdn.dribbble.com/userupload/10471938/file/original-2e30b00c968752ab0a1ee42d8a9cd2fa.jpg?resize=320x240&vertical=center"
-                }
-              />
-              <ProjectContainer
-                name={"SaveIt"}
-                duration={"1 month"}
-                img={
-                  "https://cdn.dribbble.com/userupload/9784250/file/original-1100bc42ac6b83a633f7e0b0463792bb.png?resize=320x240&vertical=center"
-                }
-              />
-              <ProjectContainer
-                name={"MyBag"}
-                duration={"2 motnhs"}
-                img={
-                  "https://cdn.dribbble.com/userupload/14242666/file/still-846073c229981e24a86a3b8d1572d322.gif?resize=320x240&vertical=center"
-                }
-              />
-              <ProjectContainer
-                name={"Remoty"}
-                duration={"4 months"}
-                img={
-                  "https://cdn.dribbble.com/userupload/14900913/file/still-b58c7dfa669ede68d7945c220660e112.png?resize=320x240&vertical=center"
-                }
-              />
+              {Projects.map((project, index) => (
+                <ProjectContainer
+                  name={project.name}
+                  duration={project.duration}
+                  img={project.cover}
+                  logo={project.logo}
+                  tech={project.tech}
+                  url={project.url}
+                />
+              ))}
             </Reveal>
           </div>
 
