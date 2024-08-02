@@ -20,7 +20,7 @@ function ProjectContainer({ img, name, duration, logo, tech, url }) {
         </span>
       </Link> */}
       {/* image */}
-      <div className="group h-fit max-md:h-fit w-full shadow-md cursor-pointer bg-white/80 dark:bg-stone-800/40 rounded-xl mb-1 overflow-clip relative">
+      <div className="group h-fit max-md:h-fit w-full shadow-md cursor-pointer bg-white/80 dark:bg-stone-800/40 rounded-lg mb-1 overflow-clip relative">
         {/* technologies */}
         <div className="absolute top-0 left-0 w-full h-full p-2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-300 translate-y-[200px] group-hover:translate-y-0 bg-gradient-to-t from-black/40 to-transparent flex items-end z-10">
           <div className="flex flex-wrap items-end justify-start h-fit gap-1">
@@ -36,11 +36,11 @@ function ProjectContainer({ img, name, duration, logo, tech, url }) {
       </div>
       {/* Details */}
       <div className="flex justify-between items-center w-full mt-1 gap-6 max-md:gap-5">
-        <h1 className="text-[17px] z-10 flex items-center gap-2 ">
-          <span className="h-[25px] w-auto aspect-square rounded-full flex">
+        <h1 className="text-sm z-10 flex items-center gap-1 ">
+          <span className="h-[22px] w-auto aspect-square rounded-full flex">
             <img src={logo} className="w-full h-full" />
           </span>
-          <span className="bg-clip-text bg-gradient-to-br text-transparent font-semibold tracking-tight max-w-[400px] from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
+          <span className="font-SourceSans font tracking-wide text-black/90 dark:text-white/80 max-w-[400px]">
             {name}
           </span>
         </h1>
