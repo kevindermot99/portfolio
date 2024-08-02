@@ -9,12 +9,15 @@ import Reveal, { Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { TbExternalLink } from "react-icons/tb";
 import { Projects } from "../content/data";
+import { HiBadgeCheck } from "react-icons/hi";
+import { FaCompassDrafting } from "react-icons/fa6";
 
 function Work() {
   const customAnimation = keyframes`
   from {
     opacity: 0;
     transform: translateY(30px);
+    filter: blur(4px)
   }
 
   to {
@@ -27,22 +30,27 @@ function Work() {
       <Navbar />
 
       {/* Functional Projects */}
-      <section className="w-full h-fit flex items-start justify-strat flex-col gap-2 px-20 max-md:px-5 pt-32 ">
-        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 mb-20 max-md:mb-10 max-md:gap-5">
-          <Fade triggerOnce>
-            <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7  text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
-              <span className="font-medium text-base text-main-color">
-              Completed &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;{" "}
-              </span>
-              <span className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
+      <section className="w-full h-fit flex items-start justify-strat flex-col gap-2 px-20 max-md:px-5 pt-32 max-md:pt-20 max-w-[1800px] mx-auto ">
+        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 mb-20 max-md:mb-5 max-md:gap-5">
+          <Reveal
+            keyframes={customAnimation}
+            triggerOnce
+            duration={800}
+            cascade
+            damping={0.1}>
+            <div className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7 text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
+              <p className="font-medium text-lg max-md:text-base text-main-color flex items-center gap-1 max-md:pb-2">
+                <HiBadgeCheck />
+                Completed
+              </p>
+              <p className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
                 Complete and Functional Projects
-              </span>
-            </h1>
-            <p className="text-base leading-6 opacity-70">
-              Here, you’ll find projects that not only look great but also works. This includes everything from full stack web apps to functional React-based apps that perform as intended.
+              </p>
+            </div>
+            <p className="text-base leading-6 opacity-70 text-justify pt-7 max-md:pt-0">
+              Projects that not only look great but also works. This includes everything from full stack web apps to functional React-based apps that perform as intended.
             </p>
-          </Fade>
+          </Reveal>
         </div>
 
         <div className="gridRespo">
@@ -119,22 +127,27 @@ function Work() {
       </section>
 
       {/* Front-end Projects */}
-      <section className="w-full h-fit flex items-start justify-strat flex-col gap-2 py-20 px-20 max-md:px-5 pt-32 ">
+      <section className="w-full h-fit flex items-start justify-strat flex-col gap-2 px-20 max-md:px-5 pt-32 max-md:pt-10 max-w-[1800px] mx-auto">
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 mb-20 max-md:mb-10 max-md:gap-5">
-          <Fade triggerOnce>
-            <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7  text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
-              <span className="font-medium text-base text-main-color">
-                Concepts &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;{" "}
-              </span>
-              <span className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
+          <Reveal
+            keyframes={customAnimation}
+            triggerOnce
+            duration={800}
+            cascade
+            damping={0.1}>
+            <div className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7 text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
+              <p className="font-medium text-lg max-md:text-base text-main-color flex items-center gap-1 max-md:pb-2">
+                <FaCompassDrafting />
+                Concepts
+              </p>
+              <p className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
                 Front-End Design Concepts and Ideas
-              </span>
-            </h1>
-            <p className="text-base leading-6 opacity-70">
+              </p>
+            </div>
+            <p className="text-base leading-6 opacity-70 text-justify pt-7 max-md:pt-0">
               these are website ideas and design concepts made with React. just early drafts and imaginative concepts of mine.
             </p>
-          </Fade>
+          </Reveal>
         </div>
 
         <div className="gridRespo">
