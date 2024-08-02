@@ -68,11 +68,11 @@ function Navbar() {
           scrolled ? "bg-light-body dark:bg-dark-body" : "bg-transparent"
         }`}
       >
-        <Link to={`/`} className="flex items-center justify-center gap-1 cursor-pointer">
+        <a href={`/`} className="flex items-center justify-center gap-1 cursor-pointer">
           <h1 className="text-xl font-bold mr-10 text-black/90 dark:text-white/80 select-none ">
             {MyNames}
           </h1>
-        </Link>
+        </a>
 
         <div className="flex gap-6 items-center justify-center max-md:hidden">
           <Link
