@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, useFetcher } from "react-router-dom";
 import Home from "./pages/Home";
 import ScrollToTop from "./ScrollToTop";
 import Work from "./pages/Work";
@@ -10,7 +10,7 @@ import NotFound from "./pages/NotFound";
 function App() {
   return (
     <div>
-      <Router>
+      <HashRouter>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -18,7 +18,7 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
