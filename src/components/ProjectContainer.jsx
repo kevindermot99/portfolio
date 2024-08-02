@@ -32,7 +32,7 @@ function ProjectContainer({ img, name, duration, logo, tech, url }) {
             
           </div>
         </div>
-        <img src={img} className="dark:opacity-90 h-full w-full object-cover group-hover:scale-105 transition duration-500" />
+        <img src={img} className="dark:opacity-90 h-full w-full object-cover group-hover:scale-[1.02] transition duration-500" />
       </div>
       {/* Details */}
       <div className="flex justify-between items-center w-full mt-1 gap-6 max-md:gap-5">
