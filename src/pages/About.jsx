@@ -9,10 +9,23 @@ import { FaCss3Alt, FaGit, FaHtml5, FaNode, FaReact } from "react-icons/fa";
 import { BiLogoPhp } from "react-icons/bi";
 import { SiMongodb, SiNextdotjs, SiRedux, SiTailwindcss } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Reveal } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 import { HiMiniPuzzlePiece, HiOutlinePuzzlePiece } from "react-icons/hi2";
 
 function About() {
+  const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+    filter: blur(4px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
   return (
     <div className="wrapper overflow-clip bg-light-body dark:bg-dark-body text-black/90 dark:text-white/80  ">
       <Navbar />
@@ -21,7 +34,12 @@ function About() {
       <section className="w-full h-fit grid grid-cols-2 max-md:grid-cols-1 gap-10 py-20 px-20 max-md:px-5 pt-32 ">
         <div className="">picture</div>
         <div className="flex flex-col gap-4 mb-20 max-md:mb-10 max-md:gap-5">
-          <Fade duration={800} cascade damping={0.1} triggerOnce>
+          <Reveal
+            keyframes={customAnimation}
+            triggerOnce
+            duration={800}
+            cascade
+            damping={0.1}>
             <div className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7 text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
               <p className="font-medium text-lg max-md:text-base text-main-color flex items-center gap-1 max-md:pb-2">
                 <HiMiniPuzzlePiece />
@@ -62,7 +80,7 @@ function About() {
               <IoLogoJavascript />
               <FaNode className="text-4xl" />
             </div>
-          </Fade>
+          </Reveal>
         </div>
       </section>
 
