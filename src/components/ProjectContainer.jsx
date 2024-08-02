@@ -8,7 +8,7 @@ function ProjectContainer({ img, name, duration, logo, tech, url }) {
   const techArray = Array.isArray(tech) ? tech : [];
   // const [url, setUrl] = useState('')
   return (
-    <a href={url} target="_blank" className="flex flex-col items-start justify-start relative w-full max-w-[400px]">
+    <a href={url} target="_blank" className="flex flex-col items-start justify-start relative w-full max-w-[300px]">
       {/* external link icon */}
       {/* <Link
         to={`/`}
