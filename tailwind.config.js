@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         Caveat: ['Caveat', 'sans-serif'],
+        OpenSans: ['Open Sans', 'sans-serif'],
+        SourceSans: ['Source Sans', 'sans-serif']
       },
       colors: {
         "light-body": "#F1EFE7",
