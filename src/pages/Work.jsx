@@ -54,7 +54,7 @@ function Work() {
           </Reveal>
         </div>
 
-        <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-8">
+        <div className="gridRespo">
           <Reveal
             keyframes={customAnimation}
             triggerOnce
