@@ -31,7 +31,7 @@ function Work() {
       <Navbar />
 
       {/* Functional Projects */}
-      <section className="w-full h-fit flex items-start justify-strat flex-col gap-2 px-20 max-md:px-5 pt-32 max-md:pt-20 max-w-[1800px] mx-auto ">
+      <section className="w-full h-fit flex items-start justify-strat flex-col gap-2 px-20 max-md:px-5 pt-32 max-md:pt-20 max-w-[1800px] mx-auto">
         <div className="flex flex-col items-center text-center mb-16 max-md:mb-5 max-md:gap-5 w-full">
           <Reveal
             keyframes={customAnimation}
@@ -44,7 +44,7 @@ function Work() {
                 <FaDraftingCompass />
                 My Work
               </p>
-              <p className="text-transparent bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-700/70 dark:to-black/80">
+              <p className="text-transparent bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-700/70 dark:to-stone-500/70">
                 Projects, Solutions & Designs
               </p>
             </div>
@@ -54,7 +54,7 @@ function Work() {
           </Reveal>
         </div>
 
-        <div className="flex flex-col items-center justify-center w-full">
+        <div className="w-full grid grid-cols-2 max-lg:grid-cols-1">
           <Reveal
             keyframes={customAnimation}
             triggerOnce
@@ -71,6 +71,7 @@ function Work() {
                 logo={project.logo}
                 tech={project.tech}
                 url={project.url}
+                color={project.color}
               />
             ))}
           </Reveal>
