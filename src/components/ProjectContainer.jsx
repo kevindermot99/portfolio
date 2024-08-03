@@ -8,7 +8,7 @@ function ProjectContainer({ img, name, desc, tech, url, color }) {
   const techArray = Array.isArray(tech) ? tech : [];
   // const [url, setUrl] = useState('')
   return (
-    <div className="group w-full max-w-[2000px] rounded-3xl ring-1 ring-stone-400/40 dark:ring-stone-600/40 p-2 dark:bg-stone-700/5">
+    <div className="group w-full max-w-[2000px] rounded-3xl ring-1 ring-stone-400/40 dark:ring-stone-600/40 p-2 dark:bg-stone-700/5 shadow-lg">
       <div className="w-full rounded-2xl ring-1 ring-transparent px-5 pt-5 max-md:px-1 max-md:pt-1 bg-stone-200 dark:bg-stone-800/30 group-hover:ring-transparent flex flex-col overflow-clip relative">
         {/* light */}
         <div className={` transition-opacity ease-in-out duration-700 opacity-0 group-hover:opacity-100 absolute top-[-300px] left-0 right-0 mx-auto -z-0 blur-3xl rounded-full w-full h-[600px]`} style={{ backgroundColor: color}} >
