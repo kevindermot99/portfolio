@@ -104,6 +104,7 @@ function Home() {
                   img={project.cover}
                   tech={project.tech}
                   url={project.url}
+                  color={project.colorj}
                 />
               ))}
             </Reveal>
