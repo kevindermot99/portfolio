@@ -18,12 +18,12 @@ function ProjectContainer({ img, name, duration, logo, tech, url, color }) {
         {/* title */}
         <div className="flex items-center justify-between mb-0 p-4 min-h-fit z-10">
           <div className="flex flex-col">
-            <h1 className="text-2xl tracking-tight font-medium opacity-90">{name}</h1>
+            <h1 className="text-2xl tracking-tight font-medium opacity-100" style={{ textShadow: '0 0 10px rgba(255, 255, 255, 0.1)' }}>{name}</h1>
             <h1 className="text-sm ">Lorem ipsum dolor sit consectetur adipisicing elit</h1>
           </div>
-          <div className="flex items-center">
+          <Link to={'https://countify.onrender.com'} target="_blank" className="flex items-center bg-stone-400/40 dark:bg-dark-body/90 rounded-full min-w-fit p-3 transition duration-300 active:scale-90">
             <GoArrowRight className="text-2xl" />
-          </div>
+          </Link>
         </div>
 
         {/* image */}
