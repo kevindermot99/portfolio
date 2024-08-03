@@ -66,9 +66,8 @@ function Work() {
             {Projects.map((project, index) => (
               <ProjectContainer
                 name={project.name}
-                duration={project.duration}
+                desc={project.desc}
                 img={project.cover}
-                logo={project.logo}
                 tech={project.tech}
                 url={project.url}
                 color={project.color}
