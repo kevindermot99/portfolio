@@ -76,7 +76,7 @@ function Work() {
       </section>
 
       {/* Front-end Projects */}
-      {/* <section className="w-full h-fit flex items-start justify-strat flex-col gap-2 px-20 max-md:px-5 pt-32 max-md:pt-10 max-w-[1800px] mx-auto">
+      <section className="w-full h-fit flex items-start justify-strat flex-col gap-2 px-20 max-md:px-5 pt-32 max-md:pt-10 max-w-[1800px] mx-auto">
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 mb-20 max-md:mb-10 max-md:gap-5">
           <Reveal
             keyframes={customAnimation}
@@ -122,7 +122,7 @@ function Work() {
             
           </Reveal>
         </div>
-      </section> */}
+      </section> 
 
       {/* Footer */}
       <Footer />
