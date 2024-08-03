@@ -32,36 +32,36 @@ function Work() {
 
       {/* Functional Projects */}
       <section className="w-full h-fit flex items-start justify-strat flex-col gap-2 px-20 max-md:px-5 pt-32 max-md:pt-20 max-w-[1800px] mx-auto ">
-        <div className=" mb-16 max-md:mb-5 max-md:gap-5">
+        <div className="flex flex-col items-center text-center mb-16 max-md:mb-5 max-md:gap-5 w-full">
           <Reveal
             keyframes={customAnimation}
             triggerOnce
             duration={800}
             cascade
             damping={0.1}>
-            <div className="text-[60px] leading-[68px] max-md:text-[27px] max-md:leading-7 text-transparent font-semibold tracking-tight z-10 max-w-[700px] ">
-              <p className="font-medium text-lg text-main-color flex items-center gap-1 max-md:pb-2 pb-1">
+            <div className="text-[60px] leading-[68px] max-md:text-[27px] max-md:leading-7 font-semibold tracking-tight z-10 max-w-[700px] ">
+              <p className="font-medium text-lg text-main-color flex items-center justify-center gap-1 max-md:pb-2 pb-1">
                 <FaDraftingCompass />
                 My Work
               </p>
-              <p className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-700/70 dark:to-black/80">
+              <p className="text-transparent bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-700/70 dark:to-black/80">
                 Projects, Solutions & Designs
               </p>
             </div>
-            {/* <p className="text-base leading-6 opacity-70 text-justify max-md:pt-0">
-              Projects that not only look great but also some of them works and This includes everything functional React-based apps to full stack web apps that perform as intended.
-            </p> */}
+            <p className="text-base leading-6 opacity-60 max-md:pt-0 max-w-[700px] pt-2">
+              {Projects.length} projects so far.
+            </p>
           </Reveal>
         </div>
 
-        <div className="flex flex-col items-center justify-center w-full bg-red-400">
+        <div className="flex flex-col items-center justify-center w-full">
           <Reveal
             keyframes={customAnimation}
             triggerOnce
             duration={800}
             cascade
             damping={0.1}
-            className="bg-orange-500 p-3"
+            className="p-3"
           >
             {Projects.map((project, index) => (
               <ProjectContainer
