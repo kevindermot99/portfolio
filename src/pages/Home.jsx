@@ -88,7 +88,7 @@ function Home() {
               </p>
             </div>
           </Reveal>
-          <div className="gridRespo">
+          <div className="grid grid-cols-2 gap-10">
             <Reveal
               keyframes={customAnimation}
               triggerOnce
@@ -97,7 +97,7 @@ function Home() {
               damping={0.1}
               className="flex items-start justify-end flex-col gap-2 w-full"
             >
-              {Projects.map((project, index) => (
+              {Projects.slice(0, 2).map((project, index) => (
                 <ProjectContainer
                   name={project.name}
                   duration={project.duration}
