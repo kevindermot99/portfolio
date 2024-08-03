@@ -1,54 +1,37 @@
 import React, { useState } from "react";
-import { GoLinkExternal, GoLock } from "react-icons/go";
+import { GoArrowRight, GoLinkExternal, GoLock } from "react-icons/go";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { TbExternalLink } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
-function ProjectContainer({ img, name, duration, logo, tech, url }) {
+function ProjectContainer({ img, name, duration, logo, tech, url, color }) {
   const techArray = Array.isArray(tech) ? tech : [];
   // const [url, setUrl] = useState('')
   return (
-    <a href={url} target="_blank" className="flex flex-col items-start justify-start relative w-full bg-green-400 max-w-[800px]">
-      {/* external link icon */}
-      {/* <Link
-        to={`/`}
-        className="absolute top-2 right-2 flex items-center justify-center h-auto w-auto p-1 rounded-md shadow-lg bg-white dark:bg-stone-600/40 dark:backdrop-blur-md z-20 group"
-      >
-        <TbExternalLink className="dark:opacity-85 transition" />
-        <span className="text-xs font-medium transition-all ease-in-out duration-500 max-w-0 overflow-clip whitespace-nowrap group-hover:max-w-xs">
-          Live view
-        </span>
-      </Link> */}
-      {/* image */}
-      <div className="group h-fit max-md:h-fit w-full shadow-md cursor-pointer bg-white/80 dark:bg-stone-800/40 rounded-lg mb-1 overflow-clip relative">
-        {/* technologies */}
-        <div className="absolute top-0 left-0 w-full h-full p-2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-300 translate-y-[200px] group-hover:translate-y-0 bg-gradient-to-t from-black/40 to-transparent flex items-end z-10">
-          <div className="flex flex-wrap items-end justify-start h-fit gap-1">
-            {techArray.map((techItem, index) => (
-              <h1 key={index} className="text-xs text-dark-body/80 font-semibold bg-light-body h-[25px] px-3 flex items-center justify-center rounded-full shadow-lg w-fit">
-                {techItem}
-              </h1>
-            ))}
-            
+    <div className="group w-full max-w-[2000px] rounded-3xl ring-1 ring-stone-400/40 dark:ring-stone-600/40 p-2 dark:bg-stone-700/5">
+      <div className="w-full rounded-2xl ring-1 ring-transparent px-5 pt-5 bg-stone-200 dark:bg-stone-800/30 group-hover:ring-transparent flex flex-col overflow-clip relative">
+        {/* light */}
+        <div className={` transition-opacity ease-in-out duration-500 opacity-0 group-hover:opacity-100 absolute top-[-300px] left-0 right-0 mx-auto -z-0 blur-3xl rounded-full w-full h-[600px]`} style={{ backgroundColor: color}}>
+
+        </div>
+
+        {/* title */}
+        <div className="flex items-center justify-between mb-0 p-4 min-h-fit z-10">
+          <div className="flex flex-col">
+            <h1 className="text-2xl tracking-tight font-medium opacity-90">{name}</h1>
+            <h1 className="text-sm ">Lorem ipsum dolor sit consectetur adipisicing elit</h1>
+          </div>
+          <div className="flex items-center">
+            <GoArrowRight className="text-2xl" />
           </div>
         </div>
-        <img src={img} className="dark:opacity-90 h-full w-full object-cover transition duration-500" />
+
+        {/* image */}
+        <div className="w-full flex items-center justify-center px-4 transition duration-300 translate-y-5 group-hover:translate-y-0">
+          <img src={img} className="rounded-t-xl w-full h-fit dark:opacity-90" />
+        </div>
       </div>
-      {/* Details */}
-      <div className="flex justify-between items-center w-full mt-1 gap-6 max-md:gap-5">
-        <h1 className="text-sm z-10 flex items-center gap-1 ">
-          <span className="h-[22px] w-auto aspect-square rounded-full flex">
-            <img src={logo} className="w-full h-full" />
-          </span>
-          <span className="font-semibold text-base tracking-tight text-black/90 dark:text-white/80 max-w-[400px]">
-            {name}
-          </span>
-        </h1>
-        <p className="text-sm capitalize leading-6 opacity-70 font-medium">
-          built in {duration}
-        </p>
-      </div>
-    </a>
+    </div>
   );
 }
 
