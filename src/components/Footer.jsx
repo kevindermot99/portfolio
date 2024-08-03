@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
       {/* CAT */}
-      <section className=" w-full h-fit flex items-center justify-center flex-col gap-1 py-32 max-md:py-0 px-20 max-md:px-5 z-20 ">
+      {/* <section className=" w-full h-fit flex items-center justify-center flex-col gap-1 py-32 max-md:py-0 px-20 max-md:px-5 z-20 ">
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-16 mb-6 max-md:gap-5">
           <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7 text-transparent font-semibold tracking-tight z-10 max-w-[500px]">
             <span className="font-medium text-base text-main-color">
@@ -29,7 +29,7 @@ function Footer() {
             , Have a great day.
           </p>
         </div>
-      </section>
+      </section> */}
 
       <div className="flex flex-col items-start justify-start w-full h-full px-20 max-md:px-5">
         <div className="py-6 border-b-[1px] border-stone-300 dark:border-stone-800 w-full flex items-center max-md:flex-col gap-3 max-md:gap-6 flex-wrap max-md:items-start justify-between">
