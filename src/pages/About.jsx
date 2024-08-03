@@ -75,8 +75,7 @@ function About() {
               solutions to real world problems.
             </p>
             <p className="text-base leading-6 max-w-full text-justify text-black/70 dark:text-white/40">
-              Currently pursuing my Bachelor's degree in Software Engineering at
-              the African Leadership University (ALU) 2024 - 2027.
+              Currently pursuing my Bachelor's degree in Software Engineering at ALU (African Leadership University), 2024 to 2027.
             </p>
             <p className="text-base max-w-full text-justify text-black/70 dark:text-white/40">
               I'm skilled in:
