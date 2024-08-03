@@ -54,7 +54,7 @@ function Work() {
           </Reveal>
         </div>
 
-        <div className="flex flex-col">
+        <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-8">
           <Reveal
             keyframes={customAnimation}
             triggerOnce
