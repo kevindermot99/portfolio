@@ -10,16 +10,17 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import { Fade, Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
-import { MdArrowRightAlt, MdOutlineErrorOutline } from "react-icons/md";
+import { MdArrowRightAlt, MdOutlineErrorOutline, MdWorkHistory } from "react-icons/md";
 import { RxSpaceBetweenVertically } from "react-icons/rx";
 import { PiSelectionPlusDuotone } from "react-icons/pi";
 import { GoShieldCheck } from "react-icons/go";
-import { RiSignalWifiErrorLine } from "react-icons/ri";
+import { RiServiceFill, RiSignalWifiErrorLine } from "react-icons/ri";
 import Footer from "../components/Footer";
 import ProjectContainer from "../components/ProjectContainer";
 import { Projects } from "../content/data";
 import Heading from "../components/Heading";
 import { FaDraftingCompass } from "react-icons/fa";
+import { TbNewSection } from "react-icons/tb";
 
 function Home() {
   const today = new Date();
@@ -69,7 +70,7 @@ function Home() {
         <section className="bg-stone-100 dark:bg-stone-800/20 w-full h-fit flex items-start justify-strat flex-col gap-2 py-16 px-20 max-md:px-5 ">
 
           <Heading
-            Icon={<FaDraftingCompass />}
+            Icon={<MdWorkHistory />}
             SectionName={`Recent Work `}
             Title={ProjectSection.title}
             Desc={ProjectSection.favorite}
@@ -111,7 +112,7 @@ function Home() {
         <section className=" w-full h-fit flex items-start justify-start flex-col gap-6 py-16 px-20 max-md:px-5 -z-0 ">
 
           <Heading
-            Icon={<FaDraftingCompass />}
+            Icon={<RiServiceFill />}
             SectionName={`Services`}
             Title={ServicesSection.title}
             Desc={ServicesSection.explanation}
