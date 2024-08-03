@@ -12,14 +12,14 @@ export const Projects = [
         tech: ["React js","Tailwind"],
         color: '#aaaaaa40'
     },
-    // {
-    //     number: '2',
-    //     name: "Gerayo",
-    //     cover: cover2,
-    //     url: "https://gerayo.onrender.com",
-    //     desc: "Buy tickets online and track your bus in Rwanda. with Gerayo traveling is better",
-    //     tech: ["React js","Tailwind", "Google Maps API"],
-    //     color: '#399E5A'
-    // },
+    {
+        number: '2',
+        name: "Gerayo",
+        cover: cover2,
+        url: "https://gerayo.onrender.com",
+        desc: "Buy tickets online and track your bus in Rwanda. with Gerayo traveling is better",
+        tech: ["React js","Tailwind", "Google Maps API"],
+        color: '#399E5A'
+    },
     
 ]
