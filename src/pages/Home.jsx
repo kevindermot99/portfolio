@@ -100,9 +100,8 @@ function Home() {
               {Projects.slice(0, 2).map((project, index) => (
                 <ProjectContainer
                   name={project.name}
-                  duration={project.duration}
+                  desc={project.desc}
                   img={project.cover}
-                  logo={project.logo}
                   tech={project.tech}
                   url={project.url}
                 />
