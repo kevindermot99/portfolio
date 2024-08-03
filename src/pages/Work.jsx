@@ -32,7 +32,7 @@ function Work() {
 
       {/* Functional Projects */}
       <section className="w-full h-fit flex items-start justify-strat flex-col gap-2 px-20 max-md:px-5 pt-32 max-md:pt-20 max-w-[1800px] mx-auto ">
-        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 mb-16 max-md:mb-5 max-md:gap-5">
+        <div className=" mb-16 max-md:mb-5 max-md:gap-5">
           <Reveal
             keyframes={customAnimation}
             triggerOnce
@@ -54,13 +54,14 @@ function Work() {
           </Reveal>
         </div>
 
-        <div className="flex flex-col items-start justify-center w-full bg-red-400">
+        <div className="flex flex-col items-center justify-center w-full bg-red-400">
           <Reveal
             keyframes={customAnimation}
             triggerOnce
             duration={800}
             cascade
             damping={0.1}
+            className="bg-orange-500 p-3"
           >
             {Projects.map((project, index) => (
               <ProjectContainer
