@@ -18,6 +18,8 @@ import { RiSignalWifiErrorLine } from "react-icons/ri";
 import Footer from "../components/Footer";
 import ProjectContainer from "../components/ProjectContainer";
 import { Projects } from "../content/data";
+import Heading from "../components/Heading";
+import { FaDraftingCompass } from "react-icons/fa";
 
 function Home() {
   const today = new Date();
@@ -65,29 +67,13 @@ function Home() {
 
         {/* Projects */}
         <section className="bg-stone-100 dark:bg-stone-800/20 w-full h-fit flex items-start justify-strat flex-col gap-2 py-16 px-20 max-md:px-5 ">
-          <Reveal
-            keyframes={customAnimation}
-            triggerOnce
-            duration={800}
-            cascade
-            damping={0.1}
-            className="flex items-start justify-end flex-col gap-2 w-full"
-          >
-            <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 mb-6 max-md:gap-5">
-              <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7  text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
-                <span className="font-medium text-base text-main-color">
-                  Work &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                  &nbsp; &nbsp;{" "}
-                </span>
-                <span className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
-                  {ProjectSection.title}
-                </span>
-              </h1>
-              <p className="text-base leading-6 opacity-70">
-                {ProjectSection.favorite}
-              </p>
-            </div>
-          </Reveal>
+
+          <Heading
+            Icon={<FaDraftingCompass />}
+            SectionName={`Recent Work `}
+            Title={ProjectSection.title}
+            Desc={ProjectSection.favorite}
+          />
           <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-10">
             <Reveal
               keyframes={customAnimation}
@@ -123,31 +109,15 @@ function Home() {
 
         {/* Services */}
         <section className=" w-full h-fit flex items-start justify-start flex-col gap-6 py-16 px-20 max-md:px-5 -z-0 ">
-          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 mb-6 max-md:gap-5">
-            <Reveal
-              keyframes={customAnimation}
-              triggerOnce
-              duration={1000}
-              cascade
-              damping={0.1}
-              className="flex items-start justify-end flex-col gap-2 w-full"
-            >
-              <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7  text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
-                <span className="font-medium text-base text-main-color">
-                  Services &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                  &nbsp; &nbsp; &nbsp;{" "}
-                </span>
-                <span className="bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-800/70 dark:to-stone-400/80">
-                  {ServicesSection.title}
-                </span>
-              </h1>
-              <p className="text-base leading-6 opacity-70">
-                {ServicesSection.explanation}
-              </p>
-            </Reveal>
-          </div>
 
-          <div className="w-full h-fit flex max-md:flex-col gap-6 mt-6 max-md:gap-5">
+          <Heading
+            Icon={<FaDraftingCompass />}
+            SectionName={`Services`}
+            Title={ServicesSection.title}
+            Desc={ServicesSection.explanation}
+          />
+
+          <div className="w-full h-fit flex max-md:flex-col gap-6 max-md:gap-5">
             {/* 01 */}
             <div className="group w-1/2 max-md:w-full h-[210px] ring-1 ring-stone-300/70 dark:ring-stone-700/30 transition  bg-stone-300/30 dark:bg-stone-700/20 rounded-2xl p-8 flex flex-col items-start justify-between relative overflow-clip">
               {/* element */}
