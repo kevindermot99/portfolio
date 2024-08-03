@@ -54,7 +54,7 @@ function Work() {
           </Reveal>
         </div>
 
-        <div className="gridRespo">
+        <div className="flex flex-col items-start justify-center w-full bg-red-400">
           <Reveal
             keyframes={customAnimation}
             triggerOnce
