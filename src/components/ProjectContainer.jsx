@@ -18,7 +18,7 @@ function ProjectContainer({ img, name, desc, tech, url, color }) {
         {/* title */}
         <div className="flex items-center justify-between mb-0 gap-10 p-4 min-h-fit z-10">
           <div className="flex flex-col gap-1">
-            <h1 className="text-2xl tracking-tight font-medium opacity-100" style={{ textShadow: '0 0 10px rgba(255, 255, 255, 0.1)' }}>{name}</h1>
+            <h1 className="text-2xl tracking-tight font-medium opacity-100" style={{ textShadow: '0 0 15px rgba(255, 255, 255, 0.1)' }}>{name}</h1>
             <h1 className="text-sm leading-5 opacity-70 ">{desc}</h1>
           </div>
           <Link to={url} target="_blank" className="flex items-center bg-stone-400/40 dark:bg-dark-body/90 rounded-full min-w-fit p-3 transition duration-300 active:scale-90">
