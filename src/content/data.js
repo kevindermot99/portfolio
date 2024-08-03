@@ -7,8 +7,7 @@ export const Projects = [
         name: "Countify",
         cover: cover1,
         url: "https://countify.onrender.com",
-        logo: "https://countify.onrender.com/assets/logo-02qLKcNb.png",
-        duration: "2 Days",
+        desc: "Online tool for counting words, sentences, and characters in PDFs and texts",
         tech: ["React js","Tailwind"],
         color: '#aaaaaa40'
     },
