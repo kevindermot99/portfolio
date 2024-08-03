@@ -39,7 +39,7 @@ function Work() {
             duration={800}
             cascade
             damping={0.1}>
-            <div className="text-[60px] leading-[68px] max-md:text-[27px] max-md:leading-7 font-semibold tracking-tight z-10 max-w-[700px] ">
+            <div className="text-[60px] leading-[68px] max-md:text-[27px] max-md:leading-7 font-semibold tracking-tight z-10 max-w-[700px]  ">
               <p className="font-medium text-lg text-main-color flex items-center justify-center gap-1 max-md:pb-2 pb-1">
                 <FaDraftingCompass />
                 My Work
