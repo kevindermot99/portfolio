@@ -88,7 +88,7 @@ function Home() {
               </p>
             </div>
           </Reveal>
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-10">
             <Reveal
               keyframes={customAnimation}
               triggerOnce
@@ -104,7 +104,7 @@ function Home() {
                   img={project.cover}
                   tech={project.tech}
                   url={project.url}
-                  color={project.colorj}
+                  color={project.color}
                 />
               ))}
             </Reveal>
