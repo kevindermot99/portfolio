@@ -17,14 +17,14 @@ const customAnimation = keyframes`
 
 function Heading({Icon, SectionName, Title, Desc }) {
     return (
-        <div className="grid grid-cols-1 max-md:grid-cols-1 gap-2 mb-6 max-md:gap-5">
+        <div className="grid grid-cols-1 max-md:grid-cols-1 gap-2 mb-6 max-md:gap-3">
             <Reveal
                 keyframes={customAnimation}
                 triggerOnce
                 duration={800}
                 cascade
                 damping={0.1}>
-                <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7 flex flex-col text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
+                <h1 className="text-[37px] leading-[41px] max-md:text-[27px] max-md:leading-7 max-md:gap-1 flex flex-col text-transparent font-semibold tracking-tight z-10 max-w-[400px] ">
                     <span className="font-medium text-lg text-main-color flex items-center gap-1">
                         {Icon}
                         {SectionName}
