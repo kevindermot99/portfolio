@@ -32,7 +32,7 @@ function Work() {
       <Navbar />
 
       {/* Functional Projects */}
-      <section className="w-full h-fit flex items-start justify-strat flex-col gap-2 px-20 max-md:px-5 pt-32 max-md:pt-20 max-w-[1800px] mx-auto">
+      <section className="w-full h-fit flex items-start justify-strat flex-col gap-2 px-20 max-md:px-5 py-32 max-md:pt-24 max-md:pb-10 max-w-[1800px] mx-auto">
         
           <Heading
             Icon={<FaDraftingCompass />}
