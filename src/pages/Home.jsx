@@ -265,7 +265,7 @@ function Home() {
           </div>
         </section>
 
-        {/* CAT */}
+        {/* Feedback */}
         <section className=" w-full h-fit flex items-start justify-start flex-col gap-6 py-16 px-20 max-md:px-5 -z-0 ">
 
           <Heading
@@ -280,7 +280,8 @@ function Home() {
               <div className="w-full bg-white dark:bg-stone-700/20 p-4 rounded-2xl shadow-sm flex flex-col">
                 <div className="w-full flex items-start justify-between">
                   <div className="flex flex-col">
-                    <h1 className="text-sm font-bold pb-1">{comment.person}</h1>
+                    <h1 className="text-sm font-bold">{comment.person}</h1>
+                    <p className="text-xs opacity-50 dark:opacity-70 font-medium pb-1 ">{comment.role}</p>
                     {/* 5 */}
                     {comment.stars === 5 && (
                       <div className="flex items-center gap-0 text-main-color/80">
@@ -332,12 +333,12 @@ function Home() {
                       </div>
                     )}
                   </div>
-                  <p className="text-xs opacity-70 font-bold ">{comment.date}</p>
+                  <p className="text-xs opacity-50 dark:opacity-70 font-medium ">{comment.date}</p>
                 </div>
 
-                <p className="pt-3 text-sm font-medium opacity-70">{comment.comemnt}</p>
+                <p className="pt-3 text-sm font-medium ">{comment.comemnt}</p>
                 <div className="bg-stone-200/70 dark:bg-stone-700/20 w-full px-3 py-2 mt-3 rounded-xl flex flex-col">
-                  <h1 className="text-sm font-medium opacity-70">Commented on Project</h1>
+                  <h1 className="text-xs font-medium opacity-50 dark:opacity-70">Commented on Project</h1>
                   <div className="flex items-start gap-2 py-1">
                     <div className="h-full w-[3px] rounded-xl bg-main-color"></div>
                     <Link to={'/'} className="text-sm font-medium hover:underline">{comment.project}</Link>
