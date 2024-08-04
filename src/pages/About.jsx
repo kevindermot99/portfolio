@@ -80,17 +80,47 @@ function About() {
             <p className="text-base max-w-full text-justify text-black/70 dark:text-white/40">
               I'm skilled in:
             </p>
-            <div className="flex flex-wrap items-center justify-start gap-6 text-black/70 dark:text-white/50 text-xl">
-              <FaReact />
-              <FaCss3Alt />
-              <SiTailwindcss className="text-2xl" />
-              <FaHtml5 />
-              <BiLogoPhp className="text-4xl" />
-              <SiMongodb />
-              <SiNextdotjs className="text-base" />
-              <FaGit className="text-xl" />
-              <IoLogoJavascript />
-              <FaNode className="text-4xl" />
+            <div className="flex flex-wrap items-center justify-start gap-2 text-black/70 dark:text-white/70 text-xl">
+              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+                <FaReact className="text-base" />
+                <p className="text-black/70 dark:text-white/50">React JS</p>
+              </span>
+              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+                <FaCss3Alt className="text-lg" />
+                <p className="text-black/70 dark:text-white/50">Css</p>
+              </span>
+              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+                <SiTailwindcss className="text-xl" />
+                <p className="text-black/70 dark:text-white/50">Tailwind Css</p>
+              </span>
+              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+                <FaHtml5 className="text-lg" />
+                <p className="text-black/70 dark:text-white/50">Html</p>
+              </span>
+              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+                <BiLogoPhp className="text-4xl" />
+                <p className="text-black/70 dark:text-white/50">PHP</p>
+              </span>
+              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+                <SiMongodb className="text-lg" />
+                <p className="text-black/70 dark:text-white/50">MongoDB</p>
+              </span>
+              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+                <SiNextdotjs className="text-base" />
+                <p className="text-black/70 dark:text-white/50">Next JS</p>
+              </span>
+              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+                <FaGit className="text-lg" />
+                <p className="text-black/70 dark:text-white/50">Git & Github</p>
+              </span>
+              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+                <IoLogoJavascript />
+                <p className="text-black/70 dark:text-white/50">Javascript</p>
+              </span>
+              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+                <FaNode className="text-3xl" />
+                <p className="text-black/70 dark:text-white/50">Node JS</p>
+              </span>
             </div>
           </Reveal>
         </div>
