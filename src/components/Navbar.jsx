@@ -65,7 +65,7 @@ function Navbar() {
       {/* Pc menu */}
       <div
         className={`px-20 max-md:px-5 py-4 h-fit w-full flex items-center justify-between fixed top-0 left-0 z-20 transition-colors duration-300 ${
-          scrolled ? "bg-light-body dark:bg-dark-body" : "bg-transparent"
+          scrolled ? "bg-light-body dark:bg-dark-body/80 backdrop-blur-md" : "bg-transparent"
         }`}
       >
         <a href={`/`} className="flex items-center justify-center gap-1 cursor-pointer">
