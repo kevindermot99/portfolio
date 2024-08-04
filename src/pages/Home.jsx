@@ -297,7 +297,7 @@ function Home() {
                   <h1 className="text-sm font-medium opacity-70">Commented on Project</h1>
                   <div className="flex items-start gap-2 py-1">
                     <div className="h-full w-[3px] rounded-xl bg-main-color"></div>
-                    <Link to={'/'} className="text-sm font-medium hover:underline">Gerayo</Link>
+                    <Link to={'/'} className="text-sm font-medium hover:underline">{singleFeedback.project}</Link>
                   </div>
                 </div>
               </div>
