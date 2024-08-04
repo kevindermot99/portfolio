@@ -266,7 +266,7 @@ function Home() {
         </section>
 
         {/* Feedback */}
-        <section className=" w-full h-fit flex items-start justify-start flex-col gap-6 py-16 px-20 max-md:px-5 -z-0 ">
+        <section className=" w-full h-fit flex items-start justify-start flex-col gap-6 py-16 max-md:pt-0 px-20 max-md:px-5 -z-0 ">
 
           <Heading
             Icon={<FaComments />}
