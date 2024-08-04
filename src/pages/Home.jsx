@@ -275,7 +275,7 @@ function Home() {
             Desc={ServicesSection.explanation}
           />
 
-          <div className="w-full h-fit grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-1  gap-5">
+          <div className="w-full h-fit grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 gap-3">
             {Feedback.map((comment, index) => (
               <div className="w-full bg-white dark:bg-stone-700/20 p-4 rounded-2xl shadow-sm flex flex-col">
                 <div className="w-full flex items-start justify-between">
