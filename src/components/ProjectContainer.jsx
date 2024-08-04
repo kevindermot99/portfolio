@@ -21,8 +21,8 @@ function ProjectContainer({ img, name, desc, tech, url, color }) {
             <h1 className="text-2xl tracking-tight font-medium opacity-100" style={{ textShadow: '0 0 15px rgba(255, 255, 255, 0.1)' }}>{name}</h1>
             <h1 className="text-sm leading-5 opacity-70 ">{desc}</h1>
           </div>
-          <Link to={url} target="_blank" title="Live Preview" className="flex items-center bg-stone-400/40 dark:bg-dark-body/50 rounded-full min-w-fit p-3 hover:scale-110 transition duration-300 active:scale-90">
-            <GoArrowRight className="text-2xl" />
+          <Link to={url} target="_blank" title="Live Preview" className="group flex items-center bg-stone-400/40 dark:bg-dark-body/50 rounded-full min-w-fit p-3 hover:scale-110 transition duration-300 active:scale-90">
+            <GoArrowRight className="text-2xl " />
           </Link>
         </div>
 
