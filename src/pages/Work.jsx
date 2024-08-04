@@ -31,8 +31,6 @@ function Work() {
     <div className="wrapper overflow-clip bg-light-body dark:bg-dark-body text-black/90 dark:text-white/80  ">
       <Navbar />
 
-
-
       {/* Functional Projects */}
       <section className="w-full h-fit flex items-start justify-strat flex-col gap-2 px-20 max-md:px-5 pt-32 max-md:pt-20 max-w-[1800px] mx-auto">
         
@@ -44,14 +42,13 @@ function Work() {
           />
         
 
-        <div className="w-full grid grid-cols-2 max-lg:grid-cols-1">
+        <div className="w-full grid grid-cols-2 gap-7 max-lg:grid-cols-1">
           <Reveal
             keyframes={customAnimation}
             triggerOnce
             duration={800}
             cascade
             damping={0.1}
-            className="p-3"
           >
             {Projects.map((project, index) => (
               <ProjectContainer
