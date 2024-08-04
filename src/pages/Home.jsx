@@ -75,7 +75,7 @@ function Home() {
             Title={ProjectSection.title}
             Desc={ProjectSection.favorite}
           />
-          <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-10">
+          <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-7">
             <Reveal
               keyframes={customAnimation}
               triggerOnce
@@ -142,7 +142,7 @@ function Home() {
                 01
               </div>
               <div className="flex flex-col items-start justify-start z-10 md:backdrop-blur-md rounded-lg overflow-clip pr-5 ">
-                <h1 className="text-2xl font-medium tracking-tight capitalize ">
+                <h1 className="text-2xl font-medium tracking-tight ">
                   Front-end Development
                 </h1>
                 <p className="opacity-70 text-base leading-6">
@@ -204,7 +204,7 @@ function Home() {
                 02
               </div>
               <div className="flex flex-col items-start justify-start z-10 md:backdrop-blur-md rounded-lg overflow-clip pr-5">
-                <h1 className="text-2xl font-medium tracking-tight capitalize ">
+                <h1 className="text-2xl font-medium tracking-tight ">
                   back-end development
                 </h1>
                 <p className="opacity-70 text-base leading-6">
