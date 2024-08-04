@@ -29,6 +29,6 @@ export const Feedback = [
         date: "",
         stars: "",
         comemnt: "",
-        name: "",
+        project: "",
     }
 ]
