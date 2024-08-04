@@ -1,4 +1,3 @@
-
 import cover1 from '../assets/projects/1.png'
 import cover2 from '../assets/projects/2.png'
 
@@ -23,3 +22,5 @@ export const Projects = [
     },
     
 ]
+
+export const Feedback = []
