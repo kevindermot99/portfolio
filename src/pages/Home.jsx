@@ -39,14 +39,15 @@ function Home() {
 `;
 
   return (
-    <>
-      <div className="wrapper w-full max-md:overflow-clip bg-light-body dark:bg-dark-body text-black/90 dark:text-white/80 relative  ">
-        <Navbar />
-        {/* light */}
-        <div className="w-[700px] h-auto aspect-square rounded-full bg-gradient-to-br from-stone-800/20 to-transparent dark:from-stone-200/10 blur-[90px] absolute left-[-240px] top-[-250px] z-0"></div>
+    <div className="max-w-[1900px] mx-auto overflow-clip relative bg-light-body dark:bg-dark-body">
+      {/* light */}
+      <div className="w-[700px] h-auto aspect-square rounded-full bg-gradient-to-br from-stone-800/20 to-transparent dark:from-stone-200/10 blur-[90px] absolute left-[-240px] top-[-250px] z-0"></div>
 
+      <div className="wrapper w-full  text-black/90 dark:text-white/80 relative  ">
+        <Navbar />
+        
         {/* Hero */}
-        <section className="animateZoom flex items-start justify-end flex-col gap-2 py-10 px-20 max-md:px-5 min-h-svh max-h-[800px]">
+        <section className="animateZoom flex items-start justify-end flex-col gap-2 py-10 px-20 max-md:px-5 h-svh max-h-[1200px]">
           <Reveal
             keyframes={customAnimation}
             triggerOnce
@@ -355,7 +356,7 @@ function Home() {
         {/* footer */}
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
 
