@@ -4,7 +4,7 @@ export const MyNames = "Kevin MK.";
 // Hero
 export const HeroText = "Transforming Ideas into Stunning Projects";
 export const MiniIntro = `I'm Kevin, a 21 year Old Full Stack Developer from Rwanda with a mission of`;
-export const Promising = { no: "complexity", yes: "simplicity" };
+export const Promising = { no: "Complexity", yes: "Simplicity" };
 
 // Projects
 export const ProjectSection = {
