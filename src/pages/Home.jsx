@@ -289,7 +289,7 @@ function Home() {
                       <TiStarOutline className="empty" />
                     </div>
                   </div>
-                  <p className="text-xs opacity-70 font-bold ">Jan 11, 2023</p>
+                  <p className="text-xs opacity-70 font-bold ">{singleFeedback.date}</p>
                 </div>
 
                 <p className="pt-3 text-sm font-medium opacity-70"> quidem dicta quis consectetur? Ea maiores, commodi atque debitis reprehenderit nemo libero eligendi deleniti omnis.</p>
