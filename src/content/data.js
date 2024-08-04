@@ -25,13 +25,28 @@ export const Projects = [
 
 export const Feedback = [
     {
-        person: "Kim, Frankifurt",
-        role: "Front-end Developer",
-        date: "Jan 11, 2023",
-        stars: 3,
-        comemnt: "quidem dicta quis consectetur? Ea maiores, commodi atque debitis reprehenderit nemo libero eligendi deleniti omnis.",
+        person: "HonourGod Levison",
+        role: "Graphics Designer",
+        date: "Aug 04, 2024",
+        stars: 4,
+        comemnt: "It will be great also if the upload can read  docs files, cause more people that will be writing will use docs majorly",
         project: "Countify",
     },
-    
+    {
+        person: "ChatGPT",
+        role: "AI Assistant",
+        date: "Aug 02, 2024",
+        stars: 3,
+        comemnt: "Countify looks good overall, but it could use a few tweaks. Adding text export and more file handling options would make it a lot more versatile.",
+        project: "Countify",
+    },
+    {
+        person: "ChatGPT",
+        role: "AI Assistant",
+        date: "Aug 02, 2024",
+        stars: 3,
+        comemnt: "",
+        project: "Countify",
+    },
     
 ]
