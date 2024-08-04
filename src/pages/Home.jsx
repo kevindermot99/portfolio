@@ -280,7 +280,7 @@ function Home() {
               <div className="w-full bg-white dark:bg-stone-700/20 px-4 py-3 rounded-2xl shadow-sm flex flex-col">
                 <div className="w-full flex items-start justify-between">
                   <div className="flex flex-col">
-                    <h1 className="text-sm font-bold">Kim, Frankifurt</h1>
+                    <h1 className="text-sm font-bold">{singleFeedback.person}</h1>
                     <div className="flex items-center gap-0 text-main-color/80">
                       <TiStarFullOutline className="full" />
                       <TiStarFullOutline className="full" />
