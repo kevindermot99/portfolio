@@ -31,11 +31,5 @@ export const Feedback = [
         comemnt: "quidem dicta quis consectetur? Ea maiores, commodi atque debitis reprehenderit nemo libero eligendi deleniti omnis.",
         project: "Countify",
     },
-    {
-        name: "",
-        date: "",
-        stars: "",
-        comemnt: "",
-        project: "Gerayo",
-    },
+    
 ]
