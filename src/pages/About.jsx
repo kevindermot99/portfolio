@@ -33,15 +33,15 @@ function About() {
       <Navbar />
 
       {/* Projects */}
-      <section className="w-full h-fit grid grid-cols-2 max-lg:grid-cols-1 gap-10 py-0 px-20 max-md:px-5 pt-32 max-md:pt-[75px] max-w-[1400px] mx-auto ">
-        <div className="w-full h-fit">
+      <section className="w-full h-fit grid grid-cols-2 max-lg:grid-cols-1 gap-10 py-0 px-20 max-md:px-5 pt-32 max-md:pt-[75px] max-w-[1900px] mx-auto ">
+        <div className="w-full h-fit flex items-start justify-end">
           <Reveal
             keyframes={customAnimation}
             triggerOnce
             duration={800}
             cascade
             damping={0.1}>
-            <div className="w-full h-fit max-h-[550px] overflow-clip rounded-md">
+            <div className="w-full h-fit max-h-[550px] 2xl:max-w-[500px] overflow-clip rounded-md">
               <img src={imageOfMe} loading="lazy" className="w-full h-full opacity-85" />
             </div>
           </Reveal>
