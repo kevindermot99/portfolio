@@ -54,9 +54,9 @@ function Home() {
             damping={0.1}
             className="flex items-start justify-end flex-col gap-2 w-full"
           >
-            <p className="text-base opacity-70 z-10">{MiniIntro}</p>
-            <h1 className="text-[70px] leading-[75px] max-md:text-[45px] max-md:leading-[50px] max-md:mb-5 text-transparent bg-clip-text bg-gradient-to-br max-w-[600px] from-black dark:from-white to-stone-700/70 dark:to-black/80 font-semibold tracking-tight z-10 ">
-              {HeroText}
+            <p className="text-base opacity-70 z-10">Hello, I'm Kevin, a 21-year-old from Rwanda, and I am a</p>
+            <h1 className="text-[65px] leading-[70px] max-md:text-[45px] max-md:leading-[50px] max-md:mb-5 text-transparent bg-clip-text bg-gradient-to-br max-w-[600px] from-black dark:from-white to-stone-700/70 dark:to-black/80 font-semibold tracking-tight z-10 ">
+            Full-Stack Developer.
             </h1>
             <p className="self-end max-md:self-start text-base font-normal capitalize">
               <s className="opacity-70 ">{Promising.no}</s>
