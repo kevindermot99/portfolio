@@ -122,7 +122,7 @@ function Home() {
 
           <div className="w-full h-fit flex max-md:flex-col gap-6 max-md:gap-5">
             {/* 01 */}
-            <div className="group w-1/2 max-md:w-full h-[210px] ring-1 ring-stone-300/70 dark:ring-stone-700/30 transition  bg-stone-300/30 dark:bg-stone-700/20 rounded-2xl p-8 flex flex-col items-start justify-between relative overflow-clip">
+            <div className="group w-1/2 max-md:w-full h-[210px] max-md:h-fit ring-1 ring-stone-300/70 dark:ring-stone-700/30 transition  bg-stone-300/30 dark:bg-stone-700/20 rounded-2xl p-8 max-md:p-5 flex flex-col items-start justify-between relative overflow-clip">
               {/* element */}
               <div className="max-md:hidden text-stone-400 dark:text-stone-700 absolute right-0 top-0 h-full min-w-[100px] -rotate-[10deg] bg-stone-100/0 p-5 flex items-center justify-center flex-col gap-3 -z-0  ">
                 <div className="h-[60px] w-[200px] rounded-xl ring-1 ring-stone-400 dark:ring-stone-700 hover:bg-stone-300/40 dark:hover:bg-stone-800 transition relative p-5 flex items-center justify-start">
@@ -153,7 +153,7 @@ function Home() {
               </div>
             </div>
             {/* 02 */}
-            <div className="group w-1/2 max-md:w-full h-[210px] ring-1 ring-stone-300/70 dark:ring-stone-700/30 transition bg-stone-300/30 dark:bg-stone-700/20 rounded-2xl p-8 flex flex-col items-start justify-between relative overflow-clip">
+            <div className="group w-1/2 max-md:w-full h-[210px] max-md:h-fit ring-1 ring-stone-300/70 dark:ring-stone-700/30 transition bg-stone-300/30 dark:bg-stone-700/20 rounded-2xl p-8 max-md:p-5 flex flex-col items-start justify-between relative overflow-clip">
               {/* element */}
               <div className="max-md:hidden text-stone-400 dark:text-stone-700 absolute right-0 top-0 h-full min-w-[100px] -rotate-[10deg] bg-stone-100/0 p-5 flex items-center justify-center flex-col gap-3 -z-0 ">
                 <div className="h-[60px] w-[210px] rounded-xl ring-1 text-black/90 dark:text-white/60 ring-stone-400 dark:ring-stone-700 hover:bg-stone-300/40 transition dark:hover:bg-stone-800 cursor-pointer relative py-2 px-4 flex items-center justify-start gap-2 overflow-clip">
@@ -217,7 +217,7 @@ function Home() {
           </div>
           <div className="w-full h-fit flex gap-6">
             {/* 03 */}
-            <div className="group w-full h-[210px] ring-1 ring-stone-300/70 dark:ring-stone-700/30 transition bg-stone-300/30 dark:bg-stone-700/20 rounded-2xl p-8 flex flex-col items-start justify-between relative overflow-clip">
+            <div className="group w-full h-[210px] max-md:h-fit ring-1 ring-stone-300/70 dark:ring-stone-700/30 transition bg-stone-300/30 dark:bg-stone-700/20 rounded-2xl p-8 max-md:p-5 flex flex-col items-start justify-between relative overflow-clip">
               {/* element */}
               <div className="max-md:hidden text-stone-400 dark:text-stone-700 absolute right-0 top-0 h-full min-w-[100px] -rotate-[10deg] bg-stone-100/0 p-5 flex items-center justify-center flex-col gap-3 -z-0 ">
                 <div className="min-h-[50px] w-[280px] rounded-xl ring-1 transition ring-stone-400 dark:ring-stone-700 relative p-2 flex items-center justify-center gap-2">
