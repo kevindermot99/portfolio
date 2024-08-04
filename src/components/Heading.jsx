@@ -17,7 +17,7 @@ const customAnimation = keyframes`
 
 function Heading({Icon, SectionName, Title, Desc }) {
     return (
-        <div className="grid grid-cols-1 max-md:grid-cols-1 gap-2 mb-6 max-md:gap-3">
+        <div className="grid grid-cols-1 gap-2 mb-6 max-md:gap-2">
             <Reveal
                 keyframes={customAnimation}
                 triggerOnce
