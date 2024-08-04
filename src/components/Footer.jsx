@@ -1,5 +1,5 @@
 import React from "react";
-import { CreatedAt, Email } from "../data";
+import { CreatedAt, Email, MyNames } from "../data";
 
 function Footer() {
   return (
@@ -32,51 +32,34 @@ function Footer() {
       </section> */}
 
       <div className="flex flex-col items-start justify-start w-full h-full px-20 max-md:px-5">
-        <div className="py-6 border-b-[1px] border-stone-300 dark:border-stone-800 w-full flex items-center max-md:flex-col gap-3 max-md:gap-6 flex-wrap max-md:items-start justify-between">
-          <a
-            target="_blank"
-            href="mailto:mbonimpayekevin@gmail.com"
-            className="font-medium  break-words max-md:max-w-[100%] line-clamp-1 text-sm text-black/70 dark:text-white/40 hover:text-main-color transition hover:underline"
-          >
-            {Email}
-          </a>
-          <div className="flex items-center justify-start gap-5 flex-wrap">
-            <a
-              href="#"
-              className="font-medium text-sm text-black/70 dark:text-white/40 hover:text-main-color transition hover:underline"
-            >
-              Dribbble
-            </a>
-            <a
-              href="#"
-              className="font-medium text-sm text-black/70 dark:text-white/40 hover:text-main-color transition hover:underline"
-            >
-              Linkedin
-            </a>
-            <a
-              href="#"
-              className="font-medium text-sm text-black/70 dark:text-white/40 hover:text-main-color transition hover:underline"
-            >
-              Instagram
-            </a>
-          </div>
-        </div>
         <div className="py-6 w-full flex items-center justify-between max-md:flex-col max-md:items-start  max-md:gap-5 ">
           <p className="font-medium text-sm text-black/70 dark:text-white/40">
-            &copy; {CreatedAt}
+            &copy; {CreatedAt} | {MyNames}
           </p>
           <div className="flex items-center justify-end gap-5">
             <a
               href="#"
-              className="font-medium text-sm text-black/70 dark:text-white/40 transition hover:text-main-color hover:underline "
+              className="font-medium text-sm text-black/70 dark:text-white/40 transition hover:text-main-color "
             >
-              Terms
+              Linked in
             </a>
             <a
               href="#"
-              className="font-medium text-sm text-black/70 dark:text-white/40 transition hover:text-main-color hover:underline "
+              className="font-medium text-sm text-black/70 dark:text-white/40 transition hover:text-main-color "
             >
-              Privacy
+              GitHub
+            </a>
+            <a
+              href="#"
+              className="font-medium text-sm text-black/70 dark:text-white/40 transition hover:text-main-color "
+            >
+              Gmail
+            </a>
+            <a
+              href="#"
+              className="font-medium text-sm text-black/70 dark:text-white/40 transition hover:text-main-color "
+            >
+              WhatsApp
             </a>
           </div>
         </div>
