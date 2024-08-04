@@ -26,7 +26,7 @@ export const Projects = [
 export const Feedback = [
     {
         name: "",
-        name: "",
+        date: "",
         name: "",
         name: "",
         name: "",
