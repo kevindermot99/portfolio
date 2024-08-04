@@ -292,7 +292,7 @@ function Home() {
                   <p className="text-xs opacity-70 font-bold ">{singleFeedback.date}</p>
                 </div>
 
-                <p className="pt-3 text-sm font-medium opacity-70"> quidem dicta quis consectetur? Ea maiores, commodi atque debitis reprehenderit nemo libero eligendi deleniti omnis.</p>
+                <p className="pt-3 text-sm font-medium opacity-70">{singleFeedback.comemnt}</p>
                 <div className="bg-stone-200/70 dark:bg-stone-700/20 w-full px-3 py-2 mt-3 rounded-xl flex flex-col">
                   <h1 className="text-sm font-medium opacity-70">Commented on Project</h1>
                   <div className="flex items-start gap-2 py-1">
