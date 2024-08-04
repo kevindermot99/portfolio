@@ -19,7 +19,7 @@ import Footer from "../components/Footer";
 import ProjectContainer from "../components/ProjectContainer";
 import { Feedback, Projects } from "../content/data";
 import Heading from "../components/Heading";
-import { FaDraftingCompass } from "react-icons/fa";
+import { FaComments, FaDraftingCompass } from "react-icons/fa";
 import { TbNewSection } from "react-icons/tb";
 import { TiStarFullOutline, TiStarHalfOutline, TiStarOutline } from "react-icons/ti";
 
@@ -269,10 +269,10 @@ function Home() {
         <section className=" w-full h-fit flex items-start justify-start flex-col gap-6 py-16 px-20 max-md:px-5 -z-0 ">
 
           <Heading
-            Icon={<RiServiceFill />}
-            SectionName={`Services`}
-            Title={ServicesSection.title}
-            Desc={ServicesSection.explanation}
+            Icon={<FaComments />}
+            SectionName={`Feedback & Stars`}
+            Title={'What People Think'}
+            Desc={'Here are the thoughts and feedback from others about my projects. Their insights have been crucial in helping me refine and improve my work'}
           />
 
           <div className="w-full h-fit grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 gap-3">
