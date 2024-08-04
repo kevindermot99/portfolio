@@ -281,7 +281,7 @@ function Home() {
                 <div className="w-full h-fit flex flex-col">
                   <div className="w-full flex items-start justify-between">
                     <div className="flex flex-col">
-                      <h1 className="text-sm font-bold">{comment.person}</h1>
+                      <h1 className="text-sm font-bold line-clamp-1">{comment.person}</h1>
                       <p className="text-xs opacity-50 dark:opacity-70 font-medium pb-1 ">{comment.role}</p>
                       {/* 5 */}
                       {comment.stars === 5 && (
@@ -334,7 +334,7 @@ function Home() {
                         </div>
                       )}
                     </div>
-                    <p className="text-xs opacity-50 dark:opacity-70 font-medium ">{comment.date}</p>
+                    <p className="text-xs opacity-50 dark:opacity-70 font-medium whitespace-nowrap ">{comment.date}</p>
                   </div>
                   <p className="pt-3 text-sm font-medium ">{comment.comemnt}</p>
                 </div>
