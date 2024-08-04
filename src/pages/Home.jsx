@@ -21,6 +21,7 @@ import { Projects } from "../content/data";
 import Heading from "../components/Heading";
 import { FaDraftingCompass } from "react-icons/fa";
 import { TbNewSection } from "react-icons/tb";
+import { TiStarFullOutline, TiStarHalfOutline, TiStarOutline } from "react-icons/ti";
 
 function Home() {
   const today = new Date();
@@ -56,7 +57,7 @@ function Home() {
           >
             <p className="text-base opacity-70 z-10">Hello, I'm Kevin, a 21-year-old from Rwanda, and I am a</p>
             <h1 className="text-[65px] leading-[70px] max-md:text-[45px] max-md:leading-[50px] text-transparent bg-clip-text bg-gradient-to-br max-w-[600px] from-black dark:from-white to-stone-700/70 dark:to-white/10 font-semibold tracking-tight z-10 ">
-            Full-Stack Developer.
+              Full-Stack Developer.
             </h1>
             <p className="self-end max-md:self-start text-base font-medium">
               <span className="opacity-70">I Value: </span>
@@ -262,6 +263,45 @@ function Home() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* CAT */}
+        <section className=" w-full h-fit flex items-start justify-start flex-col gap-6 py-16 px-20 max-md:px-5 -z-0 ">
+
+          <Heading
+            Icon={<RiServiceFill />}
+            SectionName={`Services`}
+            Title={ServicesSection.title}
+            Desc={ServicesSection.explanation}
+          />
+
+          <div className="w-full h-fit grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-1  gap-5">
+            <div className="w-full bg-white dark:bg-stone-700/20 px-4 py-3 rounded-2xl shadow-sm flex flex-col">
+              <div className="w-full flex items-start justify-between">
+                <div className="flex flex-col">
+                  <h1 className="text-sm font-bold">Kim, Frankifurt</h1>
+                  <div className="flex items-center gap-0 text-main-color/80">
+                    <TiStarFullOutline className="full" />
+                    <TiStarFullOutline className="full" />
+                    <TiStarFullOutline className="full" />
+                    <TiStarOutline className="empty" />
+                    <TiStarOutline className="empty" />
+                  </div>
+                </div>
+                <p className="text-xs opacity-70 font-bold ">Jan 11, 2023</p>
+              </div>
+
+              <p className="pt-3 text-sm font-medium opacity-70"> quidem dicta quis consectetur? Ea maiores, commodi atque debitis reprehenderit nemo libero eligendi deleniti omnis.</p>
+              <div className="bg-stone-200/70 dark:bg-stone-700/20 w-full px-3 py-2 mt-3 rounded-xl flex flex-col">
+                <h1 className="text-sm font-medium opacity-70">Commented on Project</h1>
+                <div className="flex items-start gap-2 py-1">
+                  <div className="h-full w-[3px] rounded-xl bg-main-color"></div>
+                  <Link to={'/'} className="text-sm font-medium hover:underline">Gerayo</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </section>
 
         {/* footer */}
