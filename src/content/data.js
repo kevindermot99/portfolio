@@ -27,8 +27,8 @@ export const Feedback = [
     {
         name: "",
         date: "",
-        name: "",
-        name: "",
+        stars: "",
+        comemnt: "",
         name: "",
     }
 ]
