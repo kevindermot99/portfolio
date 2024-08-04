@@ -25,7 +25,7 @@ export const Projects = [
 
 export const Feedback = [
     {
-        name: "Kim, Frankifurt",
+        person: "Kim, Frankifurt",
         date: "Jan 11, 2023",
         stars: 3,
         comemnt: "quidem dicta quis consectetur? Ea maiores, commodi atque debitis reprehenderit nemo libero eligendi deleniti omnis.",
