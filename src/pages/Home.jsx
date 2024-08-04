@@ -40,7 +40,7 @@ function Home() {
 
   return (
     <>
-      <div className="wrapper w-full overflow-clip bg-light-body dark:bg-dark-body text-black/90 dark:text-white/80 relative  ">
+      <div className="wrapper w-full max-md:overflow-clip bg-light-body dark:bg-dark-body text-black/90 dark:text-white/80 relative  ">
         <Navbar />
         {/* light */}
         <div className="w-[700px] h-auto aspect-square rounded-full bg-gradient-to-br from-stone-800/20 to-transparent dark:from-stone-200/10 blur-[90px] absolute left-[-240px] top-[-250px] z-0"></div>
