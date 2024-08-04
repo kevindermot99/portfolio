@@ -41,12 +41,20 @@ export const Feedback = [
         project: "Countify",
     },
     {
-        person: "ChatGPT",
-        role: "AI Assistant",
-        date: "Aug 02, 2024",
-        stars: 3,
-        comemnt: "",
-        project: "Countify",
+        person: "Carine Ahishakiye",
+        role: "Junior Software Engineer",
+        date: "Aug 04, 2024",
+        stars: 4,
+        comemnt: "Signing in is initially okay, but clicking the Sign-In button doesn't work, so I had to enter as a guest.",
+        project: "Gerayo",
+    },
+    {
+        person: "Stessie Magnifique ISENGWE",
+        role: "ALU Student",
+        date: "Aug 04, 2024",
+        stars: 4,
+        comemnt: "I am impressed with your project. It has great potential to make daily commutes easier and more efficient for users. Keep up the excellent work!",
+        project: "Gerayo",
     },
     
 ]
