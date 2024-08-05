@@ -15,6 +15,7 @@ import { HiMiniPuzzlePiece, HiOutlinePuzzlePiece } from "react-icons/hi2";
 import imageOfMe from '../assets/me/portrait.jpg'
 import { HiBadgeCheck } from "react-icons/hi";
 import Heading from "../components/Heading";
+import { Achievements } from "../content/data";
 
 function About() {
   const customAnimation = keyframes`
@@ -132,6 +133,28 @@ function About() {
           Title={'Milestones & Triumphs'}
           Desc={`Check out the certificates and achievements that highlight my journey and growth in tech, and each one reflects the hard work and dedication I've put into reaching new heights.`}
         />
+
+        <div className="grid grid-cols-5 max-lg:grid-cols-1 gap-7">
+          <Reveal
+            keyframes={customAnimation}
+            triggerOnce
+            duration={800}
+            cascade
+            damping={0.1}
+            className="flex items-start justify-end flex-col gap-2 w-full"
+          >
+            {Achievements.map((arch, index) => (
+              <div key={index} className="flex flex-col w-full h-fit">
+                <div className="h-fit min-h-[100px] w-full">
+                  <img src={arch.image} className=" h-full w-full rounded-xl brightness-110" />
+                </div>
+                <h1 className="text-base font-medium pt-2">{arch.title}</h1>
+                <p className="text-sm opacity-70 ">{arch.date}</p>
+                {/* <p className="text-sm leading-5 pt-2 text-justify">{arch.description}</p> */}
+              </div>
+            ))}
+          </Reveal>
+        </div>
       </section>
 
       {/* Footer */}
