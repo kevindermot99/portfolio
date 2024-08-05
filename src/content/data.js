@@ -1,5 +1,6 @@
 import cover1 from '../assets/projects/1.png'
 import cover2 from '../assets/projects/2.png'
+import sorwaziniCertificate from '../assets/achievements/sorwazini_certificate.jpg'
 
 export const Projects = [
     {
@@ -57,4 +58,13 @@ export const Feedback = [
         project: "Gerayo",
     },
     
+]
+
+export const Achievements = [
+    {
+        image: sorwaziniCertificate,
+        title: "Certificate of Achievement",
+        date: "july 24, 2024",
+        description: "Awarded to us 'Sorwazini' for outstanding entrepreneurial innovation and pitching at the E-LAB competition.",
+    },
 ]
