@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { ProjectSection } from "../data";
-import { MdArrowRightAlt } from "react-icons/md";
+import { MdArrowRightAlt, MdWorkHistory } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import ProjectContainer from "../components/ProjectContainer";
@@ -14,6 +14,7 @@ import { keyframes } from "@emotion/react";
 import { HiMiniPuzzlePiece, HiOutlinePuzzlePiece } from "react-icons/hi2";
 import imageOfMe from '../assets/me/portrait.jpg'
 import { HiBadgeCheck } from "react-icons/hi";
+import Heading from "../components/Heading";
 
 function About() {
   const customAnimation = keyframes`
@@ -120,8 +121,19 @@ function About() {
             </div>
           </Reveal>
         </div>
-      </section>      
-      
+      </section>
+
+      <section className="bg-stone-100 dark:bg-stone-800/20 w-full h-fit flex items-start justify-strat flex-col gap-2 py-16 px-20 max-md:px-5 ">
+
+        {/* Archivements  */}
+        <Heading
+          Icon={<MdWorkHistory />}
+          SectionName={`Achievements `}
+          Title={'Milestones & Triumphs'}
+          Desc={'Check out the certificates and achievements that highlight my journey and growth in tech. Each one reflects the hard work and dedication I've put into reaching new heights.'}
+        />
+      </section>
+
       {/* Footer */}
       <Footer />
     </div>
