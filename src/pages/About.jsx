@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import { ProjectSection } from "../data";
 import { MdArrowRightAlt, MdWorkHistory } from "react-icons/md";
@@ -18,6 +18,10 @@ import Heading from "../components/Heading";
 import { Achievements } from "../content/data";
 
 function About() {
+  const [image, setImage] = useState("");
+  const [act, setAct] = useState("");
+  const [showImageFull, setShowImageFull] = useState(false);
+
   const customAnimation = keyframes`
   from {
     opacity: 0;
@@ -30,9 +34,39 @@ function About() {
     transform: translateY(0);
   }
 `;
+  const showImage = (url, act) => {
+    setImage(url);
+    setAct(act);
+    setShowImageFull(true);
+  };
   return (
-    <div className="wrapper overflow-clip bg-light-body dark:bg-dark-body text-black/90 dark:text-white/80  ">
+    <div className="wrapper overflow-clip bg-light-body dark:bg-dark-body text-black/90 dark:text-white/80 relative ">
       <Navbar />
+
+      {/* full screen image */}
+      <div
+        className={`fixed top-0 left-0 w-full h-full max-h-svh flex flex-col items-center justify-center transition-all ${showImageFull ? "visible z-30 " : "invisible "
+          }`}
+      >
+        <div
+          onClick={() => setShowImageFull(false)}
+          className={`absolute top-0 left-0 bg-black/10 w-full h-full backdrop-blur-md transition-all ease-linear ${showImageFull ? "opacity-100 " : "opacity-0 "
+            } `}
+        ></div>
+        <img
+          src={image}
+          className={` max-h-[80%] brightness-[110%] dark:brightness-95 min-w-[300px] max-w-[80%] object-cover shadow rounded-xl z-10 select-none transition-all ease-linear ${showImageFull ? "opacity-100" : "opacity-0 scale-95  "
+            }`}
+        />
+        <p
+          className={` mt-[20px] w-fit bg-white/80 dark:bg-stone-800/70 rounded-2xl shadow-lg py-2 px-4 text-sm backdrop-blur-sm text-dark-body-color font-medium transition-all ease-in-out ${showImageFull
+              ? " opacity-100 delay-200"
+              : "opacity-0 -translate-y-3 scale-90"
+            } `}
+        >
+          {act}
+        </p>
+      </div>
 
       {/* Projects */}
       <section className="w-full h-fit grid grid-cols-2 max-lg:grid-cols-1 gap-10 py-0 px-20 max-md:px-5 pt-32 max-md:pt-[75px] max-w-[1900px] mx-auto ">
@@ -126,7 +160,7 @@ function About() {
 
       <section className=" w-full h-fit flex items-start justify-strat flex-col gap-2 py-10 px-20 max-md:px-5 ">
 
-        {/* Archivements  */}
+        {/* achivements  */}
         <Heading
           Icon={<MdWorkHistory />}
           SectionName={`Achievements `}
@@ -143,14 +177,14 @@ function About() {
             damping={0.1}
             className="flex items-start justify-end flex-col gap-2 w-full"
           >
-            {Achievements.map((arch, index) => (
+            {Achievements.map((ach, index) => (
               <div key={index} className="flex flex-col w-full h-fit">
-                <div className="h-fit min-h-[100px] w-full">
-                  <img src={arch.image} className=" h-full w-full rounded-xl brightness-110" />
+                <div onClick={() => showImage(ach.image, ach.description)} className="h-fit min-h-[100px] w-full cursor-pointer">
+                  <img src={ach.image} className=" h-full w-full rounded-xl brightness-110" />
                 </div>
-                <h1 className="text-base font-medium pt-2">{arch.title}</h1>
-                <p className="text-sm opacity-70 ">{arch.date}</p>
-                {/* <p className="text-sm leading-5 pt-2 text-justify">{arch.description}</p> */}
+                <h1 className="text-base font-medium pt-2">{ach.title}</h1>
+                <p className="text-sm opacity-70 ">{ach.date}</p>
+                {/* <p className="text-sm leading-5 pt-2 text-justify">{ach.description}</p> */}
               </div>
             ))}
           </Reveal>
