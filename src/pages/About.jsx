@@ -80,40 +80,40 @@ function About() {
             <p className="text-base max-w-full text-justify text-black/70 dark:text-white/40">
               I'm skilled in:
             </p>
-            <div className="flex flex-wrap items-center justify-start gap-2 text-black/70 dark:text-white/70 text-xl">
-              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+            <div className="flex flex-wrap items-center justify-start gap-2 text-black/70 dark:text-white/70 text-xl max-w-[700px]">
+              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
                 <FaReact className="text-base" />
                 <p className="text-black/70 dark:text-white/50">React JS</p>
               </span>
-              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
                 <FaCss3Alt className="text-lg" />
                 <p className="text-black/70 dark:text-white/50">Css</p>
               </span>
-              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
                 <SiTailwindcss className="text-xl" />
                 <p className="text-black/70 dark:text-white/50">Tailwind Css</p>
               </span>
-              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
                 <FaHtml5 className="text-lg" />
                 <p className="text-black/70 dark:text-white/50">Html</p>
               </span>
-              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
                 <SiMongodb className="text-lg" />
                 <p className="text-black/70 dark:text-white/50">MongoDB</p>
               </span>
-              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
                 <SiNextdotjs className="text-base" />
                 <p className="text-black/70 dark:text-white/50">Next JS</p>
               </span>
-              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
                 <FaGit className="text-lg" />
                 <p className="text-black/70 dark:text-white/50">Git & Github</p>
               </span>
-              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
                 <IoLogoJavascript />
                 <p className="text-black/70 dark:text-white/50">Javascript</p>
               </span>
-              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
                 <FaNode className="text-3xl" />
                 <p className="text-black/70 dark:text-white/50">Node JS</p>
               </span>
