@@ -123,14 +123,14 @@ function About() {
         </div>
       </section>
 
-      <section className="bg-stone-100 dark:bg-stone-800/20 w-full h-fit flex items-start justify-strat flex-col gap-2 py-16 px-20 max-md:px-5 ">
+      <section className=" w-full h-fit flex items-start justify-strat flex-col gap-2 py-10 px-20 max-md:px-5 ">
 
         {/* Archivements  */}
         <Heading
           Icon={<MdWorkHistory />}
           SectionName={`Achievements `}
           Title={'Milestones & Triumphs'}
-          Desc={'Check out the certificates and achievements that highlight my journey and growth in tech. Each one reflects the hard work and dedication I've put into reaching new heights.'}
+          Desc={`Check out the certificates and achievements that highlight my journey and growth in tech, and each one reflects the hard work and dedication I've put into reaching new heights.`}
         />
       </section>
 
