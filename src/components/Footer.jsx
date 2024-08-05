@@ -39,24 +39,28 @@ function Footer() {
           <div className="flex items-center justify-end gap-5">
             <a
               href="#"
+              target="_blank"
               className="font-medium text-sm text-black/70 dark:text-white/40 transition hover:text-main-color "
             >
               Linked in
             </a>
             <a
-              href="#"
+              href="https://github.com/kevindermot99"
+              target="_blank"
               className="font-medium text-sm text-black/70 dark:text-white/40 transition hover:text-main-color "
             >
               GitHub
             </a>
             <a
-              href="#"
+              href={`mailto:${Email}`}
+              target="_blank"
               className="font-medium text-sm text-black/70 dark:text-white/40 transition hover:text-main-color "
             >
               Gmail
             </a>
             <a
-              href="#"
+              href="https://wa.me/+250785614800"
+              target="_blank"
               className="font-medium text-sm text-black/70 dark:text-white/40 transition hover:text-main-color "
             >
               WhatsApp
