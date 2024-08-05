@@ -5,6 +5,7 @@ import { MyNames } from "../data";
 import { MdArrowRightAlt } from "react-icons/md";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
+import ResumePDF from "../assets/Kevin's Resume.pdf"
 
 function Navbar() {
   const location = useLocation();
@@ -25,6 +26,12 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // open resume
+  const handleOpenPdf = () => {
+    window.open(ResumePDF, '_blank');
+    setMobileMenu(false)
+  };
 
   return (
     <>
@@ -53,20 +60,19 @@ function Navbar() {
         >
           About
         </Link>
-        <Link
-          to="/"
+        <button
+          onClick={handleOpenPdf}
           className={` relative text-md transition opacity-70 hover:opacity-100 hover:text-main-color font-medium capitalize text-black/90 dark:text-white select-none flex items-center justify-start gap-[2px] w-full`}
         >
           My Resume
           <MdArrowRightAlt className="text-xl -rotate-45" />
-        </Link>
+        </button>
       </div>
 
       {/* Pc menu */}
       <div
-        className={`px-20 max-md:px-5 py-4 h-fit w-full flex items-center justify-between fixed top-0 left-0 z-20 transition-colors duration-300 ${
-          scrolled ? "bg-light-body dark:bg-dark-body/80 backdrop-blur-md" : "bg-transparent"
-        }`}
+        className={`px-20 max-md:px-5 py-4 h-fit w-full flex items-center justify-between fixed top-0 left-0 z-20 transition-colors duration-300 ${scrolled ? "bg-light-body dark:bg-dark-body/80 backdrop-blur-md" : "bg-transparent"
+          }`}
       >
         <a href={`/`} className="flex items-center justify-center gap-1 cursor-pointer">
           <h1 className="text-xl font-bold mr-10 text-black/90 dark:text-white/80 select-none ">
@@ -96,13 +102,13 @@ function Navbar() {
             About
           </Link>
 
-          <Link
-            to="/"
+          <button
+            onClick={handleOpenPdf}
             className={` relative text-sm transition opacity-70 hover:opacity-100 hover:text-main-color font-medium capitalize text-black/90 dark:text-white select-none flex items-center justify-start gap-[2px]`}
           >
             My Resume
             <MdArrowRightAlt className="text-lg -rotate-45" />
-          </Link>
+          </button>
         </div>
         <button onClick={() => setMobileMenu(true)} className="p-2 bg-stone-300/60 dark:bg-stone-800 transition active:scale-75 hidden max-md:flex  rounded-xl">
           <HiOutlineMenuAlt3 className="text-2xl" />
