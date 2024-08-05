@@ -5,7 +5,7 @@ import { MdArrowRightAlt, MdWorkHistory } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import ProjectContainer from "../components/ProjectContainer";
-import { FaCss3Alt, FaGit, FaHtml5, FaNode, FaReact } from "react-icons/fa";
+import { FaCss3Alt, FaGit, FaHtml5, FaMedal, FaNode, FaReact } from "react-icons/fa";
 import { BiLogoPhp } from "react-icons/bi";
 import { SiMongodb, SiNextdotjs, SiRedux, SiTailwindcss } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
@@ -162,7 +162,7 @@ function About() {
 
         {/* achivements  */}
         <Heading
-          Icon={<MdWorkHistory />}
+          Icon={<FaMedal />}
           SectionName={`Achievements `}
           Title={'Milestones & Triumphs'}
           Desc={`Check out the certificates and achievements that highlight my journey and growth in tech, and each one reflects the hard work and dedication I've put into reaching new heights.`}
@@ -179,7 +179,7 @@ function About() {
           >
             {Achievements.map((ach, index) => (
               <div key={index} className="flex flex-col w-full h-fit">
-                <div onClick={() => showImage(ach.image, ach.description)} className="h-fit min-h-[100px] w-full cursor-pointer">
+                <div onClick={() => showImage(ach.image, ach.description)} className="h-fit min-h-[100px] w-full cursor-pointer shadow-lg rounded-xl">
                   <img src={ach.image} className=" h-full w-full rounded-xl brightness-110" />
                 </div>
                 <h1 className="text-base font-medium pt-2">{ach.title}</h1>
