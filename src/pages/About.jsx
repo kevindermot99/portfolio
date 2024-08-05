@@ -81,7 +81,7 @@ function About() {
               I'm skilled in:
             </p>
             <div className="flex flex-wrap items-center justify-start gap-2 text-black/70 dark:text-white/70 text-xl">
-              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
+              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
                 <FaReact className="text-base" />
                 <p className="text-black/70 dark:text-white/50">React JS</p>
               </span>
@@ -96,10 +96,6 @@ function About() {
               <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
                 <FaHtml5 className="text-lg" />
                 <p className="text-black/70 dark:text-white/50">Html</p>
-              </span>
-              <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
-                <BiLogoPhp className="text-4xl" />
-                <p className="text-black/70 dark:text-white/50">PHP</p>
               </span>
               <span className="flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] px-3 rounded-xl ">
                 <SiMongodb className="text-lg" />
