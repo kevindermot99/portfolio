@@ -38,11 +38,11 @@ function Footer() {
           </p>
           <div className="flex items-center justify-end gap-5">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/kevinkaneza/"
               target="_blank"
               className="font-medium text-sm text-black/70 dark:text-white/40 transition hover:text-main-color "
             >
-              Linked in
+              Linkedin
             </a>
             <a
               href="https://github.com/kevindermot99"
