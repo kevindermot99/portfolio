@@ -76,7 +76,7 @@ function Navbar() {
           }`}
       >
         <a href={`/`} className="flex items-baseline justify-center gap-1 cursor-pointer">
-          <img src={MKLogo} className="h-7 translate-y-[3px]" />
+          {/* <img src={MKLogo} className="h-7 translate-y-[3px]" /> */}
           <h1 className="text-xl font-bold mr-10 text-black/90 dark:text-white/80 select-none ">
             {MyNames}
           </h1>
