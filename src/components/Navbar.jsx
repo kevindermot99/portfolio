@@ -6,6 +6,7 @@ import { MdArrowRightAlt } from "react-icons/md";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import ResumePDF from "../assets/Kevin's Resume.pdf"
+import MKLogo from '../assets/logo.png'
 
 function Navbar() {
   const location = useLocation();
@@ -74,7 +75,8 @@ function Navbar() {
         className={`px-20 max-md:px-5 py-4 h-fit w-full flex items-center justify-between fixed top-0 left-0 z-20 transition-colors duration-300 ${scrolled ? "bg-light-body dark:bg-dark-body/80 backdrop-blur-md" : "bg-transparent"
           }`}
       >
-        <a href={`/`} className="flex items-center justify-center gap-1 cursor-pointer">
+        <a href={`/`} className="flex items-baseline justify-center gap-1 cursor-pointer">
+          <img src={MKLogo} className="h-7 translate-y-[3px]" />
           <h1 className="text-xl font-bold mr-10 text-black/90 dark:text-white/80 select-none ">
             {MyNames}
           </h1>
