@@ -45,7 +45,7 @@ function About() {
 
       {/* full screen image */}
       <div
-        className={`fixed top-0 left-0 w-full h-full max-h-svh flex flex-col items-center justify-center transition-all ${showImageFull ? "visible z-30 " : "invisible "
+        className={`fixed top-0 left-0 w-full h-full max-h-svh flex flex-col items-center justify-center px-5 transition-all ${showImageFull ? "visible z-30 " : "invisible "
           }`}
       >
         <div
