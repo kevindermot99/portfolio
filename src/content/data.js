@@ -65,6 +65,6 @@ export const Achievements = [
         image: sorwaziniCertificate,
         title: "Certificate of Achievement",
         date: "july 24, 2024",
-        description: "Awarded to us 'Sorwazini' for outstanding entrepreneurial innovation and pitching at the E-LAB competition.",
+        description: "Awarded to us 'Sorwazini' for outstanding entrepreneurial innovation and pitching at the E-LAB competition. We Created 'GERAYO'",
     },
 ]
