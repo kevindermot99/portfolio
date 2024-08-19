@@ -146,7 +146,7 @@ function Home() {
               </div>
               <div className="flex flex-col items-start justify-start z-10 md:backdrop-blur-md rounded-lg overflow-clip pr-5 ">
                 <h1 className="text-2xl font-medium tracking-tight ">
-                  Front-end Development
+                  Frontend Development
                 </h1>
                 <p className="opacity-70 text-base leading-6">
                   With React js, Next js or Figma
@@ -208,7 +208,7 @@ function Home() {
               </div>
               <div className="flex flex-col items-start justify-start z-10 md:backdrop-blur-md rounded-lg overflow-clip pr-5">
                 <h1 className="text-2xl font-medium tracking-tight ">
-                  back-end development
+                  backend development
                 </h1>
                 <p className="opacity-70 text-base leading-6">
                   With Node js, Express js or Next js
