@@ -77,7 +77,7 @@ function About() {
             duration={800}
             cascade
             damping={0.1}>
-            <div className="w-full h-fit max-h-[550px] 2xl:max-w-[500px] overflow-clip rounded-md">
+            <div className="w-full h-full 2xl:max-w-[500px] overflow-clip rounded-md">
               <img src={imageOfMe} loading="lazy" className="w-full h-full opacity-85" />
             </div>
           </Reveal>
@@ -113,7 +113,7 @@ function About() {
             <p className="text-base leading-6 max-w-full text-justify text-black/70 dark:text-white/40">
               Currently pursuing my Bachelor's degree in Software Engineering at ALU (African Leadership University), 2024 to 2027.
             </p>
-            <p className="text-base max-w-full text-justify text-black/70 dark:text-white/40">
+            {/* <p className="text-base max-w-full text-justify text-black/70 dark:text-white/40">
               I'm skilled in:
             </p>
             <div className="flex flex-wrap items-center justify-start gap-2 text-black/70 dark:text-white/70 text-xl max-w-[700px]">
@@ -153,7 +153,7 @@ function About() {
                 <FaNode className="text-3xl" />
                 <p className="text-black/70 dark:text-white/50">Node JS</p>
               </span>
-            </div>
+            </div> */}
           </Reveal>
         </div>
       </section>
