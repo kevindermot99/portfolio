@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import ProjectContainer from "../components/ProjectContainer";
 import { FaCss3Alt, FaGit, FaHtml5, FaMedal, FaNode, FaReact } from "react-icons/fa";
-import { BiLogoPhp } from "react-icons/bi";
-import { SiMongodb, SiNextdotjs, SiRedux, SiTailwindcss } from "react-icons/si";
+import { BiLogoNodejs, BiLogoPhp } from "react-icons/bi";
+import { SiExpress, SiMongodb, SiNextdotjs, SiRedux, SiTailwindcss } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { Fade, Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
@@ -16,11 +16,61 @@ import imageOfMe from '../assets/me/portrait.jpg'
 import { HiBadgeCheck } from "react-icons/hi";
 import Heading from "../components/Heading";
 import { Achievements } from "../content/data";
+import { DiNodejsSmall } from "react-icons/di";
+import { TbBrandJavascript } from "react-icons/tb";
 
 function About() {
   const [image, setImage] = useState("");
   const [act, setAct] = useState("");
   const [showImageFull, setShowImageFull] = useState(false);
+
+  const techs = [
+    {
+      name: "React JS",
+      icon: "https://icon.icepanel.io/Technology/svg/React.svg",
+    },
+    {
+      name: "Node Js",
+      icon: "https://icon.icepanel.io/Technology/svg/Node.js.svg",
+    },
+    {
+      name: "Next.js",
+      icon: "https://icon.icepanel.io/Technology/svg/Next.js.svg",
+    },
+    {
+      name: "MongoDB",
+      icon: "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
+    },
+    {
+      name: "Git",
+      icon: "https://icon.icepanel.io/Technology/svg/Git.svg",
+    },
+    {
+      name: "GitHub",
+      icon: "https://icon.icepanel.io/Technology/svg/GitHub.svg",
+    },
+    {
+      name: "Express",
+      icon: "https://icon.icepanel.io/Technology/svg/Express.svg",
+    },
+    {
+      name: "Javascript",
+      icon: "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
+    },
+    {
+      name: "CSS3",
+      icon: "https://icon.icepanel.io/Technology/svg/CSS3.svg",
+    },
+    {
+      name: "Tailwind CSS",
+      icon: "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
+    },
+    {
+      name: "HTML5",
+      icon: "https://icon.icepanel.io/Technology/svg/HTML5.svg",
+    },
+    
+  ]
 
   const customAnimation = keyframes`
   from {
@@ -40,7 +90,7 @@ function About() {
     setShowImageFull(true);
   };
 
-  const techStyle = 'flex-1 flex flex-col items-center justify-center whitespace-nowrap gap-1 text-xs font-medium bg-transparent h-[60px] w-full '
+  const techStyle = 'flex-1 flex flex-col items-center justify-center whitespace-nowrap gap-1 bg-transparent h-fit w-full '
 
   return (
     <div className="wrapper overflow-clip bg-light-body dark:bg-dark-body text-black/90 dark:text-white/80 relative ">
@@ -63,8 +113,8 @@ function About() {
         />
         <p
           className={` mt-[20px] w-fit bg-white/80 dark:bg-stone-800/70 rounded-2xl shadow-lg py-2 px-4 text-sm backdrop-blur-sm text-dark-body-color font-medium transition-all ease-in-out ${showImageFull
-              ? " opacity-100 delay-200"
-              : "opacity-0 -translate-y-3 scale-90"
+            ? " opacity-100 delay-200"
+            : "opacity-0 -translate-y-3 scale-90"
             } `}
         >
           {act}
@@ -119,49 +169,23 @@ function About() {
             <p className="text-base max-w-full text-justify text-black/70 dark:text-white/40">
               I'm skilled in:
             </p>
-            <div className="grid grid-cols-7 max-lg:grid-cols-5 max-md:grid-cols-3 place-items-baseline gap-2 text-black/70 dark:text-white/80 text-xl max-w-[700px]">
-              <span className={techStyle}>
-                <FaReact className="text-[35px]" />
-                <p className="text-black/50 dark:text-white/50">React JS</p>
-              </span>
-              <span className={techStyle}>
-                <FaCss3Alt className="text-[35px]" />
-                <p className="text-black/50 dark:text-white/50">Css</p>
-              </span>
-              <span className={techStyle}>
-                <SiTailwindcss className="text-[35px]" />
-                <p className="text-black/50 dark:text-white/50">Tailwind Css</p>
-              </span>
-              <span className={techStyle}>
-                <FaHtml5 className="text-[35px]" />
-                <p className="text-black/50 dark:text-white/50">Html</p>
-              </span>
-              <span className={techStyle}>
-                <SiMongodb className="text-[35px]" />
-                <p className="text-black/50 dark:text-white/50">MongoDB</p>
-              </span>
-              <span className={techStyle}>
-                <SiNextdotjs className="text-[27px]" />
-                <p className="text-black/50 dark:text-white/50">Next JS</p>
-              </span>
-              <span className={techStyle}>
-                <FaGit className="text-[30px]" />
-                <p className="text-black/50 dark:text-white/50">Git & Github</p>
-              </span>
-              <span className={techStyle}>
-                <IoLogoJavascript className="text-[30px]" />
-                <p className="text-black/50 dark:text-white/50">Javascript</p>
-              </span>
-              <span className={techStyle}>
-                <FaNode className="text-[40px]" />
-                <p className="text-black/50 dark:text-white/50">Node JS</p>
-              </span>
+            <div className="grid grid-cols-7 max-lg:grid-cols-5 max-md:grid-cols-3 place-items-baseline gap-2 text-black/70 dark:text-white/80 max-w-[700px]">
+              {techs.map((tech, index) => (
+                <div key={index} className={`${techStyle}`} title={tech.name}>
+                  <div className="h-12 w-12 aspect-square flex bg-white p-3 rounded-full">
+                    <img src={tech.icon} className="h-full w-full" />
+                  </div>
+                  <p className="text-black/50 dark:text-white/60 py-1 text-sm ">
+                  {tech.name}
+                  </p>
+                </div>
+              ))}
             </div>
           </Reveal>
         </div>
       </section>
 
-      <section className=" w-full h-fit flex items-start justify-strat flex-col gap-2 py-10 px-20 max-md:px-5 ">
+      <section className=" w-full h-fit flex items-start justify-strat flex-col gap-2 pb-10 px-20 max-md:px-5 ">
 
         {/* achivements  */}
         <Heading
