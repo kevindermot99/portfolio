@@ -8,7 +8,7 @@ import ProjectContainer from "../components/ProjectContainer";
 import { FaCss3Alt, FaGit, FaHtml5, FaMedal, FaNode, FaReact } from "react-icons/fa";
 import { BiLogoPhp } from "react-icons/bi";
 import { SiMongodb, SiNextdotjs, SiRedux, SiTailwindcss } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io";
+import { IoLogoJavascript } from "react-icons/io5";
 import { Fade, Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { HiMiniPuzzlePiece, HiOutlinePuzzlePiece } from "react-icons/hi2";
@@ -39,6 +39,9 @@ function About() {
     setAct(act);
     setShowImageFull(true);
   };
+
+  const techStyle = 'flex-1 flex flex-col items-center justify-center whitespace-nowrap gap-1 text-xs font-medium bg-transparent h-[60px] w-full '
+
   return (
     <div className="wrapper overflow-clip bg-light-body dark:bg-dark-body text-black/90 dark:text-white/80 relative ">
       <Navbar />
@@ -113,47 +116,47 @@ function About() {
             <p className="text-base leading-6 max-w-full text-justify text-black/70 dark:text-white/40">
               Currently pursuing my Bachelor's degree in Software Engineering at ALU (African Leadership University), 2024 to 2027.
             </p>
-            {/* <p className="text-base max-w-full text-justify text-black/70 dark:text-white/40">
+            <p className="text-base max-w-full text-justify text-black/70 dark:text-white/40">
               I'm skilled in:
             </p>
-            <div className="flex flex-wrap items-center justify-start gap-2 text-black/70 dark:text-white/70 text-xl max-w-[700px]">
-              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
-                <FaReact className="text-base" />
-                <p className="text-black/70 dark:text-white/50">React JS</p>
+            <div className="grid grid-cols-7 max-lg:grid-cols-5 max-md:grid-cols-3 place-items-baseline gap-2 text-black/70 dark:text-white/80 text-xl max-w-[700px]">
+              <span className={techStyle}>
+                <FaReact className="text-[35px]" />
+                <p className="text-black/50 dark:text-white/50">React JS</p>
               </span>
-              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
-                <FaCss3Alt className="text-lg" />
-                <p className="text-black/70 dark:text-white/50">Css</p>
+              <span className={techStyle}>
+                <FaCss3Alt className="text-[35px]" />
+                <p className="text-black/50 dark:text-white/50">Css</p>
               </span>
-              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
-                <SiTailwindcss className="text-xl" />
-                <p className="text-black/70 dark:text-white/50">Tailwind Css</p>
+              <span className={techStyle}>
+                <SiTailwindcss className="text-[35px]" />
+                <p className="text-black/50 dark:text-white/50">Tailwind Css</p>
               </span>
-              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
-                <FaHtml5 className="text-lg" />
-                <p className="text-black/70 dark:text-white/50">Html</p>
+              <span className={techStyle}>
+                <FaHtml5 className="text-[35px]" />
+                <p className="text-black/50 dark:text-white/50">Html</p>
               </span>
-              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
-                <SiMongodb className="text-lg" />
-                <p className="text-black/70 dark:text-white/50">MongoDB</p>
+              <span className={techStyle}>
+                <SiMongodb className="text-[35px]" />
+                <p className="text-black/50 dark:text-white/50">MongoDB</p>
               </span>
-              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
-                <SiNextdotjs className="text-base" />
-                <p className="text-black/70 dark:text-white/50">Next JS</p>
+              <span className={techStyle}>
+                <SiNextdotjs className="text-[27px]" />
+                <p className="text-black/50 dark:text-white/50">Next JS</p>
               </span>
-              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
-                <FaGit className="text-lg" />
-                <p className="text-black/70 dark:text-white/50">Git & Github</p>
+              <span className={techStyle}>
+                <FaGit className="text-[30px]" />
+                <p className="text-black/50 dark:text-white/50">Git & Github</p>
               </span>
-              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
-                <IoLogoJavascript />
-                <p className="text-black/70 dark:text-white/50">Javascript</p>
+              <span className={techStyle}>
+                <IoLogoJavascript className="text-[30px]" />
+                <p className="text-black/50 dark:text-white/50">Javascript</p>
               </span>
-              <span className="flex-1 flex items-center whitespace-nowrap gap-1 text-xs font-medium bg-stone-600/10 h-[40px] max-w-[200px] px-4 rounded-xl ">
-                <FaNode className="text-3xl" />
-                <p className="text-black/70 dark:text-white/50">Node JS</p>
+              <span className={techStyle}>
+                <FaNode className="text-[40px]" />
+                <p className="text-black/50 dark:text-white/50">Node JS</p>
               </span>
-            </div> */}
+            </div>
           </Reveal>
         </div>
       </section>
