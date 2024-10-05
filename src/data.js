@@ -1,5 +1,5 @@
 // navbar
-export const MyNames = "Kevin MK.";
+export const MyNames = "mk.";
 
 // Hero
 export const HeroText = "Transforming Ideas into Stunning Projects";

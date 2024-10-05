@@ -35,7 +35,7 @@ function Navbar() {
   };
 
   return (
-    <>
+    <div className="w-full h-fit bg-red-400 relative">
       {/* mobile menu overlay */}
       <div onClick={() => setMobileMenu(false)} className={`w-full h-full bg-dark-body/30 dark:bg-dark-body/60 fixed top-0 left z-40 transition-all duration-300 ease-in-out ${mobileMenu ? 'visible opacity-100' : 'invisible opacity-0 '}`}></div>
       {/* mobile menu */}
@@ -72,51 +72,49 @@ function Navbar() {
 
       {/* Pc menu */}
       <div
-        className={`px-20 max-md:px-5 py-4 h-fit w-full flex items-center justify-between fixed top-0 left-0 z-20 transition-colors duration-300 ${scrolled ? "bg-light-body dark:bg-dark-body/80 backdrop-blur-md" : "bg-transparent"
+        className={`py-2 px-3 h-fit w-full max-w-[600px] mx-auto flex items-center justify-between fixed top-4 left-0 right-0 z-20 transition-colors duration-300 rounded-[20px] bg-[#f0f0f0d2] dark:bg-stone-700/40 backdrop-blur-md ${scrolled ? "" : ""
           }`}
       >
-        <a href={`/`} className="flex items-baseline justify-center gap-1 cursor-pointer">
-          <img src={MKLogo} className="h-6 min-w-6 translate-y-[3px]" />
-          <h1 className="text-xl font-medium mr-10 text-black/90 dark:text-white/80 select-none ">
+        <a href={`/`} className="flex items-baseline justify-center gap-1 cursor-pointer px-2">
+          <h1 className="text-3xl pb-1 font-medium mr-10 text-black/90 dark:text-white select-none font-LeckerliOne ">
             {MyNames}
           </h1>
         </a>
 
-        <div className="flex gap-6 items-center justify-center max-md:hidden">
+        <div className="flex gap-2 items-center justify-center max-md:hidden">
           <Link
             to="/"
-            className={` relative text-sm transition hover:text-main-color font-medium capitalize select-none ${location.pathname === '/' ? 'text-main-color' : 'text-black/90 dark:text-white/80'}`}
+            className={` relative text-sm transition hover:bg-stone-300/70 dark:hover:bg-stone-700/50 px-3 py-2 rounded-xl  font-semibold capitalize select-none ${location.pathname === '/' ? '' : 'text-black/90 dark:text-white/80'}`}
           >
             Home
           </Link>
 
           <Link
             to="/work"
-            className={` relative text-sm transition hover:text-main-color font-medium capitalize select-none ${location.pathname === '/work' ? 'text-main-color' : 'text-black/90 dark:text-white/80'}`}
+            className={` relative text-sm transition hover:bg-stone-300/70 dark:hover:bg-stone-700/50 px-3 py-2 rounded-xl  font-semibold capitalize select-none ${location.pathname === '/work' ? '' : 'text-black/90 dark:text-white/80'}`}
           >
             work
           </Link>
 
           <Link
             to="/about"
-            className={` relative text-sm transition hover:text-main-color font-medium capitalize select-none ${location.pathname === '/about' ? 'text-main-color' : 'text-black/90 dark:text-white/80'}`}
+            className={` relative text-sm transition hover:bg-stone-300/70 dark:hover:bg-stone-700/50 px-3 py-2 rounded-xl  font-semibold capitalize select-none ${location.pathname === '/about' ? '' : 'text-black/90 dark:text-white/80'}`}
           >
             About
           </Link>
-
-          <button
+        </div>
+        <button
             onClick={handleOpenPdf}
-            className={` relative text-sm transition opacity-70 hover:opacity-100 hover:text-main-color font-medium capitalize text-black/90 dark:text-white select-none flex items-center justify-start gap-[2px]`}
+            className={` h-[35px] w-fit pl-4 pr-2 rounded-xl shadow-xl relative text-sm transition font-medium capitalize bg-main-color text-text-white dark:bg-white dark:text-text-black select-none flex items-center justify-start gap-[2px] hover:scale-105 `}
           >
             My Resume
             <MdArrowRightAlt className="text-lg -rotate-45" />
           </button>
-        </div>
         <button onClick={() => setMobileMenu(true)} className="p-2 bg-stone-300/60 dark:bg-stone-800 transition active:scale-75 hidden max-md:flex  rounded-xl">
           <HiOutlineMenuAlt3 className="text-2xl" />
         </button>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -10,7 +10,11 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import { Fade, Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
-import { MdArrowRightAlt, MdOutlineErrorOutline, MdWorkHistory } from "react-icons/md";
+import {
+  MdArrowRightAlt,
+  MdOutlineErrorOutline,
+  MdWorkHistory,
+} from "react-icons/md";
 import { RxSpaceBetweenVertically } from "react-icons/rx";
 import { PiSelectionPlusDuotone } from "react-icons/pi";
 import { GoShieldCheck } from "react-icons/go";
@@ -21,14 +25,20 @@ import { Feedback, Projects } from "../content/data";
 import Heading from "../components/Heading";
 import { FaComments, FaDraftingCompass } from "react-icons/fa";
 import { TbNewSection } from "react-icons/tb";
-import { TiStarFullOutline, TiStarHalfOutline, TiStarOutline } from "react-icons/ti";
+import {
+  TiStarFullOutline,
+  TiStarHalfOutline,
+  TiStarOutline,
+} from "react-icons/ti";
+import pfp from "../assets/me/pfp.jpeg";
+import Marquee from "react-fast-marquee";
 
 function Home() {
   const today = new Date();
   const customAnimation = keyframes`
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(100px);
     filter: blur(4px)
   }
 
@@ -41,37 +51,58 @@ function Home() {
   return (
     <div className="max-w-[1900px] mx-auto overflow-clip relative bg-light-body dark:bg-dark-body">
       {/* light */}
-      <div className="w-[700px] h-auto aspect-square rounded-full 2xl:hidden bg-gradient-to-br from-stone-800/20 to-transparent dark:from-stone-200/10 blur-[90px] absolute left-[-240px] top-[-250px] z-0"></div>
+      {/* <div className="w-[700px] h-auto aspect-square rounded-full 2xl:hidden bg-stone-200/30 dark:bg-stone-200/10 blur-[90px] absolute right-[-240px] top-[0px] z-0"></div> */}
 
       <div className="wrapper w-full  text-black/90 dark:text-white/80 relative  ">
         <Navbar />
-        
+
         {/* Hero */}
-        <section className="animateZoom flex items-start justify-end flex-col gap-2 py-10 px-20 max-md:px-5 h-svh max-h-[1200px]">
+        <section className=" flex items-center justify-center flex-col py-10 px-20 max-md:px-5 h-svh max-h-[1200px] max-lg:h-fit max-lg:max-h-fit">
           <Reveal
             keyframes={customAnimation}
             triggerOnce
             duration={800}
             cascade
             damping={0.1}
-            className="flex items-start justify-end flex-col gap-2 w-full"
+            className="flex items-center justify-center flex-col w-full"
           >
-            <p className="text-base opacity-70 z-10">Hello, I'm Kevin, a 21-year-old from Rwanda, and I am a</p>
-            <h1 className="text-[60px] leading-[65px] max-md:text-[45px] max-md:leading-[50px] text-transparent bg-clip-text bg-gradient-to-br max-w-[600px] from-black dark:from-white to-stone-700/70 dark:to-white/10 font-semibold tracking-tight z-10 ">
-              Full Stack Developer.
+            <div className="h-[70px] w-fit aspect-square overflow-hidden mt-10 mb-2 rounded-[26px] shadow-xl">
+              <img src={pfp} className="h-full w-full object-cover" />
+            </div>
+            <h1 className="max-w-[900px] text-[60px] leading-[65px] font-PlusJakartaSans mb-2 pb-3 max-md:text-[45px] text-transparent bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-700/70 dark:to-white/10 font-extrabold z-10 text-center ">
+              Delivering world-class development for web applications
             </h1>
-            <p className="self-end max-md:self-start text-base font-medium">
-              <span className="opacity-70">I Value: </span>
-              <s className="opacity-70 ">{Promising.no}</s>
-              &nbsp;
-              <span className="text-main-color">{Promising.yes}.</span>
+            <p className=" max-md:self-start text-lg font-normal max-w-[600px] opacity-90 text-center">
+              I build web apps with a modern user experience and deliver real
+              results for businesses.
             </p>
+            <button className="bg-text-black shadow-xl mt-5 text-sm p-2 pr-3 transition hover:scale-110 rounded-2xl text-text-white font-medium flex items-center justify-center gap-2">
+              <div className="flex items-center justify-center gap-1">
+                <img src={pfp} className="h-[30px] rounded-full" />
+                <span className="text-lg">+</span>
+                <div className="h-[30px] aspect-square rounded-full bg-blue-700 text-text-white flex items-center justify-center text-xs">
+                  You
+                </div>
+              </div>
+              Let's do a quick 10 min call
+            </button>
           </Reveal>
         </section>
 
+        <div className="flex overflow-hidden space-x-16">
+          <Marquee autoFill className="max-w-[1200px] mx-auto">
+            {/* First set of logos */}
+            <h1 className="w-full px-5">1Example logo</h1>
+            <h1 className="w-full px-5">2Example logo</h1>
+            <h1 className="w-full px-5">3Example logo</h1>
+            <h1 className="w-full px-5">4Example logo</h1>
+            <h1 className="w-full px-5">5Example logo</h1>
+            <h1 className="w-full px-5">6Example logo</h1>
+          </Marquee>
+        </div>
+
         {/* Projects */}
         <section className="bg-stone-100 dark:bg-stone-800/20 w-full h-fit flex items-start justify-strat flex-col gap-2 py-16 px-20 max-md:px-5 ">
-
           <Heading
             Icon={<MdWorkHistory />}
             SectionName={`Recent Work `}
@@ -113,7 +144,6 @@ function Home() {
 
         {/* Services */}
         <section className=" w-full h-fit flex items-start justify-start flex-col gap-6 py-16 px-20 max-md:px-5 -z-0 ">
-
           <Heading
             Icon={<RiServiceFill />}
             SectionName={`Services`}
@@ -268,12 +298,13 @@ function Home() {
 
         {/* Feedback */}
         <section className=" w-full h-fit flex items-start justify-start flex-col gap-6 py-16 max-md:pt-0 px-20 max-md:px-5 -z-0 ">
-
           <Heading
             Icon={<FaComments />}
             SectionName={`Feedback & Stars`}
-            Title={'What People Think'}
-            Desc={'Here are the thoughts and feedback from others about my projects. Their insights have been crucial in helping me refine and improve my work'}
+            Title={"What People Think"}
+            Desc={
+              "Here are the thoughts and feedback from others about my projects. Their insights have been crucial in helping me refine and improve my work"
+            }
           />
 
           <div className="w-full h-fit grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 gap-3">
@@ -282,8 +313,12 @@ function Home() {
                 <div className="w-full h-fit flex flex-col">
                   <div className="w-full flex items-start justify-between">
                     <div className="flex flex-col">
-                      <h1 className="text-sm font-bold line-clamp-1">{comment.person}</h1>
-                      <p className="text-xs opacity-50 dark:opacity-70 font-medium pb-1 ">{comment.role}</p>
+                      <h1 className="text-sm font-bold line-clamp-1">
+                        {comment.person}
+                      </h1>
+                      <p className="text-xs opacity-50 dark:opacity-70 font-medium pb-1 ">
+                        {comment.role}
+                      </p>
                       {/* 5 */}
                       {comment.stars === 5 && (
                         <div className="flex items-center gap-0 text-main-color/80">
@@ -335,22 +370,29 @@ function Home() {
                         </div>
                       )}
                     </div>
-                    <p className="text-xs opacity-50 dark:opacity-70 font-medium whitespace-nowrap ">{comment.date}</p>
+                    <p className="text-xs opacity-50 dark:opacity-70 font-medium whitespace-nowrap ">
+                      {comment.date}
+                    </p>
                   </div>
                   <p className="pt-3 text-sm font-medium ">{comment.comemnt}</p>
                 </div>
                 <div className="bg-stone-200/70 dark:bg-stone-700/20 w-full px-3 py-2 mt-3 rounded-xl flex flex-col">
-                  <h1 className="text-xs font-medium opacity-50 dark:opacity-70">Commented on Project</h1>
+                  <h1 className="text-xs font-medium opacity-50 dark:opacity-70">
+                    Commented on Project
+                  </h1>
                   <div className="flex items-start gap-2 py-1">
                     <div className="h-full w-[3px] rounded-xl bg-main-color"></div>
-                    <Link to={'/'} className="text-sm font-medium hover:underline">{comment.project}</Link>
+                    <Link
+                      to={"/"}
+                      className="text-sm font-medium hover:underline"
+                    >
+                      {comment.project}
+                    </Link>
                   </div>
                 </div>
               </div>
             ))}
-
           </div>
-
         </section>
 
         {/* footer */}
