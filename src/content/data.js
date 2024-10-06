@@ -1,6 +1,15 @@
 import cover1 from '../assets/projects/1.png'
 import cover2 from '../assets/projects/2.png'
 import sorwaziniCertificate from '../assets/achievements/sorwazini_certificate.jpg'
+import bikaBlack from '../assets/workedOn/bika-black.png'
+import bikaWhite from '../assets/workedOn/bika-white.png'
+import gerayoBlack from '../assets/workedOn/gerayo-black.png'
+import gerayoWhite from '../assets/workedOn/gerayo-white.png'
+import upfrontBlack from '../assets/workedOn/upfront-black.png'
+import upfrontWhite from '../assets/workedOn/upfront-white.png'
+import outsideBlack from '../assets/workedOn/outside-black.png'
+import outsideWhite from '../assets/workedOn/outside-white.png'
+
 
 export const Projects = [
     {
@@ -67,4 +76,27 @@ export const Achievements = [
         date: "july 24, 2024",
         description: "Awarded to us 'Sorwazini' for outstanding entrepreneurial innovation and pitching at the E-LAB competition. We Created 'GERAYO App'",
     },
+]
+
+export const workedOn = [
+    {
+        logoWhite: outsideWhite,
+        logoBlack: outsideBlack,
+        name: "Outside",
+    },
+    {
+        logoWhite: upfrontWhite,
+        logoBlack: upfrontBlack,
+        name: "Upfront",
+    },
+    {
+        logoWhite: gerayoWhite,
+        logoBlack: gerayoBlack,
+        name: "Gerayo",
+    },
+    {
+        logoWhite: bikaWhite,
+        logoBlack: bikaBlack,
+        name: "Bika",
+    }
 ]
