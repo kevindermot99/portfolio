@@ -229,7 +229,7 @@ ${visitorNames === "" ? "~ Your Name ~" : visitorNames}`);
                 </label>
                 <label
                   className={`${label} ${
-                    app === "Discord" &&
+                    app === "FaceTime" &&
                     "ring-offset-1 ring-offset-transparent ring-main-color/60 dark:ring-text-white/50 bg-stone-100 dark:bg-stone-700/40"
                   } ${
                     app !== "" &&

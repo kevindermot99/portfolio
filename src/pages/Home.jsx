@@ -112,12 +112,12 @@ function Home() {
           </Reveal>
         </section>
         {/* work on/at */}
-        <div className="flex flex-col items-center justify-center overflow-hidden opacity-60 text-text-black dark:text-text-white py-20">
-          <div className="w-full max-w-[1200px] mx-auto relative flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center overflow-hidden text-text-black dark:text-text-white py-20">
+          <div className="w-full max-w-[1600px] mx-auto relative flex flex-col items-center justify-center">
             {/* edges */}
-            <div className="absolute top-0 left-0 z-10 w-[170px] max-md:w-[20px] h-full bg-gradient-to-r from-light-body dark:from-dark-body via-light-body dark:via-dark-body to-transparent"></div>
-            <div className="absolute top-0 right-0 z-10 w-[170px] max-md:w-[20px] h-full bg-gradient-to-l from-light-body dark:from-dark-body via-light-body dark:via-dark-body to-transparent"></div>
-            <p className=" max-md:self-start text-sm pb-5 font-medium max-w-[600px] opacity-90 text-center w-full">
+            <div className="absolute top-0 left-0 z-10 w-[120px] max-md:w-[20px] h-full bg-gradient-to-r from-light-body dark:from-dark-body to-transparent"></div>
+            <div className="absolute top-0 right-0 z-10 w-[120px] max-md:w-[20px] h-full bg-gradient-to-l from-light-body dark:from-dark-body to-transparent"></div>
+            <p className=" max-md:self-start text-sm pb-5 font-medium max-w-[600px] opacity-70 text-center w-full">
               Worked on
             </p>
             <Marquee pauseOnHover="true" speed={15} autoFill className="w-full">
@@ -126,13 +126,13 @@ function Home() {
                 <div className="w-full px-5 flex items-center justify-center gap-1">
                   <img
                     src={project.logoBlack}
-                    className={`h-5 grayscale dark:hidden ${
+                    className={`h-5 opacity-35 dark:hidden ${
                       project.name === "Outside" && "p-[1px]"
                     }`}
                   />
                   <img
                     src={project.logoWhite}
-                    className={`h-5 grayscale hidden dark:flex ${
+                    className={`h-5 opacity-35 hidden dark:flex ${
                       project.name === "Outside" && "p-[1px]"
                     }`}
                   />
