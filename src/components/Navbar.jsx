@@ -72,7 +72,7 @@ function Navbar() {
 
       {/* Pc menu */}
       <div
-        className={`py-2 px-3 h-fit w-full max-w-[600px] mx-auto flex items-center justify-between fixed top-4 left-0 right-0 z-20 transition-colors duration-300 rounded-[20px] bg-[#f0f0f0d2] dark:bg-stone-700/40 backdrop-blur-xl ${scrolled ? "" : ""
+        className={`py-2 px-3 h-fit w-full max-md:max-w-[95%] max-w-[600px] mx-auto flex items-center justify-between fixed top-4 left-0 right-0 z-20 transition-colors duration-300 rounded-[20px] bg-[#f0f0f0d2] dark:bg-text-black/80 backdrop-blur-xl ${scrolled ? "" : ""
           }`}
       >
         <a href={`/`} className="flex items-baseline justify-center gap-1 cursor-pointer px-2">
@@ -104,8 +104,8 @@ function Navbar() {
           </Link>
         </div>
         <button
-            onClick={handleOpenPdf}
-            className={` h-[35px] w-fit pl-4 pr-2 rounded-xl shadow-xl relative text-sm transition font-medium capitalize bg-main-color text-text-white dark:bg-white dark:text-text-black select-none flex items-center justify-start gap-[2px] hover:scale-105 `}
+              onClick={handleOpenPdf}
+              className={` h-[35px] w-fit pl-4 pr-2 rounded-xl shadow-xl relative text-sm transition font-medium capitalize bg-main-color text-text-white dark:bg-white dark:text-text-black select-none flex max-md:hidden items-center justify-start gap-[2px] hover:scale-105 `}
           >
             My Resume
             <MdArrowRightAlt className="text-lg -rotate-45" />
