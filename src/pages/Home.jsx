@@ -86,7 +86,7 @@ function Home() {
                 <img src={pfp} className="h-full w-full object-cover" />
               </div>
             </div>
-            <h1 className="font-bold text-xl whitespace-nowrap font-IndieFlower text-black dark:text-white text-center w-full max-w-[660px] opacity-60">
+            <h1 className="font-bold text-xl whitespace-nowrap font-IndieFlower text-black dark:text-white text-center w-full max-w-[660px] opacity-60 whitespace-break-spaces">
               Hi, I'm Kevin. a Full stack Web Developer, on a mission of
             </h1>
             <h1 className="max-w-[900px] text-[60px] leading-[65px] font-PlusJakartaSans mb-2 pb-3 max-md:text-[45px] text-text-black dark:text-text-white font-extrabold z-10 text-center ">
@@ -115,8 +115,8 @@ function Home() {
         <div className="flex flex-col items-center justify-center overflow-hidden opacity-60 text-text-black dark:text-text-white py-20">
           <div className="w-full max-w-[1200px] mx-auto relative flex flex-col items-center justify-center">
             {/* edges */}
-            <div className="absolute top-0 left-0 z-10 w-[170px] h-full bg-gradient-to-r from-light-body dark:from-dark-body via-light-body dark:via-dark-body to-transparent"></div>
-            <div className="absolute top-0 right-0 z-10 w-[170px] h-full bg-gradient-to-l from-light-body dark:from-dark-body via-light-body dark:via-dark-body to-transparent"></div>
+            <div className="absolute top-0 left-0 z-10 w-[170px] max-md:w-[20px] h-full bg-gradient-to-r from-light-body dark:from-dark-body via-light-body dark:via-dark-body to-transparent"></div>
+            <div className="absolute top-0 right-0 z-10 w-[170px] max-md:w-[20px] h-full bg-gradient-to-l from-light-body dark:from-dark-body via-light-body dark:via-dark-body to-transparent"></div>
             <p className=" max-md:self-start text-sm pb-5 font-medium max-w-[600px] opacity-90 text-center w-full">
               Worked on
             </p>
