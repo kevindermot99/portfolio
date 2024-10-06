@@ -21,7 +21,7 @@ import { GoShieldCheck } from "react-icons/go";
 import { RiServiceFill, RiSignalWifiErrorLine } from "react-icons/ri";
 import Footer from "../components/Footer";
 import ProjectContainer from "../components/ProjectContainer";
-import { Feedback, Projects } from "../content/data";
+import { Feedback, Projects, workedOn } from "../content/data";
 import Heading from "../components/Heading";
 import { FaComments, FaDraftingCompass } from "react-icons/fa";
 import { TbNewSection } from "react-icons/tb";
@@ -31,6 +31,8 @@ import {
   TiStarOutline,
 } from "react-icons/ti";
 import pfp from "../assets/me/pfp.jpeg";
+import bubbleBlack from "../assets/particles/bubble-black.png";
+import bubbleWhite from "../assets/particles/bubble-white.png";
 import Marquee from "react-fast-marquee";
 
 function Home() {
@@ -57,7 +59,7 @@ function Home() {
         <Navbar />
 
         {/* Hero */}
-        <section className=" flex items-center justify-center flex-col py-10 px-20 max-md:px-5 h-svh max-h-[1200px] max-lg:h-fit max-lg:max-h-fit">
+        <section className=" flex items-center justify-center flex-col pt-32 px-20 max-md:px-5 h-full max-h-[1200px] max-lg:h-fit max-lg:max-h-fit">
           <Reveal
             keyframes={customAnimation}
             triggerOnce
@@ -66,9 +68,17 @@ function Home() {
             damping={0.1}
             className="flex items-center justify-center flex-col w-full"
           >
-            <div className="h-[70px] w-fit aspect-square overflow-hidden mt-10 mb-2 rounded-[26px] shadow-xl">
-              <img src={pfp} className="h-full w-full object-cover" />
+            <div className="relative">
+              <div className="absolute top-[50px] left-[110%] w-fit flex gap-1 opacity-50 ">
+                <img src={bubbleBlack} className="w-6 translate-y-1 h-fit rotate-45 dark:hidden" />
+                <img src={bubbleWhite} className="w-6 translate-y-1 h-fit rotate-45 hidden dark:flex" />
+                <h1 className="font-bold text-xl -rotate-6 whitespace-nowrap translate-y-[-5px] font-IndieFlower text-black dark:text-white">Hello, I'm Kevin</h1>
+              </div>
+              <div className="h-[70px] w-fit aspect-square overflow-hidden mt-10 mb-2 rounded-[26px] shadow-xl relative">
+                <img src={pfp} className="h-full w-full object-cover" />
+              </div>
             </div>
+            <h1 className="font-bold text-xl whitespace-nowrap font-IndieFlower text-black dark:text-white text-left w-full max-w-[660px] opacity-60">I'm on a mission of</h1>
             <h1 className="max-w-[900px] text-[60px] leading-[65px] font-PlusJakartaSans mb-2 pb-3 max-md:text-[45px] text-transparent bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-700/70 dark:to-white/10 font-extrabold z-10 text-center ">
               Delivering world-class development for web applications
             </h1>
@@ -88,17 +98,25 @@ function Home() {
             </button>
           </Reveal>
         </section>
+        {/* work on/at */}
+        <div className="flex flex-col items-center justify-center overflow-hidden opacity-60 text-text-black dark:text-text-white py-20">
+          <div className="w-full max-w-[1400px] mx-auto relative">
+            {/* edges */}
+            <div className="absolute top-0 left-0 z-10 w-[170px] h-full bg-gradient-to-r from-light-body via-light-body to-transparent"></div>
+            <div className="absolute top-0 right-0 z-10 w-[170px] h-full bg-gradient-to-l from-light-body via-light-body to-transparent"></div>
 
-        <div className="flex overflow-hidden space-x-16">
-          <Marquee autoFill className="max-w-[1200px] mx-auto">
-            {/* First set of logos */}
-            <h1 className="w-full px-5">1Example logo</h1>
-            <h1 className="w-full px-5">2Example logo</h1>
-            <h1 className="w-full px-5">3Example logo</h1>
-            <h1 className="w-full px-5">4Example logo</h1>
-            <h1 className="w-full px-5">5Example logo</h1>
-            <h1 className="w-full px-5">6Example logo</h1>
-          </Marquee>
+            <Marquee pauseOnHover="true" speed={25} autoFill className="w-full">
+              {/* First set of logos */}
+              {workedOn.map((project, index) => (
+                <div className="w-full px-5 flex items-center justify-center gap-1">
+                  <img src={project.logo} className="w-5 grayscale" />
+                  <h1 className="text-sm font-bold tracking-tight font-PlusJakartaSans ">
+                    {project.name}
+                  </h1>
+                </div>
+              ))}
+            </Marquee>
+          </div>
         </div>
 
         {/* Projects */}

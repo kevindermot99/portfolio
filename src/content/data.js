@@ -1,6 +1,11 @@
 import cover1 from '../assets/projects/1.png'
 import cover2 from '../assets/projects/2.png'
 import sorwaziniCertificate from '../assets/achievements/sorwazini_certificate.jpg'
+import gerayo from '../assets/workedOn/gerayo.png'
+import upfront from '../assets/workedOn/upfront.png'
+import countify from '../assets/workedOn/countify.png'
+import outside from '../assets/workedOn/outside.png'
+
 
 export const Projects = [
     {
@@ -67,4 +72,23 @@ export const Achievements = [
         date: "july 24, 2024",
         description: "Awarded to us 'Sorwazini' for outstanding entrepreneurial innovation and pitching at the E-LAB competition. We Created 'GERAYO App'",
     },
+]
+
+export const workedOn = [
+    {
+        logo: outside,
+        name: "Outside Hospitality",
+    },
+    {
+        logo: upfront,
+        name: "Upfront",
+    },
+    {
+        logo: countify,
+        name: "Countify",
+    },
+    {
+        logo: gerayo,
+        name: "Gerayo",
+    }
 ]

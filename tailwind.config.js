@@ -12,6 +12,7 @@ export default {
         Macondo: ["Macondo", "sans-serif"],
         PlusJakartaSans: ["Plus Jakarta Sans", "sans-serif"],
         LeckerliOne: ["Leckerli One", "sans-serif"],
+        IndieFlower: ["Indie Flower", "sans-serif"]
       },
       colors: {
         "light-body": "#fafafa",
