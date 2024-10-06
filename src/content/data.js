@@ -1,10 +1,14 @@
 import cover1 from '../assets/projects/1.png'
 import cover2 from '../assets/projects/2.png'
 import sorwaziniCertificate from '../assets/achievements/sorwazini_certificate.jpg'
-import gerayo from '../assets/workedOn/gerayo.png'
-import upfront from '../assets/workedOn/upfront.png'
-import countify from '../assets/workedOn/countify.png'
-import outside from '../assets/workedOn/outside.png'
+import bikaBlack from '../assets/workedOn/bika-black.png'
+import bikaWhite from '../assets/workedOn/bika-white.png'
+import gerayoBlack from '../assets/workedOn/gerayo-black.png'
+import gerayoWhite from '../assets/workedOn/gerayo-white.png'
+import upfrontBlack from '../assets/workedOn/upfront-black.png'
+import upfrontWhite from '../assets/workedOn/upfront-white.png'
+import outsideBlack from '../assets/workedOn/outside-black.png'
+import outsideWhite from '../assets/workedOn/outside-white.png'
 
 
 export const Projects = [
@@ -76,19 +80,23 @@ export const Achievements = [
 
 export const workedOn = [
     {
-        logo: outside,
-        name: "Outside Hospitality",
+        logoWhite: outsideWhite,
+        logoBlack: outsideBlack,
+        name: "Outside",
     },
     {
-        logo: upfront,
+        logoWhite: upfrontWhite,
+        logoBlack: upfrontBlack,
         name: "Upfront",
     },
     {
-        logo: countify,
-        name: "Countify",
+        logoWhite: gerayoWhite,
+        logoBlack: gerayoBlack,
+        name: "Gerayo",
     },
     {
-        logo: gerayo,
-        name: "Gerayo",
+        logoWhite: bikaWhite,
+        logoBlack: bikaBlack,
+        name: "Bika",
     }
 ]

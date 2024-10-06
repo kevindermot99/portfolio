@@ -34,8 +34,10 @@ import pfp from "../assets/me/pfp.jpeg";
 import bubbleBlack from "../assets/particles/bubble-black.png";
 import bubbleWhite from "../assets/particles/bubble-white.png";
 import Marquee from "react-fast-marquee";
+import BookCall from "../components/BookCall";
 
 function Home() {
+  const [booking, setBooking] = useState(false);
   const today = new Date();
   const customAnimation = keyframes`
   from {
@@ -50,16 +52,27 @@ function Home() {
   }
 `;
 
+  const handleBook = () => {
+    setBooking(true);
+  };
+
+  const handleBookCancel = () => {
+    setBooking(false);
+  };
+
   return (
     <div className="max-w-[1900px] mx-auto overflow-clip relative bg-light-body dark:bg-dark-body">
       {/* light */}
       {/* <div className="w-[700px] h-auto aspect-square rounded-full 2xl:hidden bg-stone-200/30 dark:bg-stone-200/10 blur-[90px] absolute right-[-240px] top-[0px] z-0"></div> */}
-
+      {/* booking modal */}
+      {booking && (
+            <BookCall handleBookCancel={handleBookCancel} />
+      )}
       <div className="wrapper w-full  text-black/90 dark:text-white/80 relative  ">
         <Navbar />
 
         {/* Hero */}
-        <section className=" flex items-center justify-center flex-col pt-32 px-20 max-md:px-5 h-full max-h-[1200px] max-lg:h-fit max-lg:max-h-fit">
+        <section className=" flex items-center justify-center flex-col pt-28 px-20 max-md:px-5 h-full max-h-[1200px] max-lg:h-fit max-lg:max-h-fit">
           <Reveal
             keyframes={customAnimation}
             triggerOnce
@@ -68,25 +81,25 @@ function Home() {
             damping={0.1}
             className="flex items-center justify-center flex-col w-full"
           >
-            <div className="relative">
-              <div className="absolute top-[50px] left-[110%] w-fit flex gap-1 opacity-50 ">
-                <img src={bubbleBlack} className="w-6 translate-y-1 h-fit rotate-45 dark:hidden" />
-                <img src={bubbleWhite} className="w-6 translate-y-1 h-fit rotate-45 hidden dark:flex" />
-                <h1 className="font-bold text-xl -rotate-6 whitespace-nowrap translate-y-[-5px] font-IndieFlower text-black dark:text-white">Hello, I'm Kevin</h1>
-              </div>
-              <div className="h-[70px] w-fit aspect-square overflow-hidden mt-10 mb-2 rounded-[26px] shadow-xl relative">
+            <div className="relative mb-3">
+              <div className="h-[70px] w-fit aspect-square overflow-hidden mt-10 mb-2 rounded-[50px] shadow-xl relative">
                 <img src={pfp} className="h-full w-full object-cover" />
               </div>
             </div>
-            <h1 className="font-bold text-xl whitespace-nowrap font-IndieFlower text-black dark:text-white text-left w-full max-w-[660px] opacity-60">I'm on a mission of</h1>
-            <h1 className="max-w-[900px] text-[60px] leading-[65px] font-PlusJakartaSans mb-2 pb-3 max-md:text-[45px] text-transparent bg-clip-text bg-gradient-to-br from-black dark:from-white to-stone-700/70 dark:to-white/10 font-extrabold z-10 text-center ">
-              Delivering world-class development for web applications
+            <h1 className="font-bold text-xl whitespace-nowrap font-IndieFlower text-black dark:text-white text-center w-full max-w-[660px] opacity-60">
+              Hi, I'm Kevin. a Full stack Web Developer, on a mission of
+            </h1>
+            <h1 className="max-w-[900px] text-[60px] leading-[65px] font-PlusJakartaSans mb-2 pb-3 max-md:text-[45px] text-text-black dark:text-text-white font-extrabold z-10 text-center ">
+              Delivering world-class development for Web Apps
             </h1>
             <p className=" max-md:self-start text-lg font-normal max-w-[600px] opacity-90 text-center">
               I build web apps with a modern user experience and deliver real
               results for businesses.
             </p>
-            <button className="bg-text-black shadow-xl mt-5 text-sm p-2 pr-3 transition hover:scale-110 rounded-2xl text-text-white font-medium flex items-center justify-center gap-2">
+            <button
+              onClick={handleBook}
+              className="bg-text-black shadow-xl mt-5 text-sm p-2 pr-3 transition hover:scale-110 rounded-2xl text-text-white font-medium flex items-center justify-center gap-2"
+            >
               <div className="flex items-center justify-center gap-1">
                 <img src={pfp} className="h-[30px] rounded-full" />
                 <span className="text-lg">+</span>
@@ -100,19 +113,29 @@ function Home() {
         </section>
         {/* work on/at */}
         <div className="flex flex-col items-center justify-center overflow-hidden opacity-60 text-text-black dark:text-text-white py-20">
-          <div className="w-full max-w-[1400px] mx-auto relative">
+          <div className="w-full max-w-[1200px] mx-auto relative flex flex-col items-center justify-center">
             {/* edges */}
-            <div className="absolute top-0 left-0 z-10 w-[170px] h-full bg-gradient-to-r from-light-body via-light-body to-transparent"></div>
-            <div className="absolute top-0 right-0 z-10 w-[170px] h-full bg-gradient-to-l from-light-body via-light-body to-transparent"></div>
-
-            <Marquee pauseOnHover="true" speed={25} autoFill className="w-full">
+            <div className="absolute top-0 left-0 z-10 w-[170px] h-full bg-gradient-to-r from-light-body dark:from-dark-body via-light-body dark:via-dark-body to-transparent"></div>
+            <div className="absolute top-0 right-0 z-10 w-[170px] h-full bg-gradient-to-l from-light-body dark:from-dark-body via-light-body dark:via-dark-body to-transparent"></div>
+            <p className=" max-md:self-start text-sm pb-5 font-medium max-w-[600px] opacity-90 text-center w-full">
+              Worked on
+            </p>
+            <Marquee pauseOnHover="true" speed={15} autoFill className="w-full">
               {/* First set of logos */}
               {workedOn.map((project, index) => (
                 <div className="w-full px-5 flex items-center justify-center gap-1">
-                  <img src={project.logo} className="w-5 grayscale" />
-                  <h1 className="text-sm font-bold tracking-tight font-PlusJakartaSans ">
-                    {project.name}
-                  </h1>
+                  <img
+                    src={project.logoBlack}
+                    className={`h-5 grayscale dark:hidden ${
+                      project.name === "Outside" && "p-[1px]"
+                    }`}
+                  />
+                  <img
+                    src={project.logoWhite}
+                    className={`h-5 grayscale hidden dark:flex ${
+                      project.name === "Outside" && "p-[1px]"
+                    }`}
+                  />
                 </div>
               ))}
             </Marquee>
