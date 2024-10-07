@@ -7,6 +7,7 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import ResumePDF from "../assets/Kevin's Resume.pdf"
 import MKLogo from '../assets/logo.png'
+import { LuVideo } from "react-icons/lu";
 
 function Navbar() {
   const location = useLocation();

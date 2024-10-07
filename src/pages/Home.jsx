@@ -65,9 +65,7 @@ function Home() {
       {/* light */}
       {/* <div className="w-[700px] h-auto aspect-square rounded-full 2xl:hidden bg-stone-200/30 dark:bg-stone-200/10 blur-[90px] absolute right-[-240px] top-[0px] z-0"></div> */}
       {/* booking modal */}
-      {booking && (
-            <BookCall handleBookCancel={handleBookCancel} />
-      )}
+      {booking && <BookCall handleBookCancel={handleBookCancel} />}
       <div className="wrapper w-full  text-black/90 dark:text-white/80 relative  ">
         <Navbar />
 
@@ -117,39 +115,41 @@ function Home() {
             {/* edges */}
             <div className="absolute top-0 left-0 z-10 w-[120px] max-md:w-[20px] h-full bg-gradient-to-r from-light-body dark:from-dark-body to-transparent"></div>
             <div className="absolute top-0 right-0 z-10 w-[120px] max-md:w-[20px] h-full bg-gradient-to-l from-light-body dark:from-dark-body to-transparent"></div>
-            <p className=" max-md:self-start text-sm pb-5 font-medium max-w-[600px] opacity-70 text-center w-full">
-              Worked on
+            <p className=" max-md:self-start text-sm pb-5 font-semibold max-w-[600px] opacity-35 text-center w-full">
+              I've worked on
             </p>
-            <Marquee pauseOnHover="true" speed={15} autoFill className="w-full">
-              {/* First set of logos */}
+            {/* <Marquee play={false} pauseOnHover="true" speed={15} className="w-full">
+              
+            </Marquee> */}
+            <div className="flex items-center justify-center gap-2">
               {workedOn.map((project, index) => (
                 <div className="w-full px-5 flex items-center justify-center gap-1">
                   <img
                     src={project.logoBlack}
-                    className={`h-5 opacity-35 dark:hidden ${
+                    className={`h-5 min-w-fit opacity-35 dark:hidden ${
                       project.name === "Outside" && "p-[1px]"
                     }`}
                   />
                   <img
                     src={project.logoWhite}
-                    className={`h-5 opacity-35 hidden dark:flex ${
+                    className={`h-5 min-w-fit opacity-35 hidden dark:flex ${
                       project.name === "Outside" && "p-[1px]"
                     }`}
                   />
                 </div>
               ))}
-            </Marquee>
+            </div>
           </div>
         </div>
 
         {/* Projects */}
-        <section className="bg-stone-100 dark:bg-stone-800/20 w-full h-fit flex items-start justify-strat flex-col gap-2 py-16 px-20 max-md:px-5 ">
-          <Heading
+        <section className=" w-full h-fit flex items-start justify-strat flex-col gap-2 py-10 px-20 max-md:px-5 ">
+          {/* <Heading
             Icon={<MdWorkHistory />}
             SectionName={`Recent Work `}
             Title={ProjectSection.title}
             Desc={ProjectSection.favorite}
-          />
+          /> */}
           <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-7">
             <Reveal
               keyframes={customAnimation}

@@ -15,7 +15,7 @@ export default {
         IndieFlower: ["Indie Flower", "sans-serif"]
       },
       colors: {
-        "light-body": "#fafafa",
+        "light-body": "#fff",
         "dark-body": "#0a0a0a",
         "main-color": "#000",
         // "main-color": "#B14AED",

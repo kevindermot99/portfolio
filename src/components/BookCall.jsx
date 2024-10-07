@@ -3,6 +3,7 @@ import { Fade, Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import pfp from "../assets/me/pfp.jpeg";
 import { LuCheck, LuSendHorizonal, LuX } from "react-icons/lu";
+import { animate } from "framer-motion";
 
 function BookCall({ handleBookCancel }) {
   const [time, setTime] = useState("");
@@ -11,6 +12,7 @@ function BookCall({ handleBookCancel }) {
   const [message, setMessage] = useState(``);
   const [visitorNames, setVisitorNames] = useState("");
   const [filled, setFilled] = useState(false);
+  const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     setMessage(`Hello Kevin,
@@ -44,7 +46,7 @@ ${visitorNames === "" ? "~ Your Name ~" : visitorNames}`);
   useEffect(() => {
     const handleEscKey = (event) => {
       if (event.key === "Escape") {
-        handleBookCancel();
+        handleQuit();
       }
     };
 
@@ -54,17 +56,32 @@ ${visitorNames === "" ? "~ Your Name ~" : visitorNames}`);
     };
   }, []);
 
-  const checkRequired = () => {};
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
+
+  const handleQuit = () => {
+    setAnimate(false);
+    setTimeout(() => {
+      handleBookCancel();
+    }, 500);
+  };
 
   const label = `flex items-center w-full h-[45px] select-none gap-3 font-medium ring-1 rounded-2xl ring-stone-200 cursor-pointer dark:ring-stone-700 p-4 peer-checked:ring-main-color dark:peer-checked:ring-text-white`;
 
   return (
     <div className="fixed top-0 left-0 w-full h-full flex z-30 items-center justify-center overscroll-contain">
       <div
-        onClick={handleBookCancel}
-        className="fixed top-0 left-0 w-full h-full bg-black/30 dark:bg-black/60 flex z-0"
+        onClick={handleQuit}
+        className={`fixed top-0 left-0 w-full h-full bg-black/30 dark:bg-black/60 flex z-0 transition duration-300 ${
+          animate ? "opacity-100" : "opacity-0"
+        }`}
       ></div>
-      <div className="bg-white dark:bg-[#181818] z-10 absolute top-0 left-0 bottom-0 right-0 m-auto w-fit h-[620px] max-md:h-full max-h-[90%] max-w-[900px] max-md:max-w-[90%] rounded-3xl shadow-xl p-3 ring-2 ring-stone-100 dark:ring-[#191919]">
+      <div
+        className={`bg-white dark:bg-[#181818] z-10 absolute top-0 left-0 bottom-0 right-0 m-auto w-fit h-[620px] max-md:h-full max-h-[90%] max-w-[900px] max-md:max-w-[90%] rounded-3xl shadow-xl p-3 ring-2 ring-stone-100 dark:ring-[#191919] ransition duration-300 ${
+          animate ? "opacity-100" : "opacity-0 scale-75 blur-xl"
+        }`}
+      >
         <div className=" text-text-black dark:text-text-white w-full h-full grid grid-cols-2 max-lg:grid-cols-1 overflow-y-auto custom-scrollbar overflow-x-hidden p-5">
           <div className="w-full flex flex-col items-start justify-start text-left gap-3">
             <Reveal
@@ -338,16 +355,19 @@ ${visitorNames === "" ? "~ Your Name ~" : visitorNames}`);
                       ? "#"
                       : `mailto:mbonimpayekevin@gmail.com?subject=${subject}&body=${message}`
                   }`}
-                  onClick={checkRequired}
                   className={`w-full h-[45px] bg-dark-body dark:bg-white text-text-white dark:text-text-black transition active:scale-[.98] font-semibold flex items-center justify-center gap-2 rounded-2xl text-sm 
-                    ${visitorNames !== "" && time !== "" && app !== "" ? '' : 'opacity-70 cursor-not-allowed'}
+                    ${
+                      visitorNames !== "" && time !== "" && app !== ""
+                        ? ""
+                        : "opacity-70 cursor-not-allowed"
+                    }
                     `}
                 >
                   Create Request
                   <LuSendHorizonal className="text-lg" />
                 </a>
                 <button
-                  onClick={handleBookCancel}
+                  onClick={handleQuit}
                   className={`w-full h-[45px] bg-stone-200 dark:bg-stone-600/60 text-text-black dark:text-white transition active:scale-[.98] font-semibold hidden max-lg:flex items-center justify-center gap-2 rounded-2xl text-sm `}
                 >
                   Cancel
