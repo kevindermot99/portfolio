@@ -116,7 +116,7 @@ function Home() {
             <div className="absolute top-0 left-0 z-10 w-[120px] max-md:w-[20px] h-full bg-gradient-to-r from-light-body dark:from-dark-body to-transparent"></div>
             <div className="absolute top-0 right-0 z-10 w-[120px] max-md:w-[20px] h-full bg-gradient-to-l from-light-body dark:from-dark-body to-transparent"></div>
             <p className=" max-md:self-start text-sm pb-5 font-semibold max-w-[600px] opacity-35 text-center w-full">
-              I've worked on
+              I’ve worked on building
             </p>
             {/* <Marquee play={false} pauseOnHover="true" speed={15} className="w-full">
               
