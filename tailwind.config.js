@@ -6,23 +6,18 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Caveat: ["Caveat", "sans-serif"],
-        OpenSans: ["Open Sans", "sans-serif"],
-        SourceSans: ["Source Sans", "sans-serif"],
-        Macondo: ["Macondo", "sans-serif"],
-        PlusJakartaSans: ["Plus Jakarta Sans", "sans-serif"],
-        LeckerliOne: ["Leckerli One", "sans-serif"],
+        Outfit: ["Outfit", "sans-serif"],
         IndieFlower: ["Indie Flower", "sans-serif"]
       },
       colors: {
-        "light-body": "#fff",
-        "dark-body": "#0a0a0a",
-        "main-color": "#000",
-        // "main-color": "#B14AED",
-        "text-white": "#f1f1f1",
-        "text-black": "#111111",
+        "body-color": "#18181b",
+        "text-color": "#f4f4f5",
+        "text-color-50": "#a1a1aa",
+        "text-color-30": "#52525b",
+        "text-color": "#f1f1f1",
+        "container-color": "#27272a",
+        "main-color": "#3582c0",
       },
-      
     },
   },
   plugins: [],
