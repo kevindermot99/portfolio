@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,11 +10,44 @@
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Inter', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
-  color-scheme: dark;
-  background-color: #18181b;
+  background-color: #fff;
+}
+
+.rnd {
+  border-radius: 32px;
+}
+
+.dividor {
+  width: 100%;
+  height: 1px;
+  background: #e7e7e7;
+  margin: 20px 0;
+}
+
+.hidden_scrollbar::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.tool_indicator {
+  position: relative;
+}
+
+.tool_indicator::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #dcdee2;
+  position: absolute;
+  top: -26px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }

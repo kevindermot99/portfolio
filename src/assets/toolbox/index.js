@@ -1,0 +1,8 @@
+export { default as SpotifyLogo} from '../toolbox/spotify.png'
+export { default as ChromeLogo} from '../toolbox/chrome.png'
+export { default as MongoLogo} from '../toolbox/mongo.png'
+export { default as NotionLogo} from '../toolbox/notion.png'
+export { default as UpfrontLogo} from '../toolbox/upfront.png'
+export { default as CalendarLogo} from '../toolbox/calendar.png'
+export { default as CanvaLogo} from '../toolbox/canva.png'
+export { default as LinuxLogo} from '../toolbox/linux.png'
