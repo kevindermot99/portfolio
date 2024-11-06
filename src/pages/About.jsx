@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../components/Navbar";
-import { FavMusic, Toolbox, WhoAmI } from "../content/content";
-import { Link } from "react-router-dom";
+import { FavMusic, TechStack, Toolbox, WhoAmI } from "../content/content";
+import { Link, useLocation } from "react-router-dom";
 import { img1, img2, img3, img4, img5 } from "../assets/gallery";
 import {
   LuArrowUpRight,
@@ -51,6 +51,7 @@ function About() {
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const [showPlaylist, setShowPlaylist] = useState(false);
   const [animatePlaylist, setAnimatePlaylist] = useState(true);
+  const location = useLocation();
 
   let clickAudio1 = new Audio(SoundClick);
   clickAudio1.volume = 0.5;
@@ -74,7 +75,7 @@ function About() {
     setPlaying(true);
     songRef.current.play();
     songRef.current.onended = () => {
-      setPlaying(false);  // This will stop the song when it ends
+      setPlaying(false);
     };
   };
 
@@ -83,6 +84,15 @@ function About() {
     songRef.current.pause();
     // songRef.current.currentTime = 0;
   };
+
+  useEffect(() => {
+    handleStop();
+
+    return () => {
+      songRef.current.pause();
+      songRef.current.currentTime = 0;
+    };
+  }, [location.pathname]);
 
   const handleMute = () => {
     setMuted(!muted);
@@ -96,7 +106,7 @@ function About() {
     songRef.current.src = FavMusic[nextIndex].audioSrc;
     songRef.current.play();
     songRef.current.onended = () => {
-      setPlaying(false);  // This will stop the song when it ends
+      setPlaying(false); // This will stop the song when it ends
     };
     setCurrentTrack(FavMusic[nextIndex]);
   };
@@ -109,7 +119,7 @@ function About() {
     songRef.current.src = FavMusic[prevIndex].audioSrc;
     songRef.current.play();
     songRef.current.onended = () => {
-      setPlaying(false);  // This will stop the song when it ends
+      setPlaying(false); // This will stop the song when it ends
     };
     setCurrentTrack(FavMusic[prevIndex]);
   };
@@ -127,8 +137,6 @@ function About() {
       setShowPlaylist(false);
     }, 50);
   };
-
-  
 
   return (
     <div className="">
@@ -175,7 +183,7 @@ function About() {
         </div>
         {/* spotify socials and photos */}
         <div className="w-full h-fit flex max-lg:flex-col gap-5">
-          {/* Social & Photos */}
+          {/* Socials & Tech Stack */}
           <div className="w-full h-fit grid grid-cols-1 max-md:grid-cols-1 gap-5">
             {/* Social */}
             <div className="group w-full h-full min-h-[320px] p-6 max-md:p-8 bg-card_bg rnd flex flex-col-reverse gap-2 relative overflow-hidden">
@@ -227,6 +235,164 @@ function About() {
                     , Thank you!
                   </h1>
                 </div>
+              </div>
+            </div>
+            {/* Tech Stack */}
+            <div className="group w-full h-full min-h-[320px] max-lg:min-h-fit p-6 max-md:p-8 bg-card_bg rnd relative overflow-hidden">
+              <h1 className="text-sm font-medium text-black/60 mb-2 uppercase">
+                What I use
+              </h1>
+              <div className="w-full h-fit flex flex-wrap items-start justify-between gap-3 ">
+                {/* tech */}
+                {TechStack.map((tech, index) => (
+                  <div className="w-fit h-fit flex flex-col items-center justify-center gap-1 mt-2">
+                    <div className="bg-white w-16 p-3 shadow-xl shadow-stone-200 rounded-2xl">
+                      <img src={tech.icon} className="" />
+                    </div>
+                    <h1 className="text-sm font-medium text-black/60">
+                      {tech.name}
+                    </h1>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          {/* Spotify & Photos */}
+          <div className="w-full h-fit grid grid-cols-1 max-md:grid-cols-1 gap-5">
+            {/* Spotify */}
+            <div className="group w-full h-full min-h-[320px] p-6 max-md:p-8 bg-card_bg rnd flex flex-col gap-2 relative overflow-hidden">
+              {showPlaylist && (
+                <div
+                  onClick={handleClosePlaylist}
+                  className={`absolute top-0 left-0 z-30 bg-black/20 w-full h-full flex transition-all duration-300
+                  ${animatePlaylist ? "opacity-0" : "opacity-100"}
+                  `}
+                ></div>
+              )}
+              {showPlaylist && (
+                <div
+                  className={`absolute left-2 right-2 backdrop-blur-md rounded-3xl mx-auto z-30  max-h-[50%] w-auto h-fit p-2 flex flex-col transition-all duration-300 
+                ${animatePlaylist ? "bottom-[-300px]" : "bottom-2"}
+                ${playing ? "bg-[#1f1d1dad] text-white" : "bg-white text-black"}
+                `}
+                >
+                  {FavMusic.map((music, index) => (
+                    <div
+                      className={`w-full h-[55px] flex items-center justify-start gap-2 py-0 px-3 cursor-pointer rounded-2xl
+                    ${
+                      playing
+                        ? "hover:bg-stone-100/10"
+                        : "hover:bg-stone-200/60"
+                    }
+                    `}
+                    >
+                      <CgMusicNote className="text-2xl opacity-30" />
+                      <div className="flex-1 flex flex-col">
+                        <h1 className="text-base leading-tight">
+                          {music.name}
+                        </h1>
+                        <h1 className="text-sm truncate opacity-50 leading-tight">
+                          {music.singer}
+                        </h1>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+              <Link
+                to={"/"}
+                className="bg-transparent w-14 rounded-2xl absolute top-5 right-5 z-20"
+              >
+                <img
+                  src="https://img.icons8.com/fluency/96/spotify.png"
+                  className=""
+                />
+              </Link>
+
+              <div
+                className={`bg-gradient-to-b from-[#817d7a] to-[#292726] z-10 transition-all duration-500 ease-in-out aspect-square rounded-2xl shadow-xl absolute
+                ${
+                  playing
+                    ? "w-[200%] top-[-50%] right-[-50%]"
+                    : "w-5 top-9 right-9"
+                }
+                `}
+              ></div>
+
+              <div
+                className={`w-full flex-1 z-10 ${
+                  playing ? "text-white" : "text-black/70"
+                } `}
+              >
+                <div className="flex items-start justify-start  flex-col gap-4">
+                  <img
+                    src={currentTrack.poster}
+                    className="w-36 rounded-xl shadow-lg h-fit aspect-square  object-cover object-center"
+                  />
+                  <div className="w-full flex items-center justify-between">
+                    <div className="flex flex-col gap-1 transition duration-500">
+                      {/* Change text color to white on hover of the 'peer' link */}
+                      <h1 className="font-bold text-lg leading-tight truncate ">
+                        {currentTrack.name}
+                      </h1>
+                      <h1 className="text-base font-medium opacity-60 leading-tight truncate ">
+                        {currentTrack.singer}
+                      </h1>
+                    </div>
+                    <div className="flex items-center justify-end gap-2">
+                      <IoHeadsetOutline className="text-2xl cursor-pointer hover:scale-105 transition duration-300" />
+                      <LuPlusCircle className="text-2xl cursor-pointer hover:scale-105 transition duration-300" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className={`w-full h-[45px] text-lg flex items-center justify-around gap-1 p-2 z-20 ring-1 rounded-full font-medium transition duration-300 ${
+                  playing
+                    ? "bg-[#29272675] ring-black/20 text-white"
+                    : "ring-stone-200 text-black/70"
+                }`}
+              >
+                <button
+                  onClick={handleShowPlaylist}
+                  className="w-fit flex items-center justify-center text-xl"
+                >
+                  <PiPlaylistDuotone />
+                </button>
+                <button
+                  onClick={handlePrevious}
+                  className="w-fit flex items-center justify-center text-xl"
+                >
+                  <GiPreviousButton />
+                </button>
+                {playing ? (
+                  <button
+                    onClick={handleStop}
+                    className="w-fit flex items-center justify-center text-xl"
+                  >
+                    <GiPauseButton />
+                  </button>
+                ) : (
+                  <button
+                    onClick={handlePlay}
+                    className="w-fit flex items-center justify-center text-xl"
+                  >
+                    <GiPlayButton />
+                  </button>
+                )}
+                <button
+                  onClick={handleNext}
+                  className="w-fit flex items-center justify-center text-xl"
+                >
+                  <GiNextButton />
+                </button>
+                <button
+                  onClick={handleMute}
+                  className="w-fit flex items-center justify-center text-xl"
+                >
+                  {muted ? <LuVolumeX /> : <LuVolume2 />}
+                </button>
               </div>
             </div>
             {/* Photos */}
@@ -297,139 +463,6 @@ function About() {
                     }`}
                 >
                   <LuMapPin />
-                </button>
-              </div>
-            </div>
-          </div>
-          {/* Spotify */}
-          <div className="w-full h-fit grid grid-cols-1 max-md:grid-cols-1 gap-5">
-            {/* Spotify */}
-            <div className="group w-full h-full min-h-[320px] p-6 max-md:p-8 bg-card_bg rnd flex flex-col gap-2 relative overflow-hidden">
-              {showPlaylist && (
-                <div
-                  onClick={handleClosePlaylist}
-                  className={`absolute top-0 left-0 z-30 bg-black/20 w-full h-full flex transition-all duration-300
-                  ${animatePlaylist ? "opacity-0" : "opacity-100"}
-                  `}
-                ></div>
-              )}
-              {showPlaylist && (
-                <div
-                  className={`absolute left-2 right-2 backdrop-blur-md rounded-3xl mx-auto z-30  max-h-[50%] w-auto h-fit p-2 flex flex-col transition-all duration-300 
-                ${animatePlaylist ? "bottom-[-300px]" : "bottom-2"}
-                ${playing ? 'bg-[#1f1d1dad] text-white' : 'bg-white text-black'}
-                `}
-                >
-                  {FavMusic.map((music, index) => (
-                    <div className={`w-full h-[55px] flex items-center justify-start gap-2 py-0 px-3 cursor-pointer rounded-2xl
-                    ${playing ? 'hover:bg-stone-100/10' : 'hover:bg-stone-200/60'}
-                    `}>
-                      <CgMusicNote className="text-2xl opacity-30" />
-                      <div className="flex-1 flex flex-col">
-                        <h1 className="text-base leading-tight">
-                          {music.name}
-                        </h1>
-                        <h1 className="text-sm truncate opacity-50 leading-tight">
-                          {music.singer}
-                        </h1>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-              <Link
-                to={"/"}
-                className="bg-transparent w-14 rounded-2xl absolute top-5 right-5 z-20"
-              >
-                <img
-                  src="https://img.icons8.com/fluency/96/spotify.png"
-                  className=""
-                />
-              </Link>
-
-              <div
-                className={`bg-gradient-to-b from-[#817d7a] to-[#292726] z-10 transition-all duration-500 ease-in-out aspect-square rounded-2xl shadow-xl absolute
-                ${
-                  playing
-                    ? "w-[200%] top-[-50%] right-[-50%]"
-                    : "w-5 top-9 right-9"
-                }
-                `}
-              ></div>
-
-              <div
-                className={`w-full flex-1 z-10 ${
-                  playing ? "text-white" : "text-black/70"
-                } `}
-              >
-                <div className="flex items-start justify-start  flex-col gap-4">
-                  <img
-                    src={currentTrack.poster}
-                    className="w-36 rounded-xl shadow-lg h-fit aspect-square  object-cover object-center"
-                  />
-                  <div className="w-full flex items-center justify-between">
-                    <div className="flex flex-col gap-1 transition duration-500">
-                      {/* Change text color to white on hover of the 'peer' link */}
-                      <h1 className="font-bold text-lg leading-tight truncate ">
-                        {currentTrack.name}
-                      </h1>
-                      <h1 className="text-base font-medium opacity-60 leading-tight truncate ">
-                        {currentTrack.singer}
-                      </h1>
-                    </div>
-                    <div className="flex items-center justify-end gap-2">
-                      <IoHeadsetOutline className="text-2xl cursor-pointer hover:scale-105 transition duration-300" />
-                      <LuPlusCircle className="text-2xl cursor-pointer hover:scale-105 transition duration-300" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className={`w-full h-[45px] text-lg flex items-center justify-around gap-1 p-2 z-20 ring-1 rounded-full font-medium transition duration-300 ${
-                  playing
-                    ? "bg-[#29272675] ring-black/20 text-white"
-                    : "ring-stone-200"
-                }`}
-              >
-                <button
-                  onClick={handleShowPlaylist}
-                  className="w-fit flex items-center justify-center text-xl"
-                >
-                  <PiPlaylistDuotone />
-                </button>
-                <button
-                  onClick={handlePrevious}
-                  className="w-fit flex items-center justify-center text-xl"
-                >
-                  <GiPreviousButton />
-                </button>
-                {playing ? (
-                  <button
-                    onClick={handleStop}
-                    className="w-fit flex items-center justify-center text-xl"
-                  >
-                    <GiPauseButton />
-                  </button>
-                ) : (
-                  <button
-                    onClick={handlePlay}
-                    className="w-fit flex items-center justify-center text-xl"
-                  >
-                    <GiPlayButton />
-                  </button>
-                )}
-                <button
-                  onClick={handleNext}
-                  className="w-fit flex items-center justify-center text-xl"
-                >
-                  <GiNextButton />
-                </button>
-                <button
-                  onClick={handleMute}
-                  className="w-fit flex items-center justify-center text-xl"
-                >
-                  {muted ? <LuVolumeX /> : <LuVolume2 />}
                 </button>
               </div>
             </div>

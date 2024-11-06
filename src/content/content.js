@@ -270,3 +270,30 @@ export const FavMusic = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0I1wVHhXPfc0nBiJo1-cyWFQZjfEeTCeJcw&s",
   },
 ];
+
+export const TechStack = [
+  {
+    icon: "https://img.icons8.com/color/96/mongo-db.png",
+    name: "Mongo DB",
+  },
+  {
+    icon: "https://img.icons8.com/color/96/express-js.png",
+    name: "Express",
+  },
+  {
+    icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png",
+    name: "React",
+  },
+  {
+    icon: "https://img.icons8.com/windows/96/node-js.png",
+    name: "Node",
+  },
+  {
+    icon: "https://img.icons8.com/fluency/96/tailwind_css.png",
+    name: "Tailwind",
+  },
+  {
+    icon: "https://img.icons8.com/color/96/git.png",
+    name: "Git",
+  },
+];
