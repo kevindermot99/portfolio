@@ -1,4 +1,4 @@
-import { MusicWash, MusicSumWave, MusicWetDreamz } from "../assets/music";
+import { MusicWash, MusicSumWave, MusicOoyy } from "../assets/music";
 import {
   CalendarLogo,
   CanvaLogo,
@@ -28,7 +28,8 @@ export const Toolbox = [
     icon: ChromeLogo,
     cards: [
       {
-        favicon: "https://www.gstatic.com/devrel-devsite/prod/v20340109590ecca637cc225c95b56cbdeeca1e36cdadabf4502e87253db1ac7d/web/images/favicon.png",
+        favicon:
+          "https://www.gstatic.com/devrel-devsite/prod/v20340109590ecca637cc225c95b56cbdeeca1e36cdadabf4502e87253db1ac7d/web/images/favicon.png",
         title: "Progressive Web Apps",
         desc: "https://developers.google.com/web/progressive-web-apps",
       },
@@ -80,22 +81,26 @@ export const Toolbox = [
     icon: MongoLogo,
     cards: [
       {
-        favicon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1aququuxTXwpYCcLioAWb--XpaYwDknSW3A&s",
+        favicon:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1aququuxTXwpYCcLioAWb--XpaYwDknSW3A&s",
         title: "MongoDB Documentation",
         desc: "Start with the official MongoDB docs to master the database.",
       },
       {
-        favicon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1aququuxTXwpYCcLioAWb--XpaYwDknSW3A&s",
+        favicon:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1aququuxTXwpYCcLioAWb--XpaYwDknSW3A&s",
         title: "MongoDB Atlas Setup",
         desc: "Learn how to deploy and manage databases in MongoDB Atlas. Cloud storage made easy.",
       },
       {
-        favicon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1aququuxTXwpYCcLioAWb--XpaYwDknSW3A&s",
+        favicon:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1aququuxTXwpYCcLioAWb--XpaYwDknSW3A&s",
         title: "MongoDB Indexing Techniques",
         desc: "Optimize queries with MongoDB indexing. Improve performance on large datasets.",
       },
       {
-        favicon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1aququuxTXwpYCcLioAWb--XpaYwDknSW3A&s",
+        favicon:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1aququuxTXwpYCcLioAWb--XpaYwDknSW3A&s",
         title: "MongoDB Aggregation Framework",
         desc: "Use MongoDB’s aggregation framework for complex queries and data processing.",
       },
@@ -210,22 +215,26 @@ export const Toolbox = [
     icon: LinuxLogo,
     cards: [
       {
-        favicon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWy9oOUOprqLnV_wjaFiTU7xxUuuXXWrCs_Q&s",
+        favicon:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWy9oOUOprqLnV_wjaFiTU7xxUuuXXWrCs_Q&s",
         title: "Ubuntu Terminal Tips",
         desc: "Learn essential Linux terminal commands to speed up your workflow.",
       },
       {
-        favicon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWy9oOUOprqLnV_wjaFiTU7xxUuuXXWrCs_Q&s",
+        favicon:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWy9oOUOprqLnV_wjaFiTU7xxUuuXXWrCs_Q&s",
         title: "Customize Ubuntu Appearance",
         desc: "Change your desktop theme and appearance for a more personal experience.",
       },
       {
-        favicon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWy9oOUOprqLnV_wjaFiTU7xxUuuXXWrCs_Q&s",
+        favicon:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWy9oOUOprqLnV_wjaFiTU7xxUuuXXWrCs_Q&s",
         title: "Ubuntu Performance Tweaks",
         desc: "Optimize Ubuntu for better performance on older hardware.",
       },
       {
-        favicon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWy9oOUOprqLnV_wjaFiTU7xxUuuXXWrCs_Q&s",
+        favicon:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWy9oOUOprqLnV_wjaFiTU7xxUuuXXWrCs_Q&s",
         title: "Secure Ubuntu System",
         desc: "Set up firewall, encryption, and other security measures to keep your system safe.",
       },
@@ -235,24 +244,29 @@ export const Toolbox = [
 
 export const FavMusic = [
   {
+    name: "Top Funnel",
+    singer: "Ooyy",
+    spotifyUrl:
+      "https://open.spotify.com/track/6oeuCDPzYNwA5zTgXRFq14?si=3dc61c43f8a84aef",
+    audioSrc: MusicOoyy,
+    poster:
+      "https://cdns-images.dzcdn.net/images/cover/0b80c2fbe3afc061afa035542bb68f63/500x500.jpg",
+  },
+  {
     name: "Wash.",
     singer: "Bon Iver",
-    spotifyUrl: "https://open.spotify.com/track/7rIhp6EWLNtM8qFIQruJPT?si=297d35a54102481d",
+    spotifyUrl:
+      "https://open.spotify.com/track/7rIhp6EWLNtM8qFIQruJPT?si=297d35a54102481d",
     audioSrc: MusicWash,
-    poster: "https://i.scdn.co/image/ab67616d0000b2736880235a103031a13ff8c902"
+    poster: "https://i.scdn.co/image/ab67616d0000b2736880235a103031a13ff8c902",
   },
   {
     name: "Possessions",
     singer: "Sum Wave",
-    spotifyUrl: "https://open.spotify.com/track/3f14Cmmzo0yfzRvZl00uGO?si=0ff4bf71363d4af5",
+    spotifyUrl:
+      "https://open.spotify.com/track/3f14Cmmzo0yfzRvZl00uGO?si=0ff4bf71363d4af5",
     audioSrc: MusicSumWave,
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0I1wVHhXPfc0nBiJo1-cyWFQZjfEeTCeJcw&s"
+    poster:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0I1wVHhXPfc0nBiJo1-cyWFQZjfEeTCeJcw&s",
   },
-  {
-    name: "Wet Dreamz",
-    singer: "J.Cole",
-    spotifyUrl: "https://open.spotify.com/track/4tqcoej1zPvwePZCzuAjJd?si=1f3db0e3e1cb4fad",
-    audioSrc: MusicWetDreamz,
-    poster: "https://i1.sndcdn.com/artworks-s7CMXZ0V4048Z8ZW-ivA5Iw-t500x500.jpg"
-  },
-]
+];
