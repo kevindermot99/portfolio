@@ -29,22 +29,11 @@ function Home() {
   const [activeTab, setActiveTab] = useState(activeTool.cards[0]);
   const [galleryTab, setGalleryTab] = useState(1);
 
-  let clickAudio1 = new Audio(SoundNotification);
-  clickAudio1.volume = 0.3;
-
-  let clickAudio2 = new Audio(SoundBoop);
-  clickAudio2.volume = 0.3;
+  let clickAudio1 = new Audio(SoundClick);
+  clickAudio1.volume = 0.5;
 
   const playClick = () => {
     clickAudio1.play();
-  };
-
-  const playBoop = () => {
-    clickAudio2.play();
-  };
-
-  const handleMouseEnter = () => {
-    playBoop();
   };
 
   const handleChangeTool = (tool) => {
@@ -61,11 +50,13 @@ function Home() {
   return (
     <div className="">
       <Navbar />
-      <h1 className="mt-24 w-full max-w-[1400px] px-12 flex items-center justify-end gap-2 text-sm text-black/40 mx-auto ">
+      <h1 className="mt-[80px] max-lg:mt-14 w-full max-w-[1400px] px-12 flex items-center justify-end gap-2 text-sm text-black/40 mx-auto max-lg:hidden ">
         <HiArchiveBox />
         My Toolbox
       </h1>
-      <section className=" grid grid-cols-2 gap-5 max-w-[1400px] mx-auto px-5 py-3">
+      {/* Hero Section */}
+      <section className="max-lg:mt-16 grid grid-cols-2 max-lg:grid-cols-1 gap-5 max-w-[1400px] mx-auto px-5 py-3">
+        {/* Who Am I */}
         <div className="w-full h-full p-8 bg-card_bg rnd">
           <h1 className="text-[31px] leading-[39px] font-semibold">
             {WhoAmI.name}
@@ -100,8 +91,10 @@ function Home() {
             <FaDribbble className="h-[30px] w-auto min-w-fit rounded-full aspect-square text-black/40 cursor-pointer outline-none hover:text-black hover:bg-stone-200 p-1" />
           </div>
         </div>
+        {/* Toolbox, socials and photos */}
         <div className="w-full h-fit flex flex-col gap-5">
-          <div className="w-full h-fit py-10 pl-10 bg-card_bg rnd flex flex-col gap-2 relative">
+          {/* toobox */}
+          <div className="w-full h-fit py-10 pl-10 max-md:pl-8 max-md:py-8 bg-card_bg rnd flex flex-col gap-2 relative">
             <div className="text-xs text-black/50 uppercase flex items-center justify-start gap-1">
               <img src={activeTool.icon} className="h-5 rounded-md shadow" />
               {activeTool.name}
@@ -129,7 +122,7 @@ function Home() {
                 </div>
               ))}
             </div>
-            <div className="h-[90px] mt-2 ring-1 ring-stone-200/30 w-full rounded-l-2xl shadow-xl shadow-[#eeeeee] flex items-center justify-start bg-white p-[10px] gap-2 overflow-x-clip">
+            <div className="h-[90px] mt-2 ring-1 ring-stone-200/30 w-full rounded-l-2xl shadow-xl shadow-[#eeeeee] flex items-center justify-start bg-white p-[10px] gap-2 relative overflow-x-clip max-md:overflow-x-auto hidden_scrollbar">
               {Toolbox.map((tool, index) => (
                 <button
                   key={index}
@@ -149,11 +142,13 @@ function Home() {
               ))}
             </div>
           </div>
-          <div className="w-full h-fit grid grid-cols-2 gap-5">
-            <div className="group w-full h-full p-6 bg-card_bg rnd flex flex-col-reverse gap-2 relative overflow-hidden">
+          {/* Social & Photos */}
+          <div className="w-full h-fit grid grid-cols-2 max-md:grid-cols-1 gap-5">
+            {/* Social */}
+            <div className="group w-full h-full p-6 max-md:p-8 bg-card_bg rnd flex flex-col-reverse gap-2 relative overflow-hidden">
               <Link
                 to={"/"}
-                className="bg-[#0288d1] w-14 rounded-2xl absolute top-4 right-4 z-20"
+                className="bg-[#0288d1] w-14 rounded-2xl absolute top-5 right-5 z-20"
               >
                 <img
                   src="https://img.icons8.com/color/144/linkedin.png"
@@ -163,15 +158,14 @@ function Home() {
 
               <Link
                 to={"/"}
-                onMouseEnter={handleMouseEnter}
-                className="w-full h-[45px] flex items-center justify-center gap-2 z-20 ring-1 ring-stone-200 rounded-full font-medium hover:bg-white hover:ring-transparent hover:text-black transition duration-300 peer"
+                className="w-full h-[45px] text-lg flex items-center justify-center gap-2 z-20 ring-1 ring-stone-200 rounded-full font-medium hover:bg-white hover:ring-transparent hover:text-black/80 transition duration-300 peer"
               >
                 View more posts <LuArrowUpRight className="text-lg" />
               </Link>
 
-              <div className="bg-[#0288d1] w-14 z-10 peer-hover:w-[200%] peer-hover:top-[-50%] peer-hover:right-[-50%] transition-all duration-500 ease-in-out aspect-square rounded-full shadow-xl absolute top-4 right-4"></div>
+              <div className="bg-[#0288d1] w-14 z-10 peer-hover:w-[200%] peer-hover:top-[-50%] peer-hover:right-[-50%] transition-all duration-500 ease-in-out aspect-square rounded-2xl shadow-xl absolute top-5 right-5"></div>
 
-              <div className="w-full flex-1 z-10 peer-hover:text-white">
+              <div className="w-full flex-1 z-10 peer-hover:text-white text-black/70">
                 <div className="flex items-center justify-start gap-2">
                   <div className="h-12 w-12 aspect-square min-w-fit rounded-full overflow-hidden">
                     <img
@@ -181,37 +175,39 @@ function Home() {
                   </div>
                   <div className="flex flex-col transition duration-500">
                     {/* Change text color to white on hover of the 'peer' link */}
-                    <h1 className="font-medium leading-tight truncate max-w-[80%] ">
+                    <h1 className="font-medium text-lg leading-tight truncate max-w-[80%] ">
                       Kevin K. Mbonimpaye
                     </h1>
-                    <h1 className="text-sm opacity-50 leading-tight truncate max-w-[80%]">
+                    <h1 className="text-base opacity-50 leading-tight truncate max-w-[80%]">
                       @kanezakevin
                     </h1>
                   </div>
                 </div>
 
                 <div className="flex flex-col flex-1 w-full py-5 transition duration-500">
-                  <h1 className="font-medium text-xl leading-tight break-all">
-                    I’ve obtained a new certificate of Recognition from
-                    <span className="text-blue-400 ">
+                  <h1 className="font-medium text-[22px] font-Outfit leading-tight break-all">
+                    New certificate of Recognition from
+                    <span className="text-blue-300">
                       {" "}
-                      #AfrikanBabyBookProject
+                      @AfrikanBabyBookProject
                     </span>
+                    , Thank you!
                   </h1>
                 </div>
               </div>
             </div>
-
+            {/* Photos */}
             <div className="group w-full h-full bg-card_bg rnd flex flex-col gap-2 relative overflow-hidden">
               <Link
                 to={"/"}
-                className="bg-white w-14 rounded-2xl shadow-xl absolute top-4 right-4"
+                className="bg-white w-14 rounded-2xl shadow-xl absolute top-5 right-5"
               >
                 <img
                   src="https://img.icons8.com/color/144/ios-photos.png"
                   className=""
                 />
               </Link>
+              {/* Images */}
               <div className="w-full h-[320px] cursor-pointer">
                 {galleryTab === 1 ? (
                   <img src={img1} className="w-full h-full object-cover" />
@@ -223,8 +219,8 @@ function Home() {
                   <img src={img4} className="w-full h-full object-cover" />
                 )}
               </div>
-
-              <div className="w-[85%] h-[50px] rounded-full shadow-lg bg-white/35 backdrop-blur-xl absolute bottom-[-100px] group-hover:bottom-6 right-0 left-0 mx-auto transition-all duration-300 ease-in-out flex gap-1 p-[5px]">
+              {/* bottom navbar */}
+              <div className="w-[84%] h-[50px] rounded-full shadow-lg bg-white/35 backdrop-blur-xl absolute bottom-[-100px] max-lg:bottom-5 group-hover:bottom-5 right-0 left-0 mx-auto transition-all duration-300 ease-in-out flex gap-1 p-[5px]">
                 <button
                   onClick={() => handleGallryTab(1)}
                   className={`w-full outline-none select-none flex items-center justify-center text-2xl transition text-black rounded-full 
@@ -272,6 +268,14 @@ function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      {/* New project comming soon */}
+      <section className=" grid grid-cols-1 gap-5 max-w-[1400px] mx-auto px-5 pt-3 pb-7">
+        <div className="w-full h-full p-8 border-[2px] border-stone-200/60 border-dashed rnd min-h-[240px] flex items-center justify-center flex-col">
+          <h1 className="text-xl px-3 text-black/25 font-medium text-center">
+            New project soon...
+          </h1>
         </div>
       </section>
     </div>

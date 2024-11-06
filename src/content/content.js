@@ -1,3 +1,4 @@
+import { MusicWash, MusicSumWave, MusicWetDreamz } from "../assets/music";
 import {
   CalendarLogo,
   CanvaLogo,
@@ -232,3 +233,26 @@ export const Toolbox = [
   },
 ];
 
+export const FavMusic = [
+  {
+    name: "Wash.",
+    singer: "Bon Iver",
+    spotifyUrl: "https://open.spotify.com/track/7rIhp6EWLNtM8qFIQruJPT?si=297d35a54102481d",
+    audioSrc: MusicWash,
+    poster: "https://i.scdn.co/image/ab67616d0000b2736880235a103031a13ff8c902"
+  },
+  {
+    name: "Possessions",
+    singer: "Sum Wave",
+    spotifyUrl: "https://open.spotify.com/track/3f14Cmmzo0yfzRvZl00uGO?si=0ff4bf71363d4af5",
+    audioSrc: MusicSumWave,
+    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0I1wVHhXPfc0nBiJo1-cyWFQZjfEeTCeJcw&s"
+  },
+  {
+    name: "Wet Dreamz",
+    singer: "J.Cole",
+    spotifyUrl: "https://open.spotify.com/track/4tqcoej1zPvwePZCzuAjJd?si=1f3db0e3e1cb4fad",
+    audioSrc: MusicWetDreamz,
+    poster: "https://i1.sndcdn.com/artworks-s7CMXZ0V4048Z8ZW-ivA5Iw-t500x500.jpg"
+  },
+]
