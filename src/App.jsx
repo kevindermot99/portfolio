@@ -4,6 +4,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import ScrollToTop from "./ScrollToTop";
 import About from "./pages/About";
+import UnderConstruction from "./pages/UnderConstruction";
 
 function App() {
   return (
@@ -11,8 +12,10 @@ function App() {
       <HashRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
+          <Route path="/" element={<UnderConstruction />} />
+          <Route path="*" element={<UnderConstruction />} />
+          {/* <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route> */}
         </Routes>
       </HashRouter>
     </div>
