@@ -29,8 +29,8 @@ function Gerayo() {
         className={`flex flex-col gap-2 select-none pointer-events-none group-hover:scale-75 group-hover:translate-y-[-105px] transition-all duration-500 saturate-0 group-hover:saturate-100`}
       >
         <div className="flex items-center gap-1 ">
-          <FaLocationDot className="text-4xl transition-all duration-500 text-dark_color/60 dark:text-light_color/45 group-hover:text-[#399e5a]" />
-          <h1 className=" font-bold text-4xl tracking-wide font-Inter text-dark_color/90 dark:text-light_color group-hover:text-[#399e5a]">
+          <FaLocationDot className="text-4xl transition-all duration-500 text-dark_color/45 dark:text-light_color/45 group-hover:text-[#399e5a]" />
+          <h1 className=" font-bold text-4xl transition-all duration-500 tracking-wide font-Inter text-dark_color/45 dark:text-light_color group-hover:text-[#399e5a]">
             gerayo
           </h1>
         </div>
