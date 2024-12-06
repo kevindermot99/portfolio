@@ -9,6 +9,7 @@ import Upfront from "../components/Projects/Upfront";
 import Countify from "../components/Projects/Countify";
 import NewProject from "../components/Projects/NewProject";
 import Gerayo from "../components/Projects/Gerayo";
+import SC from "../components/Special/SC";
 
 const customAnimation = keyframes`
 from{
@@ -25,6 +26,8 @@ to{
 
 function Home() {
   const [showLoading, setShowLoading] = useState(true);
+  const todayDate = new Date();
+  const year = todayDate.getFullYear();
   useEffect(() => {
     setTimeout(() => {
       // window.scrollTo(0, 0);
@@ -49,33 +52,76 @@ function Home() {
           <Navbar />
           <div className="w-full h-fit relative">
             <Reveal duration={500} triggerOnce keyframes={customAnimation}>
-              <div id="intro" className="w-full h-svh xl:max-h-[1000px] px-11 pb-8 flex items-center justify-center relative">
+              {/* intro */}
+              <div
+                id="intro"
+                className="w-full h-fit xl:max-h-[1000px] px-11 pb-8 pt-[300px] max-xl:pt-[160px] flex items-center justify-center relative"
+              >
                 <Intro />
               </div>
-              <div className="w-full max-w-[1400px] mx-auto h-fit relative">
-                
-                <div
-                  id="projects"
-                  className="w-full h-fit min-h-[600px] mb-10 px-11 py-0 relative grid grid-cols-4 gap-4 max-2xl:grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1"
-                >
-                  <Upfront />
-                  <Countify />
-                  <Gerayo />
-                  <NewProject />
-                </div>
-                <div
-                  id="background"
-                  className="w-full h-[700px] border-b-[1px] border-stone-200 px-11 py-8 relative"
-                >
-                  Background
+              {/* work */}
+              <div
+                id="work"
+                className="w-full max-w-[1400px] mx-auto h-fit px-11 py-[300px] relative grid grid-cols-4 gap-4 max-2xl:grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1"
+              >
+                <Upfront />
+                <Countify />
+                <Gerayo />
+                <NewProject />
+              </div>
+              {/* background */}
+              <div
+                id="background"
+                className="w-full max-w-[900px] mx-auto h-[700px] px-11 py-8 relative"
+              >
+                <h1 className="text-base max-w-[600px] text-justify">
+                  Im a {year - 2003}
+                  <SC char={"-"} />
+                  year
+                  <SC char={"-"} />
+                  old full
+                  <SC char={"-"} />
+                  stack developer from Rwanda, currently pursuing a Bachelor of
+                  Science in Software Engineering at ALU. I started my web
+                  development journey in 2020, and over the years, I
+                  <SC char={"'"} />
+                  ve cultivated a sharp eye for detail and a collaborative
+                  approach to problem
+                  <SC char={"-"} />
+                  solving.{" "}
+                </h1>
+                <br />
+                <br />
+                <br />
+                <br />
+                {/* job */}
+                <div className="w-full flex flex-col gap-3">
+                  <div className="h-auto w-24 aspect-square rounded-full bg-card_color_light dark:bg-card_color_dark text-dark_color dark:text-light_color flex items-center justify-center overflow-hidden">
+                    <p className="font-Ojuju text-8xl font-semibold mb-8">o</p>
+                  </div>
+                  <h1 className="text-3xl pt-5">Outside hospitality</h1>
+                  <h1 className="text-7xl font-Custom_b">
+                    Front
+                    <SC char={"-"} />
+                    end Developer
+                  </h1>
+                  <h1 className="text-base">
+                    Now <SC char={`•`} /> Kigali
+                  </h1>
+                  <h1 className="text-base text-dark_color/50 dark:text-light_color/50">
+                    Working on the front<SC char={"-"} />end design and development of
+                    Hospitality<SC char={"'"} />s platform.
+                  </h1>
                 </div>
               </div>
+              {/* about */}
               <div
                 id="about"
                 className="w-full h-[700px] border-b-[1px] border-stone-200 px-11 py-8 relative"
               >
                 about
               </div>
+              {/* contact */}
               <div
                 id="contact"
                 className="w-full h-[700px] border-b-[1px] border-stone-200 px-11 py-8 relative"

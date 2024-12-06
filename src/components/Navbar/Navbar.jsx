@@ -35,30 +35,18 @@ function Navbar() {
             label={"intro"}
             id={"intro"}
           />
-          <Link
-            to={"projects"}
-            smooth={true}
-            duration={400}
-            offset={-60}
-            className={`text-base w-fit flex items-center capitalize cursor-pointer hover:text-dark_color text-dark_color_weak dark:text-light_color_weak dark:hover:text-light_color`}
-          >
-            work
-          </Link>
-          {/* sub */}
-          <div className="flex flex-col gap-1 border-l-[1px] border-dark_color_weak pl-3 ml-4">
-            <ScrollTo
-              activeSection={activeSection}
-              setActiveSection={setActiveSection}
-              label={"projects"}
-              id={"projects"}
-            />
-            <ScrollTo
-              activeSection={activeSection}
-              setActiveSection={setActiveSection}
-              label={"Background"}
-              id={"background"}
-            />
-          </div>
+          <ScrollTo
+            activeSection={activeSection}
+            setActiveSection={setActiveSection}
+            label={"Work"}
+            id={"work"}
+          />
+          <ScrollTo
+            activeSection={activeSection}
+            setActiveSection={setActiveSection}
+            label={"Background"}
+            id={"background"}
+          />
           <ScrollTo
             activeSection={activeSection}
             setActiveSection={setActiveSection}

@@ -9,6 +9,7 @@ export default {
         Outfit: ["Outfit", "sans-serif"],
         Inter: ["Inter", "sans-serif"],
         DMSans: ["DM Sans", "sans-serif"],
+        Ojuju: ["Ojuju", "sans-serif"],
         Custom_r: ["Custom_Sans_r", "sans-serif"],
         Custom_m: ["Custom_Sans_m", "sans-serif"],
         Custom_b: ["Custom_Sans_b", "sans-serif"],

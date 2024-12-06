@@ -11,7 +11,7 @@ function Intro() {
     // "Engineers",
   ];
   return (
-    <div className="max-w-[750px] 2xl:max-w-[850px] w-full 2xl:min-h-[400px] max-xl:max-w-[650px] max-md:max-w-full flex flex-col items-start justify-start dark:text-light_color">
+    <div className="max-w-[750px] 2xl:max-w-[850px] w-full max-xl:max-w-[650px] max-md:max-w-full flex flex-col items-start justify-start dark:text-light_color">
       {/* visitors */}
       <div className="w-full flex gap-0 overflow-x-auto invisible_scroll">
         {expectedVisitors.map((type, index) => (
