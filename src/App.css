@@ -52,7 +52,7 @@ body.no_scroll::-webkit-scrollbar-thumb {
 }
 
 ::selection {
-  background-color: #88888865; /* Custom background color */
+  background-color: #dfdfdf; /* Custom background color */
   color: #202124; /* Custom text color */
 }
 
