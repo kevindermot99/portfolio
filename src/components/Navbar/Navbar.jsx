@@ -50,12 +50,6 @@ function Navbar() {
           <ScrollTo
             activeSection={activeSection}
             setActiveSection={setActiveSection}
-            label={"about"}
-            id={"about"}
-          />
-          <ScrollTo
-            activeSection={activeSection}
-            setActiveSection={setActiveSection}
             label={"contact"}
             id={"contact"}
           />
