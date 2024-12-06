@@ -109,17 +109,55 @@ function Home() {
                     Now <SC char={`•`} /> Kigali
                   </h1>
                   <h1 className="text-base text-dark_color/50 dark:text-light_color/50">
-                    Working on the front<SC char={"-"} />end design and development of
-                    Hospitality<SC char={"'"} />s platform.
+                    Working on the front
+                    <SC char={"-"} />
+                    end design and development of Hospitality
+                    <SC char={"'"} />s platform.
                   </h1>
                 </div>
               </div>
               {/* contact */}
               <div
                 id="contact"
-                className="w-full h-[700px] border-b-[1px] border-stone-200 px-11 py-8 relative"
+                className="w-full max-w-[900px] mx-auto h-[450px] px-11 pb-10 mb-5 relative grid grid-cols-2 gap-10"
               >
-                contact
+                <div className="flex items-start justify-between flex-col">
+                  <div className="w-full flex flex-col items-start justify-start text-ledt gap-1">
+                    <h1 className="text-base text-dark_color_weak dark:text-light_color_weak flex items-center gap-4">
+                      <div className="h-[9px] w-[9px] relative">
+                        <div className="h-[9px] w-[9px] bg-dark_color_weak rounded-xl animate-ping"></div>
+                        <div className="h-[7px] w-[7px] bg-dark_color rounded-xl absolute top-0 left-0 right-0 bottom-0 m-auto"></div>
+                      </div>
+                      Now exploring new opportunities
+                    </h1>
+                    <h1 className="text-base text-dark_color dark:text-light_color pl-[23px]">
+                      I’m open to new roles where I can bring value and grow
+                      alongside a great team
+                    </h1>
+                  </div>
+                  <div className="flex items-center gap-7">
+                    <a
+                      href="/"
+                      className="border-b pb-1 border-dark_color/70 text-dark_color dark:text-light_color dark:border-light_color/70 text-sm"
+                    >
+                      mbonimpayekevin
+                      <SC char={"@"} />
+                      gmail.com
+                    </a>
+                    <a
+                      href="/"
+                      className="border-b pb-1 border-dark_color/70 text-dark_color dark:text-light_color dark:border-light_color/70 text-sm"
+                    >
+                      LinkedIn
+                    </a>
+                  </div>
+                </div>
+                <div className="flex justify-end items-end w-full h-full ">
+                  <img
+                    src="./me/me.jpg"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </Reveal>
           </div>
