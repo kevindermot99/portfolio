@@ -114,13 +114,6 @@ function Home() {
                   </h1>
                 </div>
               </div>
-              {/* about */}
-              <div
-                id="about"
-                className="w-full h-[700px] border-b-[1px] border-stone-200 px-11 py-8 relative"
-              >
-                about
-              </div>
               {/* contact */}
               <div
                 id="contact"
