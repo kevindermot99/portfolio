@@ -26,14 +26,14 @@ function Countify() {
       className="w-full h-[312px] bg-[#f2f2f2] dark:bg-card_color_dark transition group break-inside-avoid rounded-3xl relative flex items-center justify-center flex-col overflow-hidden"
     >
       <div
-        className={`flex flex-col gap-2 select-none pointer-events-none group-hover:scale-75 group-hover:translate-y-[-105px] transition-all duration-500 saturate-0 group-hover:saturate-100`}
+        className={`flex flex-col gap-2 select-none pointer-events-none group-hover:scale-75 group-hover:translate-y-[-105px] transition-all duration-500 `}
       >
         <div className="flex items-center gap-2 ">
           <img
             src="./project_logos/countify.png"
-            className="h-12 transition-all duration-500 contrast-[35%] group-hover:contrast-100 "
+            className="h-12 transition-all duration-500 "
           />
-          <h1 className=" font-bold text-3xl text-dark_color/90 dark:text-light_color tracking-wide">
+          <h1 className=" font-bold text-3xl text-dark_color dark:text-light_color tracking-wide">
             Countify
           </h1>
         </div>
