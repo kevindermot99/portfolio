@@ -29,7 +29,7 @@ function Upfront() {
       >
         <div className="flex items-center gap-2 ">
           <img src="./project_logos/upfront.png" className="h-12" />
-          <h1 className="font-Inter font-bold text-3xl text-dark_color/90 dark:text-light_color ">
+          <h1 className="font-Inter font-bold text-3xl text-dark_color dark:text-light_color ">
             Upfront.
           </h1>
         </div>
