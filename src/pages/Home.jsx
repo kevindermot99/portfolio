@@ -41,9 +41,9 @@ function Home() {
   return (
     <>
       {/* Loading screen */}
-      {/* {showLoading && <LoadingScreen />} */}
+      {showLoading && <LoadingScreen />}
       {/* content */}
-      {!false && (
+      {!showLoading && (
         <div
           id="content"
           className="w-full h-svh flex relative pl-[250px] pr-11"
@@ -55,14 +55,14 @@ function Home() {
               {/* intro */}
               <div
                 id="intro"
-                className="w-full h-fit xl:max-h-[1000px] px-11 pb-8 pt-[300px] max-xl:pt-[160px] flex items-center justify-center relative"
+                className="w-fit mx-auto h-full xl:max-h-[1000px] py-[19%] 2xl:py-[300px] relative"
               >
                 <Intro />
               </div>
               {/* work */}
               <div
                 id="work"
-                className="w-full max-w-[1400px] mx-auto h-fit px-11 py-[300px] relative grid grid-cols-4 gap-4 max-2xl:grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1"
+                className="w-full max-w-[1400px] mx-auto h-fit px-11 pb-[300px] relative grid grid-cols-4 gap-4 max-2xl:grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1"
               >
                 <Upfront />
                 <Countify />
@@ -72,7 +72,7 @@ function Home() {
               {/* background */}
               <div
                 id="background"
-                className="w-full max-w-[900px] mx-auto h-[700px] px-11 py-8 relative"
+                className="w-full max-w-[900px] mx-auto h-[700px] px-11 pb-8 relative text-dark_color dark:text-light_color"
               >
                 <h1 className="text-base max-w-[600px] text-justify">
                   Im a {year - 2003}
