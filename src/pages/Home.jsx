@@ -130,7 +130,7 @@ function Home() {
                       </div>
                       Exploring new opportunities
                     </h1>
-                    <h1 className="text-base text-dark_color dark:text-light_color pl-[23px]">
+                    <h1 className="text-lg text-dark_color dark:text-light_color pl-[25px]">
                       I’m open to new roles where I can bring value and grow
                       alongside a great team
                     </h1>
