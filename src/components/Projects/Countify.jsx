@@ -63,6 +63,7 @@ function Countify() {
           </div>
         </div>
       </div>
+      {/* screenshot 2 */}
       <div
         className={`w-full select-none pointer-events-none flex items-start justify-between gap-0 h-fit px-3 xl:opacity-0 xl:group-hover:opacity-100 absolute left-0 right-0 mx-auto xl:top-[100%] xl:group-hover:top-[59%] top-[59%] delay-150 transition-all duration-500 ease-in-out overflow-x-auto invisible_scroll`}
       >
@@ -81,7 +82,7 @@ function Countify() {
       </div>
       {/* screenshot 3 */}
       <div
-        className={`w-[100%] px-3 h-fit opacity-0 group-hover:opacity-100 absolute left-0 right-0 mx-auto top-[100%] group-hover:top-[83%] delay-300 transition-all duration-500 ease-in-out`}
+        className={`w-[100%] px-3 h-fit xl:opacity-0 xl:group-hover:opacity-100 absolute left-0 right-0 mx-auto xl:top-[100%] xl:group-hover:top-[83%] top-[83%] delay-300 transition-all duration-500 ease-in-out`}
       >
         <div className="w-full h-[40px] rounded-2xl bg-stone-400/40 dark:bg-[#37373b] text-sm text-dark_color dark:text-light_color flex items-center justify-center gap-2 pointer-events-none select-none">
           <RiUploadCloud2Line className="text-base" />
