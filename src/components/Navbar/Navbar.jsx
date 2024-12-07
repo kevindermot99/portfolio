@@ -24,7 +24,7 @@ to{
 function Navbar({showCerts, setShowCerts}) {
   const [activeSection, setActiveSection] = useState(null);
   return (
-    <div className="w-[250px] max-lg:w-full bg-orange-400/0 flex flex-col items-start justify-between h-full max-lg:h-[70px] max-lg:bg-card_color_light/85 dark:max-lg:bg-card_color_dark/85 text-dark_color dark:text-light_color fixed z-10 top-0 left-0 px-11 py-8 max-lg:py-0 max-lg:px-5 max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:flex-row max-lg:items-center max-lg:backdrop-blur-md">
+    <div className="w-[250px] max-lg:w-full bg-orange-400/0 flex flex-col items-start justify-between h-full max-lg:h-[70px] max-lg:bg-[#fdfdfd]/80 dark:max-lg:bg-card_color_dark/85 text-dark_color dark:text-light_color fixed z-10 top-0 left-0 px-11 py-8 max-lg:py-0 max-lg:px-5 max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:flex-row max-lg:items-center max-lg:backdrop-blur-xl">
       <Reveal triggerOnce duration={500} keyframes={customAnimation}>
         <h1 className="text-[24px] leading-[24px] w-fit flex items-center cursor-default select-none">
           Kevin
