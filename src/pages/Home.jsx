@@ -146,6 +146,7 @@ function Home() {
                     </a>
                     <a
                       href="/"
+                      target="_blank"
                       className="border-b pb-1 border-dark_color/70 text-dark_color dark:text-light_color dark:border-light_color/70 text-sm"
                     >
                       LinkedIn
