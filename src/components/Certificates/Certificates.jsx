@@ -17,6 +17,7 @@ to{
 `;
 
 function Certificates({ setShowCerts }) {
+  const [closed, setClosed] = useState(false)
   const certificates = [
     {
       proof: "./certificates/sorwazini.jpg",
