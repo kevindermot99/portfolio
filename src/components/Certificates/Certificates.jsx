@@ -81,10 +81,9 @@ function Certificates({ setShowCerts }) {
         cascade={0.3}
         duration={500}
         keyframes={customAnimation}
-        className={`transition-all duration-500 ${closed ? 'opacity-0 translate-y-20' : ''}`}
       >
         {/* head */}
-        <div className="w-full h-fit flex flex-col items-start justify-start gap-6 py-[30px]">
+        <div className={`w-full h-fit flex flex-col items-start justify-start gap-6 py-[30px] transition-all duration-500 ${closed ? 'opacity-0 translate-y-20' : ''}`}>
           <h1 className="text-5xl font-Custom_b tracking-tight">
             Certificates
           </h1>
