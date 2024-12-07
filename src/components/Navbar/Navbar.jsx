@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import ScrollTo from "../ScrollTo.jsx/ScrollTo";
-import { IoIosImages } from "react-icons/io";
+import { IoIosImages, IoLogoGithub } from "react-icons/io";
 import { CgDarkMode } from "react-icons/cg";
 import { FaMedal } from "react-icons/fa";
 import { PiCertificate, PiCertificateBold } from "react-icons/pi";
@@ -62,20 +62,14 @@ function Navbar() {
         </div>
         <div className="h-fit flex flex-col bg-orange-200/0 gap-2 w-full">
           <div className="flex items-center gap-2 relative">
-            <button className="text-dark_color dark:text-light_color dark:bg-card_color_dark peer bg-[#f2f2f2] active:bg-stone-200 dark:active:bg-[#35353a] w-[42px] min-w-[48px] h-auto flex items-center justify-center text-2xl aspect-square rounded-full">
-              <CgDarkMode className="rotate-[-20deg]" />
-            </button>
-            <p className="text-base transition text-dark_color dark:text-light_color/70 translate-x-[-50px] -z-10 opacity-0 peer-hover:translate-x-0 peer-hover:opacity-100">
-              Theme
-            </p>
+            <a href="https://github.com/kevindermot99" target="_blank" className="text-dark_color dark:text-light_color dark:bg-card_color_dark peer bg-[#f2f2f2] active:bg-stone-200 dark:active:bg-[#35353a] w-[44px] min-w-[44px] h-auto flex items-center justify-center text-2xl aspect-square rounded-full">
+              <IoLogoGithub className="" />
+            </a>
           </div>
           <div className="flex items-center gap-2 relative">
-            <button className="text-dark_color dark:text-light_color dark:bg-card_color_dark peer bg-[#f2f2f2] active:bg-stone-200 dark:active:bg-[#35353a] w-[42px] min-w-[48px] h-auto flex items-center justify-center text-2xl aspect-square rounded-full">
-              <PiCertificateBold className="rotate-[-20deg]" />
+            <button className="text-dark_color dark:text-light_color dark:bg-card_color_dark peer bg-[#f2f2f2] active:bg-stone-200 dark:active:bg-[#35353a] w-[44px] min-w-[44px] h-auto flex items-center justify-center text-2xl aspect-square rounded-full">
+              <PiCertificateBold className="" />
             </button>
-            <p className="text-base transition text-dark_color dark:text-light_color/70 translate-x-[-50px] -z-10 opacity-0 peer-hover:translate-x-0 peer-hover:opacity-100">
-              Achievements
-            </p>
           </div>
         </div>
       </Reveal>
