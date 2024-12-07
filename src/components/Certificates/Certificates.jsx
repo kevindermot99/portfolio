@@ -38,7 +38,9 @@ function Certificates({ setShowCerts }) {
     },
   ];
 
-
+  const handleClose = () => {
+    
+  }
 
   useEffect(() => {
     const handleKeyDown = (event) => {
