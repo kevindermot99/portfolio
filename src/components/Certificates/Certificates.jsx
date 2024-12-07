@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { PiCertificateBold } from "react-icons/pi";
@@ -37,6 +37,26 @@ function Certificates({ setShowCerts }) {
       type: ["All", "Technical"],
     },
   ];
+
+
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        // Perform the desired action
+        console.log('Esc key pressed!');
+      }
+    };
+
+    // Attach the event listener
+    window.addEventListener('keydown', handleKeyDown);
+
+    // Cleanup the event listener on unmount
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   const certificateFilters = ["All", "Technical", "Soft Skills", "Education"];
   const [type, setType] = useState("All");
   return (
