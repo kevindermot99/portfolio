@@ -41,7 +41,7 @@ function Intro() {
           <>
             I<SC char={`'`} />m a Full
             <SC char={`-`} />
-            Stack web developer with 3 months of experience, skilled in MERN
+            stack web developer with 3 months of experience, skilled in MERN
             Stack, and committed to creating quality products.
           </>
         )}
