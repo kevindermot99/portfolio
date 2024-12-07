@@ -66,7 +66,7 @@ function Navbar() {
               <CgDarkMode className="rotate-[-20deg]" />
             </button>
             <p className="text-base transition text-dark_color dark:text-light_color/70 translate-x-[-50px] -z-10 opacity-0 peer-hover:translate-x-0 peer-hover:opacity-100">
-              Light<span className="font-Inter">/</span>Dark
+              Theme
             </p>
           </div>
           <div className="flex items-center gap-2 relative">
