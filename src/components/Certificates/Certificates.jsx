@@ -50,14 +50,15 @@ function Certificates() {
         </div>
         {/* body */}
         <div className="w-full columns-4 max-2xl:columns-3 max-xl:columns-2 max-md:columns-1 content-start space-y-4 ">
-          {[...Array(8)].map((_, index) => (
-            <div className="flex flex-col gap-4">
-              <div className="w-full h-[340px] bg-card_color_light dark:bg-card_color_dark rounded-3xl break-inside-avoid"></div>
-              <div className="flex gap-2">
+          {[...Array(1)].map((_, index) => (
+            <div className="flex flex-col gap-4 break-inside-avoid">
+              <div className="w-full h-[340px] bg-card_color_light dark:bg-card_color_dark rounded-3xl"></div>
+              <div className="flex gap-2 items-center">
                 {/* logo */}
-                <div className="h-[50px] w-[50px] bg-card_color_light dark:bg-card_color_dark rounded-xl">
+                <div className="h-auto w-[44px] aspect-square bg-card_color_light dark:bg-card_color_dark rounded-xl">
 
                 </div>
+                <h1 className="text-xl">from?</h1>
               </div>
             </div>
           ))}
