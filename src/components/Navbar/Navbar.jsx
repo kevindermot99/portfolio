@@ -61,14 +61,14 @@ function Navbar() {
           />
         </div>
         <div className="h-fit flex flex-col bg-orange-200/0 gap-2 w-full">
-          <div className="flex items-center gap-2 relative">
+          {/* <div className="flex items-center gap-2 relative">
             <button className="text-dark_color dark:text-light_color dark:bg-card_color_dark peer bg-[#f2f2f2] active:bg-stone-200 w-[42px] min-w-[48px] h-auto flex items-center justify-center text-2xl aspect-square rounded-full">
               <CgDarkMode className="rotate-[-20deg]" />
             </button>
             <p className="text-base transition text-dark_color dark:text-light_color translate-x-[-50px] -z-10 opacity-0 peer-hover:translate-x-0 peer-hover:opacity-100">
               Light<span className="font-Inter">/</span>Dark
             </p>
-          </div>
+          </div> */}
           <div className="flex items-center gap-2 relative">
             <button className="text-dark_color dark:text-light_color dark:bg-card_color_dark peer bg-[#f2f2f2] active:bg-stone-200 w-[42px] min-w-[48px] h-auto flex items-center justify-center text-2xl aspect-square rounded-full">
               <PiCertificateBold className="rotate-[-20deg]" />
