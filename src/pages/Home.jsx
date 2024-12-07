@@ -135,7 +135,7 @@ function Home() {
                       alongside a great team
                     </h1>
                   </div>
-                  <div className="flex items-center gap-7">
+                  <div className="flex items-center max-lg:flex-col max-lg:items-start gap-7 max-lg:gap-2">
                     <a
                       href="mailto:mbonimpayekevin@gmail.com.com?subject=Inquiry"
                       target="_blank"
