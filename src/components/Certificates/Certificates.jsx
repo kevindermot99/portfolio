@@ -26,6 +26,14 @@ function Certificates() {
       ],
       desc: "We won most inovative idea pitching completition.",
     },
+    {
+      proof: "./certificates/sorwazini.jpg",
+      from: [
+        "ALU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0xpCuzcYvX8XpYqJnHLpblzGtZ24B5MQCvaAQ4nD9qQvT5N8J01Zdwlj-XKWNasw5B7U&usqp=CAU",
+      ],
+      desc: "We won most inovative idea pitching completition.",
+    },
   ];
   const certificateFilters = ["All", "Technical", "Soft Skills", "Education"];
   const [type, setType] = useState("All");
@@ -76,10 +84,9 @@ function Certificates() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="flex items-start justify-center flex-col gap-1">
-                  <h1 className="text-base font-Custom_m leading-4">{certificate.from[0]}</h1>
-                  <h1 className="text-sm leading-4 text-dark_color/70 dark:text-light_color/70">{certificate.desc}</h1>
-                </div>
+                <h1 className="text-base font-Custom_m leading-4">
+                  {certificate.from[0]}
+                </h1>
               </div>
             </div>
           ))}
