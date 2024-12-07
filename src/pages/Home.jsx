@@ -55,7 +55,7 @@ function Home() {
               {/* intro */}
               <div
                 id="intro"
-                className="w-fit mx-auto h-full xl:max-h-[1000px] max-lg:max-h-max py-[19%] max-lg:py-[100px] max-md:min-h-[80vh] 2xl:py-[300px] max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center  relative"
+                className="w-fit mx-auto h-full xl:max-h-[1000px] max-lg:max-h-max py-[19%] max-lg:pb-[70px] max-lg:pt-[140px] max-md:min-h-[80vh] 2xl:py-[300px] max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center  relative"
               >
                 <Intro />
               </div>
