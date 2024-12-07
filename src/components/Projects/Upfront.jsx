@@ -26,7 +26,7 @@ function Upfront() {
       className="w-full h-[312px] bg-[#f2f2f2] dark:bg-card_color_dark transition group  rounded-3xl relative flex items-center justify-center flex-col overflow-hidden"
     >
       <div
-        className={`flex flex-col gap-2 select-none pointer-events-none xl:group-hover:scale-75 scale-75 xl:group-hover:translate-y-[-105px] translate-y-[-105px] transition-all duration-500 xl:saturate-0 xl:group-hover:saturate-100`}
+        className={`flex flex-col gap-2 select-none pointer-events-none xl:group-hover:scale-75 max-xl:scale-75 xl:group-hover:translate-y-[-105px] translate-y-[-105px] transition-all duration-500 xl:saturate-0 xl:group-hover:saturate-100`}
       >
         <div className="flex items-center gap-2 ">
           <img src="./project_logos/upfront.png" className="h-12" />
