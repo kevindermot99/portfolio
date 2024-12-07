@@ -27,10 +27,10 @@ function Certificates() {
       desc: "We won most inovative idea pitching completition.",
     },
     {
-      proof: "./certificates/sorwazini.jpg",
+      proof: "./certificates/abbp.png",
       from: [
-        "ALU",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0xpCuzcYvX8XpYqJnHLpblzGtZ24B5MQCvaAQ4nD9qQvT5N8J01Zdwlj-XKWNasw5B7U&usqp=CAU",
+        "Afrikan Baby Book Project",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tafhJVYOixyiJpXzXToh1d5ROu9cpRcPYg&s",
       ],
       desc: "We won most inovative idea pitching completition.",
     },
@@ -73,7 +73,7 @@ function Certificates() {
               <div className="w-full h-[340px] bg-card_color_light dark:bg-card_color_dark rounded-3xl py-16 px-12 overflow-clip">
                 <img
                   src={certificate.proof}
-                  className="w-full h-full object-cover rounded-md"
+                  className="w-full min-h-full object-cover rounded-md"
                 />
               </div>
               <div className="flex gap-2 items-center">
