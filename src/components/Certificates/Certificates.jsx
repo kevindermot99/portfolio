@@ -40,6 +40,7 @@ function Certificates({ setShowCerts }) {
   ];
 
   const handleClose = () => {
+    setClosed(true)
     setTimeout(() => {
       setShowCerts(false)
     }, 1000);
@@ -80,6 +81,7 @@ function Certificates({ setShowCerts }) {
         cascade={0.3}
         duration={500}
         keyframes={customAnimation}
+        className=""
       >
         {/* head */}
         <div className="w-full h-fit flex flex-col items-start justify-start gap-6 py-[30px]">
