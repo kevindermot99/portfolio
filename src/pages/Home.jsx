@@ -137,7 +137,8 @@ function Home() {
                   </div>
                   <div className="flex items-center gap-7">
                     <a
-                      href="/"
+                      href="mailto:mbonimpayekevin@gmail.com.com?subject=Inquiry"
+                      target="_blank"
                       className="border-b pb-1 border-dark_color/70 text-dark_color dark:text-light_color dark:border-light_color/70 text-sm"
                     >
                       mbonimpayekevin
