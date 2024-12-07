@@ -62,6 +62,12 @@ function Navbar() {
             label={"resume"}
             id={"resume"}
           />
+          <Link
+            to={"/"}
+            className={`text-base w-fit flex items-center capitalize cursor-pointer hover:text-dark_color dark:hover:text-light_color`}
+          >
+            resume
+          </Link>
         </div>
         <div className="h-fit flex flex-col bg-orange-200/0 gap-2 w-full">
           <div className="flex items-center gap-2 relative">
@@ -74,7 +80,10 @@ function Navbar() {
             </a>
           </div>
           <div className="flex items-center gap-2 relative">
-            <button onClick={() => setShowCerts(true)} className="text-dark_color dark:text-light_color dark:bg-card_color_dark peer bg-[#f2f2f2] active:bg-stone-200 dark:active:bg-[#35353a] w-[44px] min-w-[44px] h-auto flex items-center justify-center text-2xl aspect-square rounded-full">
+            <button
+              onClick={() => setShowCerts(true)}
+              className="text-dark_color dark:text-light_color dark:bg-card_color_dark peer bg-[#f2f2f2] active:bg-stone-200 dark:active:bg-[#35353a] w-[44px] min-w-[44px] h-auto flex items-center justify-center text-2xl aspect-square rounded-full"
+            >
               <PiCertificateBold className="" />
             </button>
           </div>
