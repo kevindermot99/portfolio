@@ -32,7 +32,7 @@ function Achievements() {
           <h1 className="text-5xl font-Custom_b tracking-tight">Achievements</h1>
           <div className="flex items-center justify-start gap-6">
             {certificateFilters.map((filter, index) => (
-              <h1 onClick={() =>  setType(fil)} key={index} className={`border-b-[2px] cursor-pointer hover:text-dark_color dark:hover:text-light_color ${type === filter ? 'text-dark_color dark:text-light_color border-dark_color dark:border-light_color' : 'text-dark_color_weak dark:text-light_color_weak border-transparent'}`}>
+              <h1 onClick={() =>  setType(filter)} key={index} className={`border-b-[2px] cursor-pointer hover:text-dark_color dark:hover:text-light_color ${type === filter ? 'text-dark_color dark:text-light_color border-dark_color dark:border-light_color' : 'text-dark_color_weak dark:text-light_color_weak border-transparent'}`}>
                 {filter}
               </h1>
             ))}
