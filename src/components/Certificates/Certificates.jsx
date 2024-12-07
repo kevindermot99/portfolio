@@ -39,7 +39,9 @@ function Certificates({ setShowCerts }) {
   ];
 
   const handleClose = () => {
-    
+    setTimeout(() => {
+      setShowCerts(false)
+    }, 1000);
   }
 
   useEffect(() => {
