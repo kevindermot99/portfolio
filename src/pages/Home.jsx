@@ -62,7 +62,7 @@ function Home() {
               {/* work */}
               <div
                 id="work"
-                className="w-full max-w-[1400px] mx-auto h-fit px-11 max-lg:px-0 pb-[300px] relative grid grid-cols-4 gap-4 max-2xl:grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1"
+                className="w-full max-w-[1400px] mx-auto h-fit px-11 max-lg:px-0 pb-[300px] max-lg:pb-20 relative grid grid-cols-4 gap-4 max-2xl:grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1"
               >
                 <Upfront />
                 <Countify />
@@ -94,7 +94,7 @@ function Home() {
                 <br />
                 <br />
                 <br />
-                {/* job */}
+                {/* jobs */}
                 <div className="w-full flex flex-col gap-3">
                   <div className="h-auto w-24 aspect-square rounded-full bg-card_color_light dark:bg-card_color_dark text-dark_color dark:text-light_color flex items-center justify-center overflow-hidden">
                     <p className="font-Ojuju text-8xl font-semibold mb-8">o</p>
@@ -115,15 +115,19 @@ function Home() {
                     <SC char={"'"} />s platform.
                   </h1>
                 </div>
+                <br />
+                <br />
+                <br />
+                <br />
               </div>
               {/* contact */}
               <div
                 id="contact"
-                className="w-full max-w-[900px] mx-auto h-[450px] max-lg:h-fit px-11 max-lg:px-0 pb-10 mb-5 relative grid grid-cols-2 max-lg:flex max-lg:flex-col gap-10"
+                className="w-full max-w-[900px] mx-auto h-[450px] max-lg:h-fit px-11 max-lg:px-0 mb-5 relative grid grid-cols-2 max-lg:flex max-lg:flex-col gap-10"
               >
-                <div className="flex items-start justify-between flex-col">
+                <div className="flex items-start justify-between flex-col max-lg:gap-8">
                   <div className="w-full flex flex-col items-start justify-start text-ledt gap-1">
-                    <h1 className="text-base text-dark_color_weak dark:text-light_color_weak flex items-center gap-4">
+                    <h1 className="text-base text-dark_color/50 dark:text-light_color/50 flex items-center gap-4">
                       <div className="h-[9px] w-[9px] relative">
                         <div className="h-[9px] w-[9px] bg-dark_color_weak dark:bg-light_color_weak rounded-xl animate-ping"></div>
                         <div className="h-[7px] w-[7px] bg-dark_color rounded-xl dark:bg-light_color absolute top-0 left-0 right-0 bottom-0 m-auto"></div>
