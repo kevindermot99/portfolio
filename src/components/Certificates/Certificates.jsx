@@ -24,7 +24,7 @@ function Certificates() {
         "ALU",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0xpCuzcYvX8XpYqJnHLpblzGtZ24B5MQCvaAQ4nD9qQvT5N8J01Zdwlj-XKWNasw5B7U&usqp=CAU",
       ],
-      desc: "We won a pitching completition for most inovative idea."
+      desc: "We won most inovative idea pitching completition.",
     },
   ];
   const certificateFilters = ["All", "Technical", "Soft Skills", "Education"];
@@ -70,13 +70,16 @@ function Certificates() {
               </div>
               <div className="flex gap-2 items-center">
                 {/* logo */}
-                <div className="h-auto w-[44px] aspect-square bg-card_color_light dark:bg-card_color_dark rounded-xl overflow-hidden">
+                <div className="h-auto w-[45px] aspect-square bg-card_color_light dark:bg-card_color_dark rounded-xl overflow-hidden">
                   <img
                     src={certificate.from[1]}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h1 className="text-base">{certificate.from[0]}</h1>
+                <div className="flex items-start justify-center flex-col gap-1">
+                  <h1 className="text-base font-Custom_m leading-4">{certificate.from[0]}</h1>
+                  <h1 className="text-sm leading-4 text-dark_color/70 dark:text-light_color/70">{certificate.desc}</h1>
+                </div>
               </div>
             </div>
           ))}
