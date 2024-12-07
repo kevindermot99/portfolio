@@ -55,6 +55,9 @@ function Certificates() {
               <div className="w-full h-[340px] bg-card_color_light dark:bg-card_color_dark rounded-3xl break-inside-avoid"></div>
               <div className="flex gap-2">
                 {/* logo */}
+                <div className="h-[50px] w-[50px] bg-card_color_light dark:bg-card_color_dark rounded-xl">
+
+                </div>
               </div>
             </div>
           ))}
