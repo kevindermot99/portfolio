@@ -10,6 +10,7 @@ import Countify from "../components/Projects/Countify";
 import NewProject from "../components/Projects/NewProject";
 import Gerayo from "../components/Projects/Gerayo";
 import SC from "../components/Special/SC";
+import Certificates from "../components/Certificates/Certificates";
 
 const customAnimation = keyframes`
 from{
@@ -26,6 +27,7 @@ to{
 
 function Home() {
   const [showLoading, setShowLoading] = useState(true);
+  const [showCerts, setShowCerts] = useState(false);
   const todayDate = new Date();
   const year = todayDate.getFullYear();
   useEffect(() => {
@@ -49,7 +51,9 @@ function Home() {
           className="w-full h-svh flex relative pl-[250px] pr-11 max-lg:px-5"
         >
           {/* navbar */}
-          <Navbar />
+          <Navbar showCerts={showCerts} setShowCerts={setShowCerts} />
+          {/* certificates */}
+          {showCerts && <Certificates setShowCerts={setShowCerts} />}
           <div className="w-full h-fit relative">
             <Reveal duration={500} triggerOnce keyframes={customAnimation}>
               {/* intro */}
