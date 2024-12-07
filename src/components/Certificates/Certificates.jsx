@@ -17,6 +17,15 @@ to{
 `;
 
 function Certificates() {
+  const certificates = [
+    {
+      image: "./certificates/sorwazini.jpg",
+      from: {
+        name: "ALU",
+        logo: "https://static.wixstatic.com/media/e77540_03cdbded28ff4127b8a12ac4a75521ef~mv2.png/v1/fill/w_380,h_380,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ALU%20Small.png"
+      }
+    }
+  ]
   const certificateFilters = ["All", "Technical", "Soft Skills", "Education"];
   const [type, setType] = useState("All");
   return (
