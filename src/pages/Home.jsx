@@ -46,7 +46,7 @@ function Home() {
       {!false && (
         <div
           id="content"
-          className="w-full h-svh flex relative pl-[250px] pr-11"
+          className="w-full h-svh flex relative pl-[250px] pr-11 max-lg:pl-11"
         >
           {/* navbar */}
           <Navbar />
@@ -55,14 +55,14 @@ function Home() {
               {/* intro */}
               <div
                 id="intro"
-                className="w-fit mx-auto h-full xl:max-h-[1000px] py-[19%] 2xl:py-[300px] relative"
+                className="w-fit mx-auto h-full xl:max-h-[1000px] max-lg:max-h-max py-[19%] 2xl:py-[300px] relative"
               >
                 <Intro />
               </div>
               {/* work */}
               <div
                 id="work"
-                className="w-full max-w-[1400px] mx-auto h-fit px-11 pb-[300px] relative grid grid-cols-4 gap-4 max-2xl:grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1"
+                className="w-full max-w-[1400px] mx-auto h-fit px-11 max-lg:px-0 pb-[300px] relative grid grid-cols-4 gap-4 max-2xl:grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1"
               >
                 <Upfront />
                 <Countify />
@@ -72,7 +72,7 @@ function Home() {
               {/* background */}
               <div
                 id="background"
-                className="w-full max-w-[900px] mx-auto h-[700px] px-11 pb-8 relative text-dark_color dark:text-light_color"
+                className="w-full max-w-[900px] mx-auto h-[700px] max-lg:h-fit px-11 max-lg:px-0 pb-8 relative text-dark_color dark:text-light_color"
               >
                 <h1 className="text-base max-w-[600px] text-justify">
                   Im a {year - 2003}
@@ -100,11 +100,11 @@ function Home() {
                     <p className="font-Ojuju text-8xl font-semibold mb-8">o</p>
                   </div>
                   <h1 className="text-3xl pt-5">Outside hospitality</h1>
-                  <h1 className="text-7xl font-Custom_b">
+                  {/* <h1 className="text-7xl max-lg:text-5xl font-Custom_b">
                     Front
                     <SC char={"-"} />
                     end Developer
-                  </h1>
+                  </h1> */}
                   <h1 className="text-base">
                     Now <SC char={`•`} /> Kigali
                   </h1>
@@ -119,7 +119,7 @@ function Home() {
               {/* contact */}
               <div
                 id="contact"
-                className="w-full max-w-[900px] mx-auto h-[450px] px-11 pb-10 mb-5 relative grid grid-cols-2 gap-10"
+                className="w-full max-w-[900px] mx-auto h-[450px] max-lg:h-fit px-11 max-lg:px-0 pb-10 mb-5 relative grid grid-cols-2 max-lg:flex max-lg:flex-col gap-10"
               >
                 <div className="flex items-start justify-between flex-col">
                   <div className="w-full flex flex-col items-start justify-start text-ledt gap-1">
@@ -154,7 +154,7 @@ function Home() {
                     </a>
                   </div>
                 </div>
-                <div className="flex justify-end items-end w-full h-full ">
+                <div className="flex justify-end items-end w-full max-lg:max-w-[400px] h-full ">
                   <img
                     src="./me/me.jpg"
                     className="w-full h-full object-cover"
