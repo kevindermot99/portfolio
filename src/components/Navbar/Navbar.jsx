@@ -56,12 +56,13 @@ function Navbar() {
             label={"contact"}
             id={"contact"}
           />
-          <Link
-            to={"/"}
+          <a
+            href="me/Kevin's Resume.pdf"
+            target="_blank"
             className={`text-base w-fit flex items-center capitalize cursor-pointer text-dark_color_weak dark:text-light_color_weak hover:text-dark_color dark:hover:text-light_color`}
           >
             resume
-          </Link>
+          </a>
         </div>
         <div className="h-fit flex flex-col bg-orange-200/0 gap-2 w-full">
           <div className="flex items-center gap-2 relative">
