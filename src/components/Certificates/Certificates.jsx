@@ -19,13 +19,13 @@ to{
 function Certificates() {
   const certificates = [
     {
-      image: "./certificates/sorwazini.jpg",
-      from: {
-        name: "ALU",
-        logo: "https://static.wixstatic.com/media/e77540_03cdbded28ff4127b8a12ac4a75521ef~mv2.png/v1/fill/w_380,h_380,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ALU%20Small.png"
-      }
-    }
-  ]
+      proof: "./certificates/sorwazini.jpg",
+      from: [
+        "ALU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0xpCuzcYvX8XpYqJnHLpblzGtZ24B5MQCvaAQ4nD9qQvT5N8J01Zdwlj-XKWNasw5B7U&usqp=CAU",
+      ],
+    },
+  ];
   const certificateFilters = ["All", "Technical", "Soft Skills", "Education"];
   const [type, setType] = useState("All");
   return (
@@ -59,15 +59,23 @@ function Certificates() {
         </div>
         {/* body */}
         <div className="w-full columns-4 max-2xl:columns-3 max-xl:columns-2 max-md:columns-1 content-start space-y-4 ">
-          {[...Array(1)].map((_, index) => (
+          {certificates.map((certificate, index) => (
             <div className="flex flex-col gap-4 break-inside-avoid">
-              <div className="w-full h-[340px] bg-card_color_light dark:bg-card_color_dark rounded-3xl"></div>
+              <div className="w-full h-[340px] bg-card_color_light dark:bg-card_color_dark rounded-3xl py-16 px-12 overflow-clip">
+                <img
+                  src={certificate.proof}
+                  className="w-full h-full object-cover rounded-md"
+                />
+              </div>
               <div className="flex gap-2 items-center">
                 {/* logo */}
-                <div className="h-auto w-[44px] aspect-square bg-card_color_light dark:bg-card_color_dark rounded-xl">
-
+                <div className="h-auto w-[44px] aspect-square bg-card_color_light dark:bg-card_color_dark rounded-xl overflow-hidden">
+                  <img
+                    src={certificate.from[1]}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <h1 className="text-xl">from?</h1>
+                <h1 className="text-base">{certificate.from[0]}</h1>
               </div>
             </div>
           ))}
