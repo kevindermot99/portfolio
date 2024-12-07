@@ -22,7 +22,7 @@ function Gerayo() {
 
   return (
     <Link
-      to="https://countify.onrender.com/#/app/counter"
+      to="https://gerayo.onrender.com/"
       target="_blank"
       className="w-full h-[312px] bg-[#f2f2f2] dark:bg-card_color_dark transition group break-inside-avoid rounded-3xl relative flex items-center justify-center flex-col overflow-hidden"
     >
