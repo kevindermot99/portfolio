@@ -7,7 +7,7 @@ import { FaMedal } from "react-icons/fa";
 import { PiCertificate, PiCertificateBold } from "react-icons/pi";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
-import Achievements from "../Achievements/Achievements";
+import Certificates from "../Certificates/Certificates";
 
 const customAnimation = keyframes`
 from{
@@ -25,7 +25,7 @@ function Navbar() {
   const [activeSection, setActiveSection] = useState(null);
   return (
     <div className="w-[250px] bg-orange-400/0 flex flex-col items-start justify-between h-full text-dark_color dark:text-light_color fixed z-10 top-0 left-0 px-11 py-8">
-      <Achievements />
+      <Certificates />
       <Reveal duration={500} keyframes={customAnimation}>
         <h1 className="text-[24px] leading-[24px] w-fit flex items-center cursor-default select-none">
           Kevin

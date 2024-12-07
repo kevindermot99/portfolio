@@ -16,7 +16,7 @@ to{
 }
 `;
 
-function Achievements() {
+function Certificates() {
   const certificateFilters = ["All", "Technical", "Soft Skills", "Education"];
   const [type, setType] = useState("All")
   return (
@@ -29,7 +29,7 @@ function Achievements() {
         </div>
         {/* hero */}
         <div className="w-full h-fit flex flex-col items-start justify-start gap-6 py-[30px]">
-          <h1 className="text-5xl font-Custom_b tracking-tight">Achievements</h1>
+          <h1 className="text-5xl font-Custom_b tracking-tight">Certificates</h1>
           <div className="flex items-center justify-start gap-6">
             {certificateFilters.map((filter, index) => (
               <h1 onClick={() =>  setType(filter)} key={index} className={`border-b-[2px] cursor-pointer hover:text-dark_color dark:hover:text-light_color transition-all duration-200 select-none ${type === filter ? 'text-dark_color dark:text-light_color border-dark_color dark:border-light_color' : 'text-dark_color_weak dark:text-light_color_weak border-transparent'}`}>
@@ -43,4 +43,4 @@ function Achievements() {
   );
 }
 
-export default Achievements;
+export default Certificates;
