@@ -13,20 +13,22 @@ function Intro() {
   return (
     <div className="max-w-[750px] 2xl:max-w-[850px] w-full max-xl:max-w-[650px] max-md:max-w-full flex flex-col items-start justify-start dark:text-light_color">
       {/* visitors */}
-      <div className="w-full flex gap-0 overflow-auto ">
-        {expectedVisitors.map((type, index) => (
-          <h1
-            key={index}
-            className={`text-base cursor-pointer select-none py-2 px-[9px] max-lg:px-0 whitespace-nowrap hover:text-dark_color dark:hover:text-light_color ${
-              messageFor === type
-                ? "text-dark_color dark:text-light_color"
-                : "text-dark_color_weak dark:text-light_color_weak "
-            }`}
-            onClick={() => setMessageFor(type)}
-          >
-            {type}
-          </h1>
-        ))}
+      <div className="w-full h-fit">
+        <div className="w-full flex items-center justify-start gap-6 overflow-clip invisible_scroll bg-red-300 ">
+          {expectedVisitors.map((type, index) => (
+            <h1
+              key={index}
+              className={`text-base cursor-pointer select-none py-2 px-[9px] max-lg:px-0 whitespace-nowrap hover:text-dark_color dark:hover:text-light_color ${
+                messageFor === type
+                  ? "text-dark_color dark:text-light_color"
+                  : "text-dark_color_weak dark:text-light_color_weak "
+              }`}
+              onClick={() => setMessageFor(type)}
+            >
+              {type}
+            </h1>
+          ))}
+        </div>
       </div>
       <h1 className="text-5xl 2xl:text-6xl max-xl:text-4xl leading-[55px] 2xl:leading-[65px] px-2 max-lg:px-0">
         {messageFor === expectedVisitors[0] && (
