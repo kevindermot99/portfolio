@@ -1,5 +1,0 @@
-export {default as img1} from '../gallery/img1.jpg'
-export {default as img2} from '../gallery/img2.jpg'
-export {default as img3} from '../gallery/img3.jpg'
-export {default as img4} from '../gallery/img4.jpg'
-export {default as img5} from '../gallery/img5.jpg'
