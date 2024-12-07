@@ -43,7 +43,7 @@ function Certificates({setShowCerts}) {
     <div className="fixed top-0 left-0 bg-white dark:bg-body_dark w-full h-full z-20 p-8 max-lg:p-5 overflow-y-auto text-dark_color dark:text-light_color">
       <Reveal triggerOnce damping={.3} cascade={.3} duration={500} keyframes={customAnimation}>
         <div className="w-full flex items-center justify-end">
-          <button className="text-dark_color dark:text-light_color dark:bg-card_color_dark peer bg-[#f2f2f2] active:bg-stone-200 dark:active:bg-[#35353a] w-[44px] min-w-[44px] h-auto flex items-center justify-center text-xl aspect-square rounded-full">
+          <button onClick={setShowCerts} className="text-dark_color dark:text-light_color dark:bg-card_color_dark peer bg-[#f2f2f2] active:bg-stone-200 dark:active:bg-[#35353a] w-[44px] min-w-[44px] h-auto flex items-center justify-center text-xl aspect-square rounded-full">
             <LuX className="" />
           </button>
         </div>
