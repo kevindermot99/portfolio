@@ -24,6 +24,7 @@ function Certificates() {
         "ALU",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0xpCuzcYvX8XpYqJnHLpblzGtZ24B5MQCvaAQ4nD9qQvT5N8J01Zdwlj-XKWNasw5B7U&usqp=CAU",
       ],
+      desc: "We won a pitching completition for most inovative idea."
     },
   ];
   const certificateFilters = ["All", "Technical", "Soft Skills", "Education"];
