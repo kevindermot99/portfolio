@@ -104,7 +104,7 @@ function Certificates({ setShowCerts }) {
           </div>
         </div>
         {/* body */}
-        <div className="w-full columns-4 max-2xl:columns-3 max-xl:columns-2 max-md:columns-1 content-start space-y-4 ">
+        <div className={`w-full columns-4 max-2xl:columns-3 max-xl:columns-2 max-md:columns-1 content-start space-y-4 transition-all duration-500 ${closed ? 'opacity-0 translate-y-20' : ''} `}>
           {certificates
             .filter((holder) => holder.type.includes(type))
             .map((certificate, index) => (
