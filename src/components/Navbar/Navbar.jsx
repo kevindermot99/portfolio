@@ -23,7 +23,7 @@ to{
 function Navbar() {
   const [activeSection, setActiveSection] = useState(null);
   return (
-    <div className="w-[250px] flex flex-col items-start justify-between h-full text-dark_color dark:text-light_color fixed z-10 top-0 left-0 px-11 py-8">
+    <div className="w-[250px] bg-orange-400/0 flex flex-col items-start justify-between h-full text-dark_color dark:text-light_color fixed z-10 top-0 left-0 px-11 py-8">
       <Reveal duration={500} keyframes={customAnimation}>
         <h1 className="text-[24px] leading-[24px] w-fit flex items-center cursor-default select-none">
           Kevin
@@ -62,9 +62,20 @@ function Navbar() {
         </div>
         <div className="h-fit flex flex-col bg-orange-200/0 gap-2 w-full">
           <div className="flex items-center gap-2 relative">
-            <button className="text-dark_color dark:text-light_color dark:bg-card_color_dark peer bg-[#f2f2f2] active:bg-stone-200 w-[42px] min-w-[48px] h-auto flex items-center justify-center text-2xl aspect-square rounded-full">
+            <button className="text-dark_color dark:text-light_color dark:bg-card_color_dark peer bg-[#f2f2f2] active:bg-stone-200 dark:active:bg-[#35353a] w-[42px] min-w-[48px] h-auto flex items-center justify-center text-2xl aspect-square rounded-full">
               <CgDarkMode className="rotate-[-20deg]" />
             </button>
+            <p className="text-base transition text-dark_color dark:text-light_color/70 translate-x-[-50px] -z-10 opacity-0 peer-hover:translate-x-0 peer-hover:opacity-100">
+              Light<span className="font-Inter">/</span>Dark
+            </p>
+          </div>
+          <div className="flex items-center gap-2 relative">
+            <button className="text-dark_color dark:text-light_color dark:bg-card_color_dark peer bg-[#f2f2f2] active:bg-stone-200 dark:active:bg-[#35353a] w-[42px] min-w-[48px] h-auto flex items-center justify-center text-2xl aspect-square rounded-full">
+              <PiCertificateBold className="rotate-[-20deg]" />
+            </button>
+            <p className="text-base transition text-dark_color dark:text-light_color/70 translate-x-[-50px] -z-10 opacity-0 peer-hover:translate-x-0 peer-hover:opacity-100">
+              Achievements
+            </p>
           </div>
         </div>
       </Reveal>
