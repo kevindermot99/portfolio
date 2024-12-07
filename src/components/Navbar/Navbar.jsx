@@ -56,15 +56,9 @@ function Navbar() {
             label={"contact"}
             id={"contact"}
           />
-          <ScrollTo
-            activeSection={activeSection}
-            setActiveSection={setActiveSection}
-            label={"resume"}
-            id={"resume"}
-          />
           <Link
             to={"/"}
-            className={`text-base w-fit flex items-center capitalize cursor-pointer hover:text-dark_color dark:hover:text-light_color`}
+            className={`text-base w-fit flex items-center capitalize cursor-pointer text-dark_color_weak dark:text-light_color_weak hover:text-dark_color dark:hover:text-light_color`}
           >
             resume
           </Link>
