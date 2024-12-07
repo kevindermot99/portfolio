@@ -49,15 +49,10 @@ function Certificates({ setShowCerts }) {
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === 'Escape') {
-        // Perform the desired action
-        console.log('Esc key pressed!');
+        handleClose()
       }
     };
-
-    // Attach the event listener
     window.addEventListener('keydown', handleKeyDown);
-
-    // Cleanup the event listener on unmount
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
@@ -66,7 +61,7 @@ function Certificates({ setShowCerts }) {
   const certificateFilters = ["All", "Technical", "Soft Skills", "Education"];
   const [type, setType] = useState("All");
   return (
-    <div className={`fixed top-0 left-0 bg-white dark:bg-body_dark w-full h-full z-20 p-8 max-lg:p-5 overflow-y-auto text-dark_color dark:text-light_color transition-all duration-500 ${closed ? 'opacity-0 blur-lg' : ''}`}>
+    <div className={`fixed top-0 left-0 bg-white dark:bg-body_dark w-full h-full z-20 p-8 max-lg:p-5 overflow-y-auto text-dark_color dark:text-light_color transition-all duration-500 ${closed ? 'opacity-0 blur-xl pointer-events-none' : ''}`}>
       <div className="w-full flex items-center justify-end">
         <button
           onClick={handleClose}
@@ -83,7 +78,7 @@ function Certificates({ setShowCerts }) {
         keyframes={customAnimation}
       >
         {/* head */}
-        <div className={`w-full h-fit flex flex-col items-start justify-start gap-6 py-[30px] transition-all duration-500 ${closed ? 'opacity-0 translate-y-20' : ''}`}>
+        <div className={`w-full h-fit flex flex-col items-start justify-start gap-6 py-[30px] transition-all duration-500 ${closed ? 'opacity-0 translate-y-[-200px]' : ''}`}>
           <h1 className="text-5xl font-Custom_b tracking-tight">
             Certificates
           </h1>
@@ -104,7 +99,7 @@ function Certificates({ setShowCerts }) {
           </div>
         </div>
         {/* body */}
-        <div className={`w-full columns-4 max-2xl:columns-3 max-xl:columns-2 max-md:columns-1 content-start space-y-4 transition-all duration-500 ${closed ? 'opacity-0 translate-y-20' : ''} `}>
+        <div className={`w-full columns-4 max-2xl:columns-3 max-xl:columns-2 max-md:columns-1 content-start space-y-4 transition-all duration-500 ${closed ? 'opacity-0 translate-y-[-200px]' : ''} `}>
           {certificates
             .filter((holder) => holder.type.includes(type))
             .map((certificate, index) => (
