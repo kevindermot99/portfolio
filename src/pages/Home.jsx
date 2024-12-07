@@ -46,7 +46,7 @@ function Home() {
       {!false && (
         <div
           id="content"
-          className="w-full h-svh flex relative pl-[250px] pr-11 max-lg:pl-11"
+          className="w-full h-svh flex relative pl-[250px] pr-11 max-lg:px-5"
         >
           {/* navbar */}
           <Navbar />
@@ -55,7 +55,7 @@ function Home() {
               {/* intro */}
               <div
                 id="intro"
-                className="w-fit mx-auto h-full xl:max-h-[1000px] max-lg:max-h-max py-[19%] 2xl:py-[300px] relative"
+                className="w-fit mx-auto h-full xl:max-h-[1000px] max-lg:max-h-max py-[19%] max-lg:py-[90px] 2xl:py-[300px] relative"
               >
                 <Intro />
               </div>
