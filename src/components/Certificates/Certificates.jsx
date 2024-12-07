@@ -43,7 +43,7 @@ function Certificates({ setShowCerts }) {
     setClosed(true)
     setTimeout(() => {
       setShowCerts(false)
-    }, 1000);
+    }, 500);
   }
 
   useEffect(() => {
@@ -81,7 +81,7 @@ function Certificates({ setShowCerts }) {
         cascade={0.3}
         duration={500}
         keyframes={customAnimation}
-        className=""
+        className={`transition-all duration-500 ${closed ? 'opacity-0 translate-y-20' : ''}`}
       >
         {/* head */}
         <div className="w-full h-fit flex flex-col items-start justify-start gap-6 py-[30px]">
