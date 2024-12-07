@@ -27,7 +27,7 @@ function Countify() {
       className="w-full h-[312px] bg-[#f2f2f2] dark:bg-card_color_dark transition group break-inside-avoid rounded-3xl relative flex items-center justify-center flex-col overflow-hidden"
     >
       <div
-        className={`flex flex-col gap-2 select-none pointer-events-none xl:group-hover:scale-75 scale-75 xl:group-hover:translate-y-[-105px] group-hover:translate-y-[-105px] transition-all duration-500 `}
+        className={`flex flex-col gap-2 select-none pointer-events-none xl:group-hover:scale-75 scale-75 xl:group-hover:translate-y-[-105px] translate-y-[-105px] transition-all duration-500 `}
       >
         <div className="flex items-center gap-2 ">
           <img
