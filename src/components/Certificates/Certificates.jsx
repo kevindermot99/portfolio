@@ -16,7 +16,7 @@ to{
 }
 `;
 
-function Certificates() {
+function Certificates({setShowCerts}) {
   const certificates = [
     {
       proof: "./certificates/sorwazini.jpg",
