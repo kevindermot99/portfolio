@@ -125,8 +125,8 @@ function Home() {
                   <div className="w-full flex flex-col items-start justify-start text-ledt gap-1">
                     <h1 className="text-base text-dark_color_weak dark:text-light_color_weak flex items-center gap-4">
                       <div className="h-[9px] w-[9px] relative">
-                        <div className="h-[9px] w-[9px] bg-dark_color_weak rounded-xl animate-ping"></div>
-                        <div className="h-[7px] w-[7px] bg-dark_color rounded-xl absolute top-0 left-0 right-0 bottom-0 m-auto"></div>
+                        <div className="h-[9px] w-[9px] bg-dark_color_weak dark:bg-light_color_weak rounded-xl animate-ping"></div>
+                        <div className="h-[7px] w-[7px] bg-dark_color rounded-xl dark:bg-light_color absolute top-0 left-0 right-0 bottom-0 m-auto"></div>
                       </div>
                       Exploring new opportunities
                     </h1>
