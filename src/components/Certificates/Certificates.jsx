@@ -66,7 +66,7 @@ function Certificates({ setShowCerts }) {
   const certificateFilters = ["All", "Technical", "Soft Skills", "Education"];
   const [type, setType] = useState("All");
   return (
-    <div className="fixed top-0 left-0 bg-white dark:bg-body_dark w-full h-full z-20 p-8 max-lg:p-5 overflow-y-auto text-dark_color dark:text-light_color">
+    <div className={`fixed top-0 left-0 bg-white dark:bg-body_dark w-full h-full z-20 p-8 max-lg:p-5 overflow-y-auto text-dark_color dark:text-light_color transition-all duration-500 ${closed ? 'opacity-0 blur-lg' : ''}`}>
       <div className="w-full flex items-center justify-end">
         <button
           onClick={handleClose}
