@@ -41,9 +41,9 @@ function Home() {
   return (
     <>
       {/* Loading screen */}
-      {/* {showLoading && <LoadingScreen />} */}
+      {showLoading && <LoadingScreen />}
       {/* content */}
-      {!false && (
+      {!showLoading && (
         <div
           id="content"
           className="w-full h-svh flex relative pl-[250px] pr-11 max-lg:px-5"
@@ -55,7 +55,7 @@ function Home() {
               {/* intro */}
               <div
                 id="intro"
-                className="w-fit mx-auto h-full xl:max-h-[1000px] max-lg:max-h-max py-[19%] max-lg:py-[90px] 2xl:py-[300px] relative"
+                className="w-fit mx-auto h-full xl:max-h-[1000px] max-lg:max-h-max py-[19%] max-lg:py-[100px] max-md:min-h-[80vh] 2xl:py-[300px] max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center  relative"
               >
                 <Intro />
               </div>
