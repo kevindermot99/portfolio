@@ -41,9 +41,9 @@ function Home() {
   return (
     <>
       {/* Loading screen */}
-      {showLoading && <LoadingScreen />}
+      {/* {showLoading && <LoadingScreen />} */}
       {/* content */}
-      {!showLoading && (
+      {!false && (
         <div
           id="content"
           className="w-full h-svh flex relative pl-[250px] pr-11"
