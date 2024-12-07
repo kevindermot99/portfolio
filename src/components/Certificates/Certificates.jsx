@@ -27,7 +27,7 @@ function Certificates() {
             <LuX className="" />
           </button>
         </div>
-        {/* hero */}
+        {/* head */}
         <div className="w-full h-fit flex flex-col items-start justify-start gap-6 py-[30px]">
           <h1 className="text-5xl font-Custom_b tracking-tight">Certificates</h1>
           <div className="flex items-center justify-start gap-6">
@@ -38,6 +38,8 @@ function Certificates() {
             ))}
           </div>
         </div>
+        {/* body */}
+        
       </Reveal>
     </div>
   );
