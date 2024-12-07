@@ -70,13 +70,13 @@ function Certificates() {
         <div className="w-full columns-4 max-2xl:columns-3 max-xl:columns-2 max-md:columns-1 content-start space-y-4 ">
           {certificates.map((certificate, index) => (
             <div className="flex flex-col gap-4 break-inside-avoid">
-              <div className="w-full h-[340px] bg-card_color_light dark:bg-card_color_dark rounded-3xl py-16 px-12 overflow-clip">
+              <div className="w-full h-[340px] select-none bg-card_color_light dark:bg-card_color_dark rounded-3xl py-16 px-12 overflow-clip">
                 <img
                   src={certificate.proof}
                   className="w-full min-h-full object-cover rounded-md"
                 />
               </div>
-              <div className="flex gap-2 items-center">
+              <div className="flex gap-3 items-center">
                 {/* logo */}
                 <div className="h-auto w-[45px] aspect-square bg-card_color_light dark:bg-card_color_dark rounded-xl overflow-hidden">
                   <img
