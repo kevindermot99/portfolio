@@ -115,7 +115,7 @@ function Home() {
                   <h1 className="text-base text-dark_color/50 dark:text-light_color/50">
                     Working on the front
                     <SC char={"-"} />
-                    end design and development of Hospitality
+                    end design and development of the company
                     <SC char={"'"} />s platform.
                   </h1>
                 </div>
