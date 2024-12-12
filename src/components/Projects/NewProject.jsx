@@ -8,7 +8,7 @@ function NewProject() {
         New project soon..
       </div>
       <p className="px-2 text-[13px] py-1 text-dark_color/40 dark:text-light_color_weak">
-        {ProjectTypes.Personal}
+        {ProjectTypes.nextRelease}
       </p>
     </div>
   );
