@@ -36,7 +36,7 @@ function Countify() {
               src="./project_logos/countify.png"
               className="h-12 transition-all duration-500 "
             />
-            <h1 className=" font-bold text-3xl text-dark_color dark:text-light_color tracking-wide xl:text-dark_color/45 xl:dark:text-light_color/45 xl:group-hover:text-dark_color xl:dark:group-hover:text-light_color transition-all duration-500">
+            <h1 className="font-Inter font-bold text-3xl text-dark_color dark:text-light_color tracking-wide xl:text-dark_color/45 xl:dark:text-light_color/45 xl:group-hover:text-dark_color xl:dark:group-hover:text-light_color transition-all duration-500">
               Countify
             </h1>
           </div>
