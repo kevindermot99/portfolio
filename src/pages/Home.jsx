@@ -71,12 +71,6 @@ function Home() {
                 <Upfront />
                 <Countify />
                 <Gerayo />
-                <Gerayo />
-                <Gerayo />
-                <Gerayo />
-                <Gerayo />
-                <Gerayo />
-                <Gerayo />
                 <NewProject />
               </div>
               {/* background */}
