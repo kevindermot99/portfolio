@@ -28,7 +28,7 @@ function Intro() {
           </h1>
         ))}
       </div>
-      <h1 className="text-5xl 2xl:text-6xl max-xl:text-4xl leading-[55px] 2xl:leading-[65px] px-2 max-lg:px-0">
+      <h1 className="text-5xl 2xl:text-6xl max-xl:text-4xl leading-[55px] 2xl:leading-[65px] px-2 max-lg:px-0 font-Custom_b">
         {messageFor === expectedVisitors[0] && (
           <>
             Hi there, I<SC char={`'`} />m a Full
