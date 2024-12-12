@@ -50,7 +50,7 @@ function Upfront() {
         </div>
       </Link>
 
-      <p className="px-2 text-[12px] text-dark_color/30">pp</p>
+      <p className="px-2 text-[13px] text-dark_color/40">pp</p>
     </div>
   );
 }
