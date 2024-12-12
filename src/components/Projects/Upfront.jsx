@@ -51,7 +51,7 @@ function Upfront() {
         </div>
       </Link>
 
-      <p className="px-2 text-[13px] py-1 text-dark_color/40">{ProjectTypes.Professional}</p>
+      <p className="px-2 text-[13px] py-1 text-dark_color/40 dark:text-light_color_weak">{ProjectTypes.Professional}</p>
     </div>
   );
 }
