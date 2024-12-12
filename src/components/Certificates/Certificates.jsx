@@ -114,7 +114,7 @@ function Certificates({ setShowCerts }) {
                 >
                   <img
                     src={certificate.proof}
-                    className="w-full min-h-full object-cover rounded-md brightness-90"
+                    className="w-full min-h-full object-cover rounded-md"
                   />
                 </a>
                 <div className="flex gap-3 items-center">
