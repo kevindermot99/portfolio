@@ -56,8 +56,12 @@ body.no_scroll::-webkit-scrollbar-thumb {
 .custom_shadow{
   box-shadow: 0px 0px 15px 1px #0000000e;
 }
+
+:root{
+  --stripes: #9c2b2b;
+}
 .stripes {
   
-  background-image: linear-gradient(-45deg, #eeeeee 25%, transparent 25%, transparent 50%, #eee 50%, #eee 75%, transparent 75%, #fff);
-  background-size: 5px 5px;
+  background-image: linear-gradient(-45deg, var(--stripes) 25%, transparent 25%, transparent 50%, var(--stripes) 50%, var(--stripes) 75%, transparent 75%, #fff);
+  background-size: 5px 35px;
 }
