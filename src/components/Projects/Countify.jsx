@@ -34,7 +34,7 @@ function Countify() {
           <div className="flex items-center gap-2 ">
             <img
               src="./project_logos/countify.png"
-              className="h-12 transition-all duration-500 xl:opacity-40 xl:group-hover:opacity-100"
+              className="h-12 transition-all duration-500 xl:opacity-40 xl:group-hover:opacity-100 xl:dark:contrast-[50%]"
             />
             <h1 className="font-Inter font-bold text-4xl text-dark_color dark:text-light_color tracking-wide xl:text-dark_color/45 xl:dark:text-light_color/45 xl:group-hover:text-dark_color xl:dark:group-hover:text-light_color transition-all duration-500">
               Countify
