@@ -34,7 +34,7 @@ function Intro() {
             Hi there, I<SC char={`'`} />m a Full
             <SC char={"-"} />
             Stack web developer with strong skills in front
-            <span className="font-Inter">-</span>end development and design.
+            <span className="font-Inter">-</span>end development and design
           </>
         )}
         {messageFor === expectedVisitors[1] && (
@@ -42,20 +42,20 @@ function Intro() {
             I<SC char={`'`} />m a Full
             <SC char={`-`} />
             stack web developer with 3 months of experience, skilled in MERN
-            Stack, and committed to creating quality products.
+            Stack, and committed to creating quality products
           </>
         )}
         {messageFor === expectedVisitors[2] && (
           <>
             I take pride in transforming design ideas into user
             <SC char={`-`} />
-            friendly web Apps, Let’s create something great together.
+            friendly web Apps, Let’s create something great together
           </>
         )}
         {messageFor === expectedVisitors[3] && (
           <>
             From ideation to launch, I help startups create high quality Web App
-            as quickly as possible.
+            as quickly as possible
           </>
         )}
       </h1>
