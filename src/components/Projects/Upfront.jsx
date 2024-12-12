@@ -25,7 +25,7 @@ function Upfront() {
       <Link
         to="https://upfront.onrender.com/"
         target="_blank"
-        className="w-full h-[312px] bg-[#f2f2f2] dark:bg-card_color_dark/30 dark:hover:bg-card_color_dark/70 transition group  rounded-3xl relative flex items-center justify-center flex-col overflow-hidden"
+        className="w-full h-[312px] bg-[#f2f2f2] dark:bg-card_color_dark transition group  rounded-3xl relative flex items-center justify-center flex-col overflow-hidden"
       >
         <div
           className={`flex flex-col gap-2 select-none pointer-events-none xl:group-hover:scale-75 max-xl:scale-75 xl:group-hover:translate-y-[-105px] max-xl:translate-y-[-105px] transition-all duration-500 xl:saturate-0 xl:group-hover:saturate-100`}
