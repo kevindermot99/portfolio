@@ -72,8 +72,11 @@ function Home() {
                 <Countify />
                 <Gerayo />
                 <Gerayo />
-
+                <Gerayo />
                 <NewProject />
+                <Gerayo />
+                <Gerayo />
+                <Gerayo />
                 <Gerayo />
 
               </div>
