@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { LuArrowUp } from "react-icons/lu";
 import UpfrontCard from "./UpfrontCard";
 import { Link } from "react-router-dom";
+import { ProjectTypes } from "./Types";
 
 function Upfront() {
   const [animate, setAnimate] = useState(false);
@@ -50,7 +51,7 @@ function Upfront() {
         </div>
       </Link>
 
-      <p className="px-2 text-[13px] py-1 text-dark_color/40"></p>
+      <p className="px-2 text-[13px] py-1 text-dark_color/40">{ProjectTypes.Professional}</p>
     </div>
   );
 }

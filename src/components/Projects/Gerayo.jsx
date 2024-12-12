@@ -3,6 +3,7 @@ import { LuArrowUp } from "react-icons/lu";
 import SC from "../Special/SC";
 import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
+import { ProjectTypes } from "./Types";
 
 function Gerayo() {
   const [animate, setAnimate] = useState(false);
@@ -82,7 +83,7 @@ function Gerayo() {
         </div>
       </Link>
 
-      <p className="px-2 text-[13px] py-1 text-dark_color/40"></p>
+      <p className="px-2 text-[13px] py-1 text-dark_color/40">{ProjectTypes.Personal}</p>
     </div>
   );
 }
