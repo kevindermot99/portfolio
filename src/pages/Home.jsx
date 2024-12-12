@@ -73,11 +73,11 @@ function Home() {
                 <Gerayo />
                 <Gerayo />
                 <Gerayo />
+                <Gerayo />
+                <Gerayo />
+                <Gerayo />
+                <Gerayo />
                 <NewProject />
-                <Gerayo />
-                <Gerayo />
-                <Gerayo />
-                <Gerayo />
 
               </div>
               {/* background */}
