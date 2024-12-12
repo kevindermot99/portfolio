@@ -66,7 +66,7 @@ function Home() {
               {/* work grid grid-cols-4 gap-4 max-2xl:grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1 */}
               <div
                 id="work"
-                className="w-full max-w-[1400px] mx-auto h-fit px-11 max-lg:px-0 pb-[300px] max-lg:pb-20 relative columns-4 xl:columns-3"
+                className="w-full max-w-[1400px] mx-auto h-fit px-11 max-lg:px-0 pb-[300px] max-lg:pb-20 relative columns-4 2xl:columns-3 max-xl:columns-2"
               >
                 <Upfront />
                 <Countify />
