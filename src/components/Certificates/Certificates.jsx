@@ -119,7 +119,7 @@ function Certificates({ setShowCerts }) {
                 </a>
                 <div className="flex gap-3 items-center">
                   {/* logo */}
-                  <div className="h-auto w-[45px] aspect-square bg-card_color_light dark:bg-card_color_dark rounded-xl overflow-hidden">
+                  <div className="h-auto w-[42px] aspect-square bg-card_color_light dark:bg-card_color_dark rounded-full overflow-hidden">
                     <img
                       src={certificate.from[1]}
                       className="w-full h-full object-cover"
