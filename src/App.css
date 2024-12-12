@@ -58,10 +58,10 @@ body.no_scroll::-webkit-scrollbar-thumb {
 }
 
 :root{
-  --stripes: #808080;
+  --stripes: #8080800c;
 }
 .stripes {
   
-  background-image: linear-gradient(-45deg, var(--stripes) 25%, transparent 25%, transparent 50%, var(--stripes) 50%, var(--stripes) 75%, transparent 75%, #ec0000);
+  background-image: linear-gradient(-45deg, var(--stripes) 25%, transparent 25%, transparent 50%, var(--stripes) 50%, var(--stripes) 75%, transparent 75%, transparent);
   background-size: 9px 9px;
 }
