@@ -50,7 +50,7 @@ function Upfront() {
         </div>
       </Link>
 
-      <p className="px-2 text-[13px] py-1 text-dark_color/40">Personal Project</p>
+      <p className="px-2 text-[13px] py-1 text-dark_color/40"></p>
     </div>
   );
 }
