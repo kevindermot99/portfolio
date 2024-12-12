@@ -31,7 +31,7 @@ function Upfront() {
           className={`flex flex-col gap-2 select-none pointer-events-none xl:group-hover:scale-75 max-xl:scale-75 xl:group-hover:translate-y-[-105px] max-xl:translate-y-[-105px] transition-all duration-500 xl:saturate-0 xl:group-hover:saturate-100`}
         >
           <div className="flex items-center gap-2 ">
-            <img src="./project_logos/upfront.png" className="h-12" />
+            <img src="./project_logos/upfront.png" className="h-12 xl:opacity-70 xl:group-hover:opacity-100" />
             <h1 className="font-Inter font-bold text-3xl text-dark_color dark:text-light_color ">
               Upfront.
             </h1>
