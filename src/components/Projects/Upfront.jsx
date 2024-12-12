@@ -21,7 +21,7 @@ function Upfront() {
   };
 
   return (
-    <div className="flex items-start flex-col">
+    <div className="flex items-start flex-col break-inside-avoid">
       <Link
         to="https://upfront.onrender.com/"
         target="_blank"
